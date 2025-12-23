@@ -5,6 +5,8 @@ interface JerseyProps {
     number?: string;
     className?: string;
     size?: 'sm' | 'md' | 'lg' | 'xl';
+    view?: 'front' | 'back';
+    name?: string; // Player Last Name for back view
 }
 
 const TEAM_COLORS: Record<string, { primary: string; secondary: string }> = {
@@ -40,7 +42,7 @@ const TEAM_COLORS: Record<string, { primary: string; secondary: string }> = {
     'Wizards': { primary: '#002B5C', secondary: '#E31837' },
 };
 
-export default function Jersey({ teamName = 'Lakers', number = '23', className = '', size = 'md' }: JerseyProps) {
+export default function Jersey({ teamName = 'Lakers', number = '23', className = '', size = 'md', view = 'front', name = 'PLAYER' }: JerseyProps) {
     const colors = TEAM_COLORS[teamName] || { primary: '#1D428A', secondary: '#FFC72C' };
 
     const sizeClasses = {
@@ -86,19 +88,36 @@ export default function Jersey({ teamName = 'Lakers', number = '23', className =
                     {number}
                 </text>
 
-                {/* Team Name Mini */}
-                <text
-                    x="50"
-                    y="35"
-                    textAnchor="middle"
-                    fill="white"
-                    fontFamily="system-ui"
-                    fontWeight="900"
-                    fontSize="8"
-                    className="uppercase tracking-tighter"
-                >
-                    {teamName}
-                </text>
+                {/* VIEW SPECIFIC CONTENT */}
+                {view === 'front' ? (
+                    /* Team Name Mini */
+                    <text
+                        x="50"
+                        y="35"
+                        textAnchor="middle"
+                        fill="white"
+                        fontFamily="system-ui"
+                        fontWeight="900"
+                        fontSize="8"
+                        className="uppercase tracking-tighter"
+                    >
+                        {teamName}
+                    </text>
+                ) : (
+                    /* Player Name (Back) */
+                    <text
+                        x="50"
+                        y="35"
+                        textAnchor="middle"
+                        fill="white"
+                        fontFamily="system-ui"
+                        fontWeight="900"
+                        fontSize={name.length > 8 ? "8" : "10"}
+                        className="uppercase tracking-tighter"
+                    >
+                        {name}
+                    </text>
+                )}
             </svg>
         </div>
     );

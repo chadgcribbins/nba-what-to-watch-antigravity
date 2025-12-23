@@ -20,7 +20,7 @@ const POPULAR_NUMBERS: Record<string, string> = {
 };
 
 export default function ProfilePage() {
-    const { prefs, isLoaded, updateEmail } = usePreferences();
+    const { prefs, setPrefs, isLoaded, updateEmail } = usePreferences();
 
     if (!isLoaded) return null;
 
@@ -45,16 +45,35 @@ export default function ProfilePage() {
 
                 <div className="flex flex-col space-y-6 relative z-10">
                     <div className="flex items-start justify-between">
-                        <div className="space-y-4">
+                        <div className="space-y-4 flex-1 mr-4">
                             <div className="flex items-center gap-3">
-                                <div className="w-12 h-12 rounded-full bg-arcade-yellow border-2 border-black flex items-center justify-center text-xl font-black text-black">
-                                    {prefs.profile?.displayName?.[0] || 'G'}
+                                <div className="w-12 h-12 rounded-full border-2 border-black flex items-center justify-center shrink-0 overflow-hidden bg-white">
+                                    {favoriteTeam?.logoUrl ? (
+                                        <img src={favoriteTeam.logoUrl} alt={favoriteTeam.name} className="w-full h-full object-cover p-1" />
+                                    ) : (
+                                        <div className="w-full h-full bg-arcade-yellow flex items-center justify-center text-xl font-black text-black">
+                                            {prefs.profile?.displayName?.[0] || 'G'}
+                                        </div>
+                                    )}
                                 </div>
-                                <div>
-                                    <h3 className="text-2xl font-black uppercase italic tracking-tighter leading-none">
-                                        {prefs.profile?.displayName || 'Guest Player'}
-                                    </h3>
-                                    <div className="flex items-center gap-1.5 mt-1 text-arcade-blue">
+                                <div className="w-full">
+                                    <label className="text-[9px] font-bold text-gray-500 uppercase tracking-widest block mb-1">
+                                        Jersey Name
+                                    </label>
+                                    <input
+                                        type="text"
+                                        value={prefs.profile?.displayName || ''}
+                                        onChange={(e) => {
+                                            const val = e.target.value.toUpperCase().slice(0, 12); // Limit char count
+                                            setPrefs({
+                                                ...prefs,
+                                                profile: { ...(prefs.profile || { avatarTemplate: 'goated-jam' }), displayName: val }
+                                            });
+                                        }}
+                                        placeholder="LAST NAME"
+                                        className="w-full bg-transparent text-3xl font-black uppercase italic tracking-tighter leading-none outline-none border-b-2 border-transparent focus:border-arcade-blue placeholder:text-gray-700 text-white"
+                                    />
+                                    <div className="flex items-center gap-1.5 mt-2 text-arcade-blue">
                                         <Shield className="w-3 h-3 fill-current" />
                                         <span className="text-[10px] font-black uppercase tracking-widest">
                                             {favoriteTeam?.full_name || 'Free Agent'}
@@ -64,10 +83,11 @@ export default function ProfilePage() {
                             </div>
 
                             <div className="space-y-1 pt-2">
-                                <p className="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Franchise GOAT</p>
+                                <p className="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Franchise GOAT / Number</p>
                                 <div className="flex items-center gap-2">
                                     <Star className="w-4 h-4 text-arcade-yellow fill-arcade-yellow" />
                                     <span className="text-sm font-black uppercase italic">{goatPlayer?.name || 'Unassigned'}</span>
+                                    <span className="text-xs font-bold text-gray-500">#{jerseyNumber}</span>
                                 </div>
                             </div>
                         </div>
@@ -76,8 +96,10 @@ export default function ProfilePage() {
                             <Jersey
                                 teamName={favoriteTeam?.name || 'Lakers'}
                                 number={jerseyNumber}
+                                name={prefs.profile?.displayName || 'PLAYER'}
+                                view="back"
                                 size="md"
-                                className="hover:scale-110 transition-transform duration-300"
+                                className="hover:scale-110 transition-transform duration-300 transform -rotate-2"
                             />
                         </div>
                     </div>

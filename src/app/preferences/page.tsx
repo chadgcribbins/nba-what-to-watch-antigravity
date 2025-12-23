@@ -234,38 +234,6 @@ export default function PreferencesPage() {
                     </p>
                 </div>
 
-                {/* 0. PROFILE IDENTITY */}
-                <div className="mb-8 p-4 bg-gray-900 border border-gray-800 rounded-sm relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-24 h-24 opacity-10 pointer-events-none">
-                        {prefs.goatId && (
-                            <img
-                                src={ALL_PLAYERS.find(p => p.id === prefs.goatId)?.headshotUrl}
-                                alt="GOAT"
-                                className="w-full h-full object-contain grayscale"
-                            />
-                        )}
-                    </div>
-                    <div className="relative z-10 flex items-center gap-4">
-                        <div className="w-12 h-12 bg-arcade-blue border-2 border-black rounded-sm flex items-center justify-center text-2xl box-shadow-arcade-xs">
-                            {prefs.profile?.displayName?.[0] || 'G'}
-                        </div>
-                        <div className="flex-1">
-                            <input
-                                type="text"
-                                value={prefs.profile?.displayName || ''}
-                                onChange={(e) => setPrefs({
-                                    ...prefs,
-                                    profile: { ...(prefs.profile || { avatarTemplate: 'goated-jam' }), displayName: e.target.value }
-                                })}
-                                placeholder="Player Name..."
-                                className="w-full bg-transparent text-xl font-black uppercase italic tracking-tighter outline-none text-arcade-yellow placeholder:text-gray-700"
-                            />
-                            <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">
-                                Certified GOAT Jersey Holder
-                            </p>
-                        </div>
-                    </div>
-                </div>
 
                 {/* 1. SCORE CARD (THE SCORER'S TABLE) */}
 
