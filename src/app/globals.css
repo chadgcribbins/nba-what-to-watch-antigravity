@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 
+  NBA JAM / ARCADE VIBE 
+  Colors: 
+  - Background: Dark Slate (#1a1a2e)
+  - Accent: Fire Red (#ff4b4b)
+  - Highlight: Electric Blue (#4b7bff)
+  - Text: Off-white (#e0e0e0)
+*/
+
+@theme {
+  --color-arcade-bg: #1a1a2e;
+  --color-arcade-card: #16213e;
+  --color-arcade-red: #ff4b4b;
+  --color-arcade-blue: #4b7bff;
+  --color-arcade-yellow: #f9d71c;
+  --color-arcade-green: #4bff4b;
+  --color-arcade-text: #e0e0e0;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background-color: var(--color-arcade-bg);
+    color: var(--color-arcade-text);
+    font-family: system-ui, -apple-system, sans-serif;
+    animation: arcade-flicker 10s linear infinite;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-shadow-arcade {
+    text-shadow: 2px 2px 0px #000;
+  }
+
+  .box-shadow-arcade {
+    box-shadow: 4px 4px 0px #000;
+  }
+
+  .box-shadow-arcade-xs {
+    box-shadow: 2px 2px 0px #000;
+  }
+
+  .arcade-border {
+    border: 2px solid #000;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@keyframes arcade-float {
+  0% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-5px) rotate(2deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(-2deg);
+  }
+}
+
+@keyframes arcade-flicker {
+  0% {
+    opacity: 0.9;
+  }
+
+  5% {
+    opacity: 0.8;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 0.8;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-arcade-float {
+  animation: arcade-float 3s ease-in-out infinite;
+}
+
+.animate-arcade-flicker {
+  animation: arcade-flicker 4s linear infinite;
 }
