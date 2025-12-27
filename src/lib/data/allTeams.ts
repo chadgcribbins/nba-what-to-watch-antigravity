@@ -33,7 +33,7 @@ export const ALL_TEAMS: Team[] = [
     { id: 30, abbreviation: 'WAS', city: 'Washington', conference: 'East', division: 'Southeast', full_name: 'Washington Wizards', name: 'Wizards', logoUrl: 'https://a.espncdn.com/i/teamlogos/nba/500/was.png' },
 ];
 
-export const TEAM_STANDINGS_2024 = {
+export const TEAM_STANDINGS_2024: Record<number, number> = {
     21: 68, // OKC
     6: 64, // CLE
     2: 61, // BOS

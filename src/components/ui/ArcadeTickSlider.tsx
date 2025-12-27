@@ -81,7 +81,7 @@ export function ArcadeTickSlider({
             {/* Microcopy & Anchors */}
             <div className="relative h-6">
                 <p className="text-[11px] text-gray-400 font-medium italic text-center absolute w-full transition-all top-0">
-                    "{microcopy[value - 1]}"
+                    &quot;{microcopy[value - 1]}&quot;
                 </p>
 
                 {/* Visual Anchors (Faded) */}

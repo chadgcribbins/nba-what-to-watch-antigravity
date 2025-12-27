@@ -1,5 +1,3 @@
-import { useRef, useEffect, useState } from 'react';
-
 interface ArcadeSliderProps {
     label: string;
     leftLabel: string;
@@ -12,14 +10,6 @@ interface ArcadeSliderProps {
 export function ArcadeSlider({ label, leftLabel, rightLabel, value, onChange, color = 'blue' }: ArcadeSliderProps) {
     // Calculate fill percentage
     const percentage = value;
-
-    // Color mapping
-    const colorMap = {
-        blue: 'accent-arcade-blue',
-        red: 'accent-arcade-red',
-        yellow: 'accent-arcade-yellow',
-        purple: 'accent-purple-500' // Custom
-    };
 
     const bgMap = {
         blue: 'bg-arcade-blue',
