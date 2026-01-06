@@ -53,24 +53,26 @@ export function GameCard({
         }
     };
 
-    const CardContainer = !isScheduled && game.watchLinks?.primary ? 'a' : 'div';
-    const cardProps = !isScheduled && game.watchLinks?.primary ? {
-        href: game.watchLinks.primary,
-        target: "_blank",
-        rel: "noopener noreferrer"
-    } : {};
-
     return (
-        <CardContainer
-            {...cardProps}
+        <div
             className={clsx(
-                "block relative p-4 mb-4 border-2 border-black rounded-sm box-shadow-arcade transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none cursor-pointer group hover:bg-[#1a2542]",
-                isScheduled ? "bg-[#0a0f1e]" : "bg-arcade-card",
+                "block relative p-4 mb-4 border-2 border-black rounded-sm box-shadow-arcade transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none bg-[#0a0f1e] group hover:bg-[#1a2542]",
+                !isScheduled && "bg-arcade-card",
                 isTopTier ? "border-arcade-yellow" : "border-black",
                 className
             )}
             onClick={onClick}
         >
+            {/* Stretched Link for Primary Action (NBA.com) */}
+            {!isScheduled && game.watchLinks?.primary && (
+                <a
+                    href={game.watchLinks.primary}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="absolute inset-0 z-10"
+                    aria-label="Watch on NBA.com"
+                />
+            )}
             <div className="flex justify-between items-start mb-2">
                 <div className="flex flex-col">
                     <span className="text-xl font-black text-shadow-arcade uppercase italic leading-none">
@@ -142,7 +144,7 @@ export function GameCard({
                 <div
                     onClick={(e) => handlePick(e, game.awayTeam.id)}
                     className={clsx(
-                        "flex flex-col items-center gap-1 flex-1 p-2 rounded-sm transition-all relative",
+                        "flex flex-col items-center gap-1 flex-1 p-2 rounded-sm transition-all relative z-20",
                         isScheduled && "hover:bg-arcade-blue/10 cursor-crosshair",
                         userPick === game.awayTeam.id && "bg-arcade-blue/20 ring-1 ring-arcade-blue shadow-[0_0_10px_rgba(0,186,255,0.3)]"
                     )}
@@ -165,7 +167,7 @@ export function GameCard({
                 <div
                     onClick={(e) => handlePick(e, game.homeTeam.id)}
                     className={clsx(
-                        "flex flex-col items-center gap-1 flex-1 p-2 rounded-sm transition-all relative",
+                        "flex flex-col items-center gap-1 flex-1 p-2 rounded-sm transition-all relative z-20",
                         isScheduled && "hover:bg-arcade-blue/10 cursor-crosshair",
                         userPick === game.homeTeam.id && "bg-arcade-blue/20 ring-1 ring-arcade-blue shadow-[0_0_10px_rgba(0,186,255,0.3)]"
                     )}
@@ -231,7 +233,7 @@ export function GameCard({
                     </div>
                 </div>
             )}
-        </CardContainer>
+        </div>
     );
 }
 
