@@ -56,7 +56,7 @@ export function GameCard({
     return (
         <div
             className={clsx(
-                "block relative p-4 mb-4 border-2 border-black rounded-sm box-shadow-arcade transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none bg-[#0a0f1e] group hover:bg-[#1a2542]",
+                "block relative p-4 mb-4 border-2 border-black rounded-sm box-shadow-arcade transition-transform active:translate-y-1 active:translate-x-1 active:shadow-none cursor-pointer bg-[#0a0f1e] group hover:bg-[#1a2542]",
                 !isScheduled && "bg-arcade-card",
                 isTopTier ? "border-arcade-yellow" : "border-black",
                 className
