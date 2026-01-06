@@ -1,38 +1,39 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState, Suspense } from 'react';
+import { Suspense, useMemo, use } from 'react';
 import { decodePrefs } from '@/lib/safety/share';
 import { ALL_PLAYERS } from '@/lib/data/allPlayers';
 import SlateRanker from '@/components/SlateRanker';
 import { fetchESPNGames } from '@/lib/api/espn';
 import { subDays } from 'date-fns';
 import { UserCircle, Trophy } from 'lucide-react';
+import type { Game, UserPreferences } from '@/types/schema';
 
 function ShareContent() {
     const searchParams = useSearchParams();
-    const [prefs, setPrefs] = useState<any>(null);
-    const [games, setGames] = useState<any[]>([]);
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
+    const prefs: UserPreferences | null = useMemo(() => {
         const p = searchParams.get('p');
-        if (p) {
-            const decoded = decodePrefs(p);
-            setPrefs(decoded);
-        }
-
-        fetchESPNGames(subDays(new Date(), 1)).then(g => {
-            setGames(g);
-            setLoading(false);
-        });
+        if (!p) return null;
+        return decodePrefs(p);
     }, [searchParams]);
 
-    if (!prefs || loading) {
+    const gamesPromise = useMemo(() => fetchESPNGames(subDays(new Date(), 1)), []);
+    const games: Game[] = use(gamesPromise);
+
+    if (!prefs) {
         return (
             <div className="min-h-screen bg-[#05080f] flex items-center justify-center p-8">
-                <div className="animate-pulse text-arcade-yellow font-black uppercase tracking-widest text-sm">
-                    Hydrating Snapshot...
+                <div className="text-center space-y-4">
+                    <div className="text-arcade-yellow font-black uppercase tracking-widest text-sm">
+                        Missing share payload.
+                    </div>
+                    <a
+                        href="/preferences"
+                        className="inline-block bg-arcade-yellow text-black px-6 py-2 text-xs font-black uppercase border-2 border-black box-shadow-arcade-xs active:translate-y-0.5 active:shadow-none transition-all"
+                    >
+                        Build Your Algo
+                    </a>
                 </div>
             </div>
         );
@@ -60,7 +61,7 @@ function ShareContent() {
                 </div>
 
                 <h1 className="text-4xl font-black uppercase italic tracking-tighter text-shadow-arcade leading-none mb-2">
-                    {prefs.profile?.displayName || 'Guest Player'}'s <span className="text-arcade-red">Slate</span>
+                    {prefs.profile?.displayName || 'Guest Player'}&apos;s <span className="text-arcade-red">Slate</span>
                 </h1>
                 <p className="text-[10px] font-bold text-gray-500 uppercase tracking-[0.3em] flex items-center justify-center gap-2">
                     <Trophy className="w-3 h-3" /> Powered by The ❤️ of the 🏀 Game!

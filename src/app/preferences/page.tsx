@@ -1,7 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import { useState, useEffect } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import {
     DndContext,
     closestCenter,
@@ -26,21 +26,32 @@ import { ArcadeTickSlider } from '@/components/ui/ArcadeTickSlider';
 import { DraggablePlayer } from '@/components/ui/DraggablePlayer';
 import { DroppableBucket } from '@/components/ui/DroppableBucket';
 import { usePreferences } from '@/lib/state/usePreferences';
-import { ALL_TEAMS } from '@/lib/data/allTeams';
+import { ALL_TEAMS, TEAM_STANDINGS_2024 } from '@/lib/data/allTeams';
 import { ALL_PLAYERS } from '@/lib/data/allPlayers';
 import { MOCK_STATS, PlayerStats } from '@/lib/data/mockStats';
-import Link from 'next/link';
 import { createPortal } from 'react-dom';
-import { Play, Share2, Info, UserCircle, Users, Sliders } from 'lucide-react';
-import { getShareUrl } from '@/lib/safety/share';
+import { Info, UserCircle, Users, Sliders } from 'lucide-react';
+import type { Team, UserPreferences } from '@/types/schema';
+
+type ActiveDragPlayer = {
+    id: string;
+    name: string;
+    headshotUrl: string;
+};
+
+function isPlayerDragData(data: unknown): data is { type: 'PLAYER'; name: string; headshotUrl: string } {
+    if (!data || typeof data !== 'object') return false;
+    const d = data as Record<string, unknown>;
+    return d.type === 'PLAYER' && typeof d.name === 'string' && typeof d.headshotUrl === 'string';
+}
 
 function DroppableTray({ children, id }: { children: ReactNode; id: string }) {
     const { setNodeRef } = useDroppable({
         id,
         data: { type: 'TRAY' },
     });
-    // @ts-ignore - useDroppable type mismatch relative to simple ref
-    return <div ref={setNodeRef} className="flex gap-2 min-w-full">{children}</div>;
+    const setNodeRefTyped = setNodeRef as unknown as (node: HTMLDivElement | null) => void;
+    return <div ref={setNodeRefTyped} className="flex gap-2 min-w-full">{children}</div>;
 }
 
 type StatFilter = 'pts' | 'reb' | 'ast' | 'stl' | 'blk' | '3pm' | 'min' | 'fg%' | '3p%' | 'ft%' | 'tov';
@@ -48,9 +59,6 @@ type StatFilter = 'pts' | 'reb' | 'ast' | 'stl' | 'blk' | '3pm' | 'min' | 'fg%' 
 export default function PreferencesPage() {
     const { prefs, setPrefs, isLoaded } = usePreferences();
     const [viewMode, setViewMode] = useState<'LEAGUE' | 'CONFERENCE' | 'DIVISION'>('LEAGUE');
-    const [activeConf, setActiveConf] = useState<'West' | 'East'>('West');
-    const [activeDiv, setActiveDiv] = useState<string>('Pacific');
-    const [sortedTeams, setSortedTeams] = useState<typeof ALL_TEAMS>([]);
 
     // Player Filter State
     const [playerSearch, setPlayerSearch] = useState('');
@@ -59,7 +67,7 @@ export default function PreferencesPage() {
     const [trayMode, setTrayMode] = useState<'DISCOVERY' | 'STATS'>('DISCOVERY');
     const [stats, setStats] = useState<Record<string, PlayerStats>>(MOCK_STATS);
 
-    const [activeDragPlayer, setActiveDragPlayer] = useState<any>(null); // For Overlay
+    const [activeDragPlayer, setActiveDragPlayer] = useState<ActiveDragPlayer | null>(null); // For Overlay
 
     const sensors = useSensors(
         useSensor(PointerSensor, { activationConstraint: { distance: 5 } }), // Add distance to prevent accidental drags
@@ -79,19 +87,11 @@ export default function PreferencesPage() {
             .catch(err => console.error('Failed to load real stats, using mock data', err));
     }, []);
 
-    useEffect(() => {
-        if (isLoaded) {
-            const ordered = prefs.teamRanks.map(id => ALL_TEAMS.find(t => t.id === id)!);
-
-            let filtered = ordered;
-            if (viewMode === 'CONFERENCE') {
-                filtered = ordered.filter(t => t.conference === activeConf);
-            } else if (viewMode === 'DIVISION') {
-                filtered = ordered.filter(t => t.division === activeDiv);
-            }
-            setSortedTeams(filtered);
-        }
-    }, [isLoaded, prefs.teamRanks, viewMode, activeConf, activeDiv]);
+    const sortedTeams = useMemo(() => {
+        return prefs.teamRanks
+            .map(id => ALL_TEAMS.find(t => t.id === id))
+            .filter((t): t is (typeof ALL_TEAMS)[number] => Boolean(t));
+    }, [prefs.teamRanks]);
 
     if (!isLoaded) return <div className="p-8 text-center text-arcade-green font-mono animate-pulse">LOADING...</div>;
 
@@ -122,15 +122,25 @@ export default function PreferencesPage() {
         return undefined;
     };
 
+    const statKeyMap: Record<StatFilter, keyof PlayerStats> = {
+        pts: 'pts',
+        reb: 'reb',
+        ast: 'ast',
+        stl: 'stl',
+        blk: 'blk',
+        '3pm': 'three_pm',
+        min: 'min',
+        'fg%': 'fg_pct',
+        '3p%': 'three_pct',
+        'ft%': 'ft_pct',
+        tov: 'tov',
+    };
+
     // Sort Logic based on Mode
     const sortedAvailablePlayers = [...filteredTrayPlayers].sort((a, b) => {
         if (trayMode === 'STATS') {
-            // Map '3pm' filter to 'three_pm' property key
-            const key = statFilter === '3pm' ? 'three_pm' : statFilter;
-
-            // @ts-ignore - Dynamic access is safe here given stricter types
+            const key = statKeyMap[statFilter];
             const statA = stats[a.id]?.[key] ?? 0;
-            // @ts-ignore
             const statB = stats[b.id]?.[key] ?? 0;
 
             return statB - statA;
@@ -143,8 +153,9 @@ export default function PreferencesPage() {
     const depthChart = sortedAvailablePlayers.slice(50, 150);
 
     function handleDragStart(event: DragStartEvent) {
-        if (event.active.data.current?.type === 'PLAYER') {
-            setActiveDragPlayer(event.active.data.current);
+        const data = event.active.data.current;
+        if (isPlayerDragData(data)) {
+            setActiveDragPlayer({ id: String(event.active.id), name: data.name, headshotUrl: data.headshotUrl });
         }
     }
 
@@ -211,12 +222,6 @@ export default function PreferencesPage() {
         }
     }
 
-    const handleShare = async () => {
-        const url = getShareUrl(prefs);
-        await navigator.clipboard.writeText(url);
-        alert('Algo link copied to clipboard!');
-    };
-
     return (
         <DndContext
             sensors={sensors}
@@ -244,7 +249,7 @@ export default function PreferencesPage() {
                         <div className="flex justify-between items-start mb-4 border-b-2 border-dashed border-gray-700 pb-3">
                             <div>
                                 <h2 className="text-xl font-black italic uppercase text-arcade-yellow text-shadow-arcade leading-none mb-1">
-                                    The Scorer's Table
+                                    The Scorer&apos;s Table
                                 </h2>
                                 <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">
                                     The recipe for a perfect game
@@ -305,7 +310,11 @@ export default function PreferencesPage() {
                                 <div className="bg-black/50 p-2 rounded border border-gray-800 flex flex-col items-center justify-center text-center">
                                     <div className="w-6 h-6 rounded-full border border-gray-600 overflow-hidden mb-1">
                                         {ALL_TEAMS.find(t => t.id === prefs.teamRanks[0])?.logoUrl ? (
-                                            <img src={ALL_TEAMS.find(t => t.id === prefs.teamRanks[0])!.logoUrl} className="w-full h-full object-cover" />
+                                            <img
+                                                src={ALL_TEAMS.find(t => t.id === prefs.teamRanks[0])!.logoUrl}
+                                                alt={ALL_TEAMS.find(t => t.id === prefs.teamRanks[0])?.name || 'My team'}
+                                                className="w-full h-full object-cover"
+                                            />
                                         ) : <div className="w-full h-full bg-arcade-yellow" />}
                                     </div>
                                     <p className="text-[9px] font-bold text-gray-300 leading-tight">My Team</p>
@@ -325,7 +334,7 @@ export default function PreferencesPage() {
                             </div>
 
                             <p className="text-[10px] text-gray-500 italic leading-tight text-center">
-                                "Your unique blend of loyalty, star power, and vibe preference tips the scale for what's watchable."
+                                &quot;Your unique blend of loyalty, star power, and vibe preference tips the scale for what&apos;s watchable.&quot;
                             </p>
                         </div>
                     </div>
@@ -450,14 +459,8 @@ export default function PreferencesPage() {
                                     <DroppableTray id="TRAY_TOP">
                                         {topTalent.map(p => {
                                             const playerStats = stats[p.id];
-                                            let key = statFilter === '3pm' ? 'three_pm' : statFilter as string;
-                                            if (statFilter === 'fg%') key = 'fg_pct';
-                                            if (statFilter === '3p%') key = 'three_pct';
-                                            if (statFilter === 'ft%') key = 'ft_pct';
-                                            if (statFilter === 'tov') key = 'tov';
-
-                                            // @ts-ignore
-                                            const val = playerStats ? playerStats[key] : 0;
+                                            const key = statKeyMap[statFilter];
+                                            const val = playerStats?.[key] ?? 0;
                                             return (
                                                 <DraggablePlayer
                                                     key={p.id}
@@ -609,7 +612,9 @@ export default function PreferencesPage() {
                             onChange={(e) => {
                                 const isChecked = e.target.checked;
                                 if (isChecked) {
-                                    const standingsOrder = [...ALL_TEAMS].sort((a: any, b: any) => b.wins - a.wins).map(t => t.id);
+                                    const standingsOrder = [...ALL_TEAMS]
+                                        .sort((a, b) => (TEAM_STANDINGS_2024[b.id] ?? 0) - (TEAM_STANDINGS_2024[a.id] ?? 0))
+                                        .map(t => t.id);
                                     setPrefs({ ...prefs, teamRanks: standingsOrder, isSyncingToStandings: true });
                                 } else {
                                     setPrefs({ ...prefs, isSyncingToStandings: false });
@@ -634,14 +639,14 @@ export default function PreferencesPage() {
                                         id={team.id}
                                         name={team.name}
                                         rank={index + 1}
-                                        logoUrl={(team as any).logoUrl}
+                                        logoUrl={team.logoUrl}
                                     />
                                 ))}
                             </ul>
                         </SortableContext>
                     ) : (
                         <GroupAccordionView
-                            groupBy={viewMode}
+                            groupBy={viewMode as 'CONFERENCE' | 'DIVISION'}
                             prefs={prefs}
                             setPrefs={setPrefs}
                             allTeams={ALL_TEAMS}
@@ -847,7 +852,7 @@ export default function PreferencesPage() {
                                 name={activeDragPlayer.name}
                                 headshotUrl={activeDragPlayer.headshotUrl}
                                 isOverlay
-                                statValue={stats[activeDragPlayer.id]?.[statFilter === '3pm' ? 'three_pm' : statFilter as keyof PlayerStats]?.toString()}
+                                statValue={stats[activeDragPlayer.id]?.[statKeyMap[statFilter]]?.toString()}
                             />
                         ) : null}
                     </DragOverlay>,
@@ -859,7 +864,14 @@ export default function PreferencesPage() {
 }
 
 
-function GroupAccordionView({ groupBy, prefs, setPrefs, allTeams }: any) {
+type GroupAccordionViewProps = {
+    groupBy: 'CONFERENCE' | 'DIVISION';
+    prefs: UserPreferences;
+    setPrefs: (prefs: UserPreferences) => void;
+    allTeams: Team[];
+};
+
+function GroupAccordionView({ groupBy, prefs, setPrefs, allTeams }: GroupAccordionViewProps) {
     const [openGroups, setOpenGroups] = useState<string[]>([]);
 
     const sensors = useSensors(
@@ -870,25 +882,27 @@ function GroupAccordionView({ groupBy, prefs, setPrefs, allTeams }: any) {
     const groups = groupBy === 'CONFERENCE' ? ['West', 'East'] :
         groupBy === 'DIVISION' ? ['Northwest', 'Pacific', 'Southwest', 'Atlantic', 'Central', 'Southeast'] : [];
 
-    if (groupBy === 'NONE' || groups.length === 0) return null;
+    if (groups.length === 0) return null;
 
     // 1. Determine Group Order (Macro)
     const groupIndices = groups.map((g: string) => {
-        const bestRank = prefs.teamRanks.findIndex((tid: any) => {
-            const team = allTeams.find((t: any) => t.id === tid);
+        const bestRank = prefs.teamRanks.findIndex((tid: number) => {
+            const team = allTeams.find((t) => t.id === tid);
+            if (!team) return false;
             return groupBy === 'CONFERENCE' ? team.conference === g : team.division === g;
         });
         return { name: g, index: bestRank === -1 ? 999 : bestRank };
     });
 
-    const sortedGroups = groupIndices.sort((a: any, b: any) => a.index - b.index).map((x: any) => x.name);
+    const sortedGroups = groupIndices.sort((a, b) => a.index - b.index).map((x) => x.name);
 
     // 2. Helper to get teams for a group
     const getTeamsInGroup = (groupName: string) => {
         // Filter master list for this group to preserve relative order
         return prefs.teamRanks
-            .map((id: number) => allTeams.find((t: any) => t.id === id))
-            .filter((t: any) => groupBy === 'CONFERENCE' ? t.conference === groupName : t.division === groupName);
+            .map((id: number) => allTeams.find((t) => t.id === id))
+            .filter((t): t is Team => Boolean(t))
+            .filter((t) => groupBy === 'CONFERENCE' ? t.conference === groupName : t.division === groupName);
     };
 
     const toggleGroup = (group: string) => {
@@ -915,7 +929,7 @@ function GroupAccordionView({ groupBy, prefs, setPrefs, allTeams }: any) {
         const { active, over } = event;
         if (!over || active.id === over.id) return;
 
-        let newPrefs = { ...prefs, isSyncingToStandings: false };
+        const newPrefs: UserPreferences = { ...prefs, isSyncingToStandings: false };
 
         const activeData = active.data.current;
 
@@ -928,8 +942,8 @@ function GroupAccordionView({ groupBy, prefs, setPrefs, allTeams }: any) {
 
                 // Rebuild Master List based on new Group Order
                 let newMasterList: number[] = [];
-                newGroupOrder.forEach((g: any) => {
-                    const teamIds = getTeamsInGroup(g).map((t: any) => t.id);
+                newGroupOrder.forEach((g) => {
+                    const teamIds = getTeamsInGroup(g).map((t) => t.id);
                     newMasterList = newMasterList.concat(teamIds);
                 });
                 newPrefs.teamRanks = newMasterList;
@@ -954,7 +968,7 @@ function GroupAccordionView({ groupBy, prefs, setPrefs, allTeams }: any) {
     return (
         <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
             <SortableContext items={sortedGroups} strategy={verticalListSortingStrategy}>
-                {sortedGroups.map((g: any, i: number) => {
+                {sortedGroups.map((g, i: number) => {
                     const teams = getTeamsInGroup(g);
                     const asset = GROUP_ASSETS[g] || {};
                     return (
@@ -968,14 +982,14 @@ function GroupAccordionView({ groupBy, prefs, setPrefs, allTeams }: any) {
                             logoUrl={asset.logo}
                             icon={asset.icon}
                         >
-                            <SortableContext items={teams.map((t: any) => t.id)} strategy={verticalListSortingStrategy}>
-                                {teams.map((t: any, idx: number) => (
+                            <SortableContext items={teams.map((t) => t.id)} strategy={verticalListSortingStrategy}>
+                                {teams.map((t) => (
                                     <SortableTeamItem
                                         key={t.id}
                                         id={t.id}
                                         name={t.name}
                                         rank={prefs.teamRanks.indexOf(t.id) + 1}
-                                        logoUrl={(t as any).logoUrl}
+                                        logoUrl={t.logoUrl}
                                     />
                                 ))}
                             </SortableContext>

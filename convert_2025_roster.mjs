@@ -1,7 +1,8 @@
-const fs = require('fs');
+import fs from 'node:fs';
 
 try {
     const raw = fs.readFileSync('roster_2025.json', 'utf8');
+    // NOTE: BBGM exports can sometimes be non-strict JSON; keep eval for now.
     const data = eval('(' + raw + ')');
 
     const players = [];
@@ -100,3 +101,4 @@ export const ALL_PLAYERS: PlayerStar[] = ${JSON.stringify(players, null, 4)};
 } catch (e) {
     console.error("Error processing:", e);
 }
+

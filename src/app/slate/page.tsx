@@ -3,10 +3,11 @@
 import { useRef, useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { subDays, addDays, format, isSameDay } from 'date-fns';
-import { Loader2, Calendar, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
+import { Loader2, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import SlateRanker from '@/components/SlateRanker';
 import { fetchESPNGames } from '@/lib/api/espn';
 import { usePreferences } from '@/lib/state/usePreferences';
+import type { Game } from '@/types/schema';
 
 function SlateContent() {
     const searchParams = useSearchParams();
@@ -24,7 +25,7 @@ function SlateContent() {
         }
         return yesterday;
     });
-    const [games, setGames] = useState<any[]>([]);
+    const [games, setGames] = useState<Game[]>([]);
     const [loading, setLoading] = useState(true);
     const { isLoaded, recordSlateRun } = usePreferences();
     const lastFetchedRef = useRef<string | null>(null);
@@ -78,7 +79,7 @@ function SlateContent() {
                         <span className="text-arcade-yellow">Unmi$$able</span> <span className="text-arcade-red">Slate</span>
                     </h2>
                     <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">
-                        Your personalized rankings from last night's slate of games.
+                        Your personalized rankings from last night&apos;s slate of games.
                     </p>
                 </div>
 

@@ -1,6 +1,5 @@
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
-import clsx from 'clsx'; // Assuming clsx is installed, if not we will install or just use template literals
 
 interface SortableTeamItemProps {
     id: number;

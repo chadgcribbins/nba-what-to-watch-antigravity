@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
-import { Settings, Tv, Share2, UserCircle } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { Settings, Tv, Share2 } from 'lucide-react';
 import { usePreferences } from '@/lib/state/usePreferences';
 import { getShareUrl } from '@/lib/safety/share';
 import Jersey from '@/components/ui/Jersey';
@@ -17,21 +17,15 @@ const POPULAR_NUMBERS: Record<string, string> = {
 
 export default function Navbar() {
     const pathname = usePathname();
-    const searchParams = useSearchParams();
     const { prefs } = usePreferences();
 
     const handleShare = async () => {
-        // User Request: "The link that you'll send is last night's games slate."
-        // Logic: If on /slate (maybe with specific date), share that. Otherwise/Default: /slate
-        let shareUrl = `${window.location.origin}/slate`;
-        if (pathname === '/slate') {
-            shareUrl = window.location.href;
-        }
+        const shareUrl = getShareUrl(prefs);
 
         const lastName = prefs.profile?.displayName || 'A fan';
         const shareData = {
             title: 'Neat-O Slate',
-            text: `${lastName} thinks you might want to see the best action from the slate of games on the NBA last night.`,
+            text: `${lastName} tuned their spoiler-free watchability model — try it and see what you get.`,
             url: shareUrl,
         };
 
@@ -48,7 +42,7 @@ export default function Navbar() {
 
         // Fallback
         await navigator.clipboard.writeText(shareUrl);
-        alert('Slate link copied to clipboard!');
+        alert('Algo link copied to clipboard!');
     };
 
     const favoriteTeam = ALL_TEAMS.find(t => t.id === (prefs.teamRanks?.[0] || 14));

@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { RankedGame } from '@/types/schema';
 import clsx from 'clsx';
 
@@ -30,8 +29,6 @@ export function GameCard({
     const isTopTier = game.suggestion === 'watch 4th quarter full' ||
         game.suggestion === 'full game';
 
-    const [reminded, setReminded] = useState(false);
-
     const handlePick = (e: React.MouseEvent, teamId: number) => {
         e.stopPropagation();
         if (!isScheduled || !onPick) return;
@@ -43,13 +40,13 @@ export function GameCard({
         if (!onToggleReminder) return;
 
         if (!userEmail && !isReminded) {
-            alert(`🚨 DROP INTO THE LOCKER ROOM FIRST! You'll need to set your email in your profile so we can send that reminder buzz.`);
+            alert(`🚨 DROP INTO THE LOCKER ROOM FIRST! You&apos;ll need to set your email in your profile so we can send that reminder buzz.`);
             return;
         }
 
         onToggleReminder();
         if (!isReminded) {
-            alert(`🎯 REMINDER SCHEDULED! We'll ping ${userEmail} when it's safe to drop in for ${game.awayTeam.abbreviation} @ ${game.homeTeam.abbreviation}.`);
+            alert(`🎯 REMINDER SCHEDULED! We&apos;ll ping ${userEmail} when it&apos;s safe to drop in for ${game.awayTeam.abbreviation} @ ${game.homeTeam.abbreviation}.`);
         }
     };
 
@@ -229,7 +226,7 @@ export function GameCard({
                         🔥
                     </div>
                     <div className="bg-arcade-red text-white text-[8px] font-black px-2 py-0.5 rounded-sm border-2 border-black box-shadow-arcade-xs uppercase italic tracking-tighter -rotate-12 relative z-10 shadow-[0_4px_10px_rgba(255,0,0,0.4)]">
-                        He's on fire!
+                        He&apos;s on fire!
                     </div>
                 </div>
             )}
