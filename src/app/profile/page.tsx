@@ -6,18 +6,6 @@ import { ALL_PLAYERS } from '@/lib/data/allPlayers';
 import Jersey from '@/components/ui/Jersey';
 import { Trophy, Star, History, Shield } from 'lucide-react';
 
-// Mock map for popular jersey numbers since they aren't in the data
-const POPULAR_NUMBERS: Record<string, string> = {
-    '1626164': '1',  // Booker
-    '201942': '11',  // DeRozan
-    '1629027': '11', // Trae
-    '201142': '35',  // KD
-    '203999': '15',  // Jokic
-    '203507': '34',  // Giannis
-    '1628366': '2',  // Lonzo (example)
-    '2544': '23',    // LeBron
-    '201939': '30',  // Steph
-};
 
 export default function ProfilePage() {
     const { prefs, setPrefs, isLoaded, updateEmail } = usePreferences();
@@ -26,7 +14,7 @@ export default function ProfilePage() {
 
     const favoriteTeam = ALL_TEAMS.find(t => t.id === (prefs.teamRanks?.[0] || 14)); // Default to Lakers if not set
     const goatPlayer = ALL_PLAYERS.find(p => p.id === prefs.goatId);
-    const jerseyNumber = goatPlayer ? (POPULAR_NUMBERS[goatPlayer.id] || '00') : '00';
+    const jerseyNumber = goatPlayer?.jerseyNumber || '00';
 
     return (
         <main className="p-4 pb-4 max-w-md mx-auto space-y-8">

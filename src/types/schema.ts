@@ -11,6 +11,10 @@ export const TeamSchema = z.object({
     full_name: z.string(),
     name: z.string(),
     logoUrl: z.string().optional(),
+    colors: z.object({
+        primary: z.string(),
+        secondary: z.string(),
+    }).optional(),
 });
 
 export type Team = z.infer<typeof TeamSchema>;
@@ -21,6 +25,7 @@ export const PlayerSchema = z.object({
     last_name: z.string(),
     position: z.string(),
     team: TeamSchema,
+    jerseyNumber: z.string().optional(),
 });
 
 export type Player = z.infer<typeof PlayerSchema>;

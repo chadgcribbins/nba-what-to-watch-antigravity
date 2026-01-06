@@ -51,13 +51,24 @@ try {
                             forceMinutes = 2500;
                         }
 
+                        const gp_val = gp || 1;
                         players.push({
                             id: nbaId,
                             name: name,
                             teamId: teamId,
                             headshotUrl: p.imgURL,
                             isStarter: forceStarter,
-                            minutes: forceMinutes
+                            minutes: forceMinutes,
+                            jerseyNumber: latestStats ? (latestStats.jerseyNumber || "00") : "00",
+                            points: latestStats ? parseFloat((latestStats.pts / gp_val).toFixed(1)) : 0,
+                            rebounds: latestStats ? parseFloat(((latestStats.drb + latestStats.orb) / gp_val).toFixed(1)) : 0,
+                            assists: latestStats ? parseFloat((latestStats.ast / gp_val).toFixed(1)) : 0,
+                            steals: latestStats ? parseFloat((latestStats.stl / gp_val).toFixed(1)) : 0,
+                            blocks: latestStats ? parseFloat((latestStats.blk / gp_val).toFixed(1)) : 0,
+                            fgPct: latestStats ? parseFloat(((latestStats.fg / (latestStats.fga || 1)) * 100).toFixed(1)) : 0,
+                            threePtPct: latestStats ? parseFloat(((latestStats.tp / (latestStats.tpa || 1)) * 100).toFixed(1)) : 0,
+                            ftPct: latestStats ? parseFloat(((latestStats.ft / (latestStats.fta || 1)) * 100).toFixed(1)) : 0,
+                            usage: latestStats ? parseFloat(latestStats.usgp.toFixed(1)) : 0
                         });
                     }
                 }
@@ -73,7 +84,17 @@ try {
         teamId: 11, // Rockets
         headshotUrl: "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631095.png",
         isStarter: true,
-        minutes: 2400
+        minutes: 2400,
+        jerseyNumber: "10",
+        points: 13.7,
+        rebounds: 8.1,
+        assists: 1.6,
+        steals: 0.7,
+        blocks: 0.8,
+        fgPct: 45.4,
+        threePtPct: 36.3,
+        ftPct: 82.2,
+        usage: 18.2
     });
 
     // Sort by Minutes DESC
@@ -89,6 +110,16 @@ export interface PlayerStar {
     headshotUrl: string;
     isStarter: boolean;
     minutes: number;
+    jerseyNumber: string;
+    points?: number;
+    rebounds?: number;
+    assists?: number;
+    steals?: number;
+    blocks?: number;
+    fgPct?: number;
+    threePtPct?: number;
+    ftPct?: number;
+    usage?: number;
 }
 
 export const ALL_PLAYERS: PlayerStar[] = ${JSON.stringify(players, null, 4)};

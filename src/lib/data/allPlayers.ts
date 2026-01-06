@@ -6,7 +6,7 @@ export interface PlayerStar {
     headshotUrl: string;
     isStarter: boolean;
     minutes: number;
-    // Stats for V1.0
+    jerseyNumber: string;
     points?: number;
     rebounds?: number;
     assists?: number;
@@ -26,15 +26,16 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626164.png",
         "isStarter": true,
         "minutes": 2795,
-        "points": 27.1,
-        "rebounds": 4.5,
-        "assists": 6.9,
+        "jerseyNumber": "1",
+        "points": 25.6,
+        "rebounds": 4.1,
+        "assists": 7.1,
         "steals": 0.9,
-        "blocks": 0.4,
-        "fgPct": 49.2,
-        "threePtPct": 36.4,
-        "ftPct": 87.3,
-        "usage": 31.2
+        "blocks": 0.2,
+        "fgPct": 46.1,
+        "threePtPct": 33.2,
+        "ftPct": 89.4,
+        "usage": 29.3
     },
     {
         "id": "201942",
@@ -43,15 +44,16 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201942.png",
         "isStarter": true,
         "minutes": 2768,
-        "points": 24.0,
-        "rebounds": 4.3,
-        "assists": 5.3,
-        "steals": 1.1,
-        "blocks": 0.6,
-        "fgPct": 48.0,
-        "threePtPct": 33.3,
-        "ftPct": 85.3,
-        "usage": 29.5
+        "jerseyNumber": "10",
+        "points": 22.2,
+        "rebounds": 3.9,
+        "assists": 4.4,
+        "steals": 0.8,
+        "blocks": 0.4,
+        "fgPct": 47.7,
+        "threePtPct": 32.8,
+        "ftPct": 85.7,
+        "usage": 25
     },
     {
         "id": "1629027",
@@ -60,15 +62,16 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629027.png",
         "isStarter": true,
         "minutes": 2739,
-        "points": 25.7,
-        "rebounds": 2.8,
-        "assists": 10.8,
-        "steals": 1.3,
+        "jerseyNumber": "11",
+        "points": 24.2,
+        "rebounds": 3.1,
+        "assists": 11.6,
+        "steals": 1.2,
         "blocks": 0.2,
-        "fgPct": 43.1,
-        "threePtPct": 37.3,
-        "ftPct": 86.0,
-        "usage": 34.5
+        "fgPct": 41.1,
+        "threePtPct": 34,
+        "ftPct": 87.5,
+        "usage": 29.6
     },
     {
         "id": "1631099",
@@ -76,7 +79,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631099.png",
         "isStarter": true,
-        "minutes": 2610
+        "minutes": 2610,
+        "jerseyNumber": "13",
+        "points": 12.4,
+        "rebounds": 6.7,
+        "assists": 1.4,
+        "steals": 0.8,
+        "blocks": 0.9,
+        "fgPct": 44.4,
+        "threePtPct": 34.3,
+        "ftPct": 83.3,
+        "usage": 15
     },
     {
         "id": "1630700",
@@ -84,7 +97,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630700.png",
         "isStarter": true,
-        "minutes": 2571
+        "minutes": 2571,
+        "jerseyNumber": "5",
+        "points": 14.1,
+        "rebounds": 5.9,
+        "assists": 4.4,
+        "steals": 3,
+        "blocks": 0.7,
+        "fgPct": 49.3,
+        "threePtPct": 34,
+        "ftPct": 59.3,
+        "usage": 18.2
     },
     {
         "id": "1641739",
@@ -92,7 +115,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641739.png",
         "isStarter": true,
-        "minutes": 2548
+        "minutes": 2548,
+        "jerseyNumber": "33",
+        "points": 11.3,
+        "rebounds": 5.8,
+        "assists": 2.2,
+        "steals": 1.5,
+        "blocks": 0.6,
+        "fgPct": 45.8,
+        "threePtPct": 37.5,
+        "ftPct": 72.2,
+        "usage": 14.4
     },
     {
         "id": "201142",
@@ -100,7 +133,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201142.png",
         "isStarter": true,
-        "minutes": 2500
+        "minutes": 2500,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629632",
@@ -108,7 +151,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629632.png",
         "isStarter": true,
-        "minutes": 2450
+        "minutes": 2450,
+        "jerseyNumber": "0",
+        "points": 20.4,
+        "rebounds": 3.7,
+        "assists": 4.5,
+        "steals": 0.9,
+        "blocks": 0.2,
+        "fgPct": 45.3,
+        "threePtPct": 37,
+        "ftPct": 90.2,
+        "usage": 24.4
     },
     {
         "id": "1627734",
@@ -116,7 +169,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627734.png",
         "isStarter": true,
-        "minutes": 2429
+        "minutes": 2429,
+        "jerseyNumber": "11",
+        "points": 19.1,
+        "rebounds": 13.9,
+        "assists": 6,
+        "steals": 0.7,
+        "blocks": 0.4,
+        "fgPct": 59,
+        "threePtPct": 41.7,
+        "ftPct": 75.4,
+        "usage": 21.6
     },
     {
         "id": "1631095",
@@ -124,7 +187,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631095.png",
         "isStarter": true,
-        "minutes": 2400
+        "minutes": 2400,
+        "jerseyNumber": "10",
+        "points": 13.7,
+        "rebounds": 8.1,
+        "assists": 1.6,
+        "steals": 0.7,
+        "blocks": 0.8,
+        "fgPct": 45.4,
+        "threePtPct": 36.3,
+        "ftPct": 82.2,
+        "usage": 18.2
     },
     {
         "id": "101108",
@@ -132,7 +205,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/101108.png",
         "isStarter": true,
-        "minutes": 2292
+        "minutes": 2292,
+        "jerseyNumber": "3",
+        "points": 8.8,
+        "rebounds": 3.6,
+        "assists": 7.4,
+        "steals": 1.3,
+        "blocks": 0.3,
+        "fgPct": 42.7,
+        "threePtPct": 37.7,
+        "ftPct": 92.4,
+        "usage": 14
     },
     {
         "id": "202696",
@@ -140,7 +223,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202696.png",
         "isStarter": true,
-        "minutes": 2278
+        "minutes": 2278,
+        "jerseyNumber": "9",
+        "points": 18.5,
+        "rebounds": 10.1,
+        "assists": 3.5,
+        "steals": 0.8,
+        "blocks": 0.7,
+        "fgPct": 53,
+        "threePtPct": 40.2,
+        "ftPct": 80.5,
+        "usage": 22.4
     },
     {
         "id": "1631101",
@@ -148,7 +241,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631101.png",
         "isStarter": true,
-        "minutes": 2252
+        "minutes": 2252,
+        "jerseyNumber": "17",
+        "points": 18.5,
+        "rebounds": 4.5,
+        "assists": 2.8,
+        "steals": 0.9,
+        "blocks": 0.2,
+        "fgPct": 45.2,
+        "threePtPct": 31.1,
+        "ftPct": 78.5,
+        "usage": 25.1
     },
     {
         "id": "203084",
@@ -156,7 +259,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203084.png",
         "isStarter": true,
-        "minutes": 2230
+        "minutes": 2230,
+        "jerseyNumber": "40",
+        "points": 12.3,
+        "rebounds": 3.8,
+        "assists": 1.7,
+        "steals": 0.5,
+        "blocks": 0.2,
+        "fgPct": 50.8,
+        "threePtPct": 43.3,
+        "ftPct": 80.9,
+        "usage": 15.7
     },
     {
         "id": "1642264",
@@ -164,7 +277,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642264.png",
         "isStarter": true,
-        "minutes": 2162
+        "minutes": 2162,
+        "jerseyNumber": "5",
+        "points": 14.7,
+        "rebounds": 3.7,
+        "assists": 4.1,
+        "steals": 0.9,
+        "blocks": 0.3,
+        "fgPct": 42.8,
+        "threePtPct": 28.5,
+        "ftPct": 72.4,
+        "usage": 26
     },
     {
         "id": "1630166",
@@ -172,7 +295,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630166.png",
         "isStarter": true,
-        "minutes": 2161
+        "minutes": 2161,
+        "jerseyNumber": "8",
+        "points": 16.9,
+        "rebounds": 7.3,
+        "assists": 3.9,
+        "steals": 1,
+        "blocks": 0.5,
+        "fgPct": 47.6,
+        "threePtPct": 36.5,
+        "ftPct": 78,
+        "usage": 23.2
     },
     {
         "id": "1630567",
@@ -180,7 +313,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630567.png",
         "isStarter": true,
-        "minutes": 2134
+        "minutes": 2134,
+        "jerseyNumber": "4",
+        "points": 19.3,
+        "rebounds": 7.7,
+        "assists": 5.8,
+        "steals": 1.4,
+        "blocks": 1,
+        "fgPct": 44.6,
+        "threePtPct": 27.1,
+        "ftPct": 75.5,
+        "usage": 27
     },
     {
         "id": "1630581",
@@ -188,7 +331,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630581.png",
         "isStarter": true,
-        "minutes": 2117
+        "minutes": 2117,
+        "jerseyNumber": "3",
+        "points": 14.6,
+        "rebounds": 8.1,
+        "assists": 7.2,
+        "steals": 1.2,
+        "blocks": 0.6,
+        "fgPct": 46.5,
+        "threePtPct": 37.8,
+        "ftPct": 78.1,
+        "usage": 21.7
     },
     {
         "id": "1641718",
@@ -196,7 +349,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641718.png",
         "isStarter": true,
-        "minutes": 2109
+        "minutes": 2109,
+        "jerseyNumber": "3",
+        "points": 16.8,
+        "rebounds": 3.8,
+        "assists": 5.6,
+        "steals": 0.7,
+        "blocks": 0.1,
+        "fgPct": 39.1,
+        "threePtPct": 34.3,
+        "ftPct": 81.8,
+        "usage": 24.3
     },
     {
         "id": "1626162",
@@ -204,7 +367,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626162.png",
         "isStarter": true,
-        "minutes": 2078
+        "minutes": 2078,
+        "jerseyNumber": "9",
+        "points": 15.1,
+        "rebounds": 6.1,
+        "assists": 1.8,
+        "steals": 1.5,
+        "blocks": 0.5,
+        "fgPct": 47,
+        "threePtPct": 29.3,
+        "ftPct": 75.1,
+        "usage": 18.9
     },
     {
         "id": "1630168",
@@ -212,7 +385,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630168.png",
         "isStarter": true,
-        "minutes": 2064
+        "minutes": 2064,
+        "jerseyNumber": "17",
+        "points": 13.4,
+        "rebounds": 8.9,
+        "assists": 2.3,
+        "steals": 0.9,
+        "blocks": 0.9,
+        "fgPct": 56.7,
+        "threePtPct": 32.4,
+        "ftPct": 75.9,
+        "usage": 17.3
     },
     {
         "id": "1630180",
@@ -220,7 +403,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630180.png",
         "isStarter": true,
-        "minutes": 2062
+        "minutes": 2062,
+        "jerseyNumber": "41",
+        "points": 13.7,
+        "rebounds": 6.5,
+        "assists": 1.5,
+        "steals": 0.8,
+        "blocks": 0.2,
+        "fgPct": 41.6,
+        "threePtPct": 31.6,
+        "ftPct": 83.7,
+        "usage": 17
     },
     {
         "id": "1628370",
@@ -228,7 +421,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628370.png",
         "isStarter": true,
-        "minutes": 2054
+        "minutes": 2054,
+        "jerseyNumber": "0",
+        "points": 17.2,
+        "rebounds": 3.8,
+        "assists": 5.6,
+        "steals": 0.9,
+        "blocks": 0.6,
+        "fgPct": 43.9,
+        "threePtPct": 32.5,
+        "ftPct": 86.5,
+        "usage": 24.6
     },
     {
         "id": "1642377",
@@ -236,7 +439,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642377.png",
         "isStarter": true,
-        "minutes": 2043
+        "minutes": 2043,
+        "jerseyNumber": "0",
+        "points": 10.4,
+        "rebounds": 3.4,
+        "assists": 1.7,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 42.5,
+        "threePtPct": 35.2,
+        "ftPct": 82.2,
+        "usage": 15.9
     },
     {
         "id": "1630592",
@@ -244,7 +457,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630592.png",
         "isStarter": false,
-        "minutes": 2031
+        "minutes": 2031,
+        "jerseyNumber": "22",
+        "points": 9.5,
+        "rebounds": 3.4,
+        "assists": 1.8,
+        "steals": 0.5,
+        "blocks": 0.1,
+        "fgPct": 39.7,
+        "threePtPct": 33.7,
+        "ftPct": 81.8,
+        "usage": 16.6
     },
     {
         "id": "1628970",
@@ -252,7 +475,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628970.png",
         "isStarter": true,
-        "minutes": 2029
+        "minutes": 2029,
+        "jerseyNumber": "0",
+        "points": 20.3,
+        "rebounds": 7.5,
+        "assists": 3.9,
+        "steals": 0.7,
+        "blocks": 0.7,
+        "fgPct": 43.1,
+        "threePtPct": 31.3,
+        "ftPct": 87,
+        "usage": 28
     },
     {
         "id": "1630170",
@@ -260,7 +493,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630170.png",
         "isStarter": true,
-        "minutes": 1983
+        "minutes": 1983,
+        "jerseyNumber": "24",
+        "points": 16.3,
+        "rebounds": 4,
+        "assists": 2.9,
+        "steals": 1.3,
+        "blocks": 0.5,
+        "fgPct": 44.3,
+        "threePtPct": 36.8,
+        "ftPct": 79.2,
+        "usage": 22.1
     },
     {
         "id": "202691",
@@ -268,7 +511,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202691.png",
         "isStarter": true,
-        "minutes": 1965
+        "minutes": 1965,
+        "jerseyNumber": "31",
+        "points": 14,
+        "rebounds": 3.4,
+        "assists": 2,
+        "steals": 0.7,
+        "blocks": 0.4,
+        "fgPct": 41.2,
+        "threePtPct": 39.1,
+        "ftPct": 90.5,
+        "usage": 21.8
     },
     {
         "id": "1630178",
@@ -276,7 +529,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630178.png",
         "isStarter": true,
-        "minutes": 1960
+        "minutes": 1960,
+        "jerseyNumber": "0",
+        "points": 26.3,
+        "rebounds": 3.3,
+        "assists": 6.1,
+        "steals": 1.8,
+        "blocks": 0.4,
+        "fgPct": 43.7,
+        "threePtPct": 33.7,
+        "ftPct": 87.9,
+        "usage": 29.8
     },
     {
         "id": "1642274",
@@ -284,7 +547,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642274.png",
         "isStarter": true,
-        "minutes": 1956
+        "minutes": 1956,
+        "jerseyNumber": "21",
+        "points": 9.1,
+        "rebounds": 8.2,
+        "assists": 1.4,
+        "steals": 0.5,
+        "blocks": 1.3,
+        "fgPct": 54.7,
+        "threePtPct": 0,
+        "ftPct": 62.3,
+        "usage": 14.3
     },
     {
         "id": "1641731",
@@ -292,7 +565,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641731.png",
         "isStarter": true,
-        "minutes": 1948
+        "minutes": 1948,
+        "jerseyNumber": "0",
+        "points": 12.3,
+        "rebounds": 5,
+        "assists": 3.4,
+        "steals": 1.3,
+        "blocks": 0.7,
+        "fgPct": 42.1,
+        "threePtPct": 28.1,
+        "ftPct": 74.6,
+        "usage": 17.9
     },
     {
         "id": "1631165",
@@ -300,7 +583,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631165.png",
         "isStarter": false,
-        "minutes": 1948
+        "minutes": 1948,
+        "jerseyNumber": "23",
+        "points": 8.3,
+        "rebounds": 2.6,
+        "assists": 1.5,
+        "steals": 1.5,
+        "blocks": 0.8,
+        "fgPct": 48.9,
+        "threePtPct": 43.3,
+        "ftPct": 84.9,
+        "usage": 12.7
     },
     {
         "id": "1630577",
@@ -308,7 +601,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630577.png",
         "isStarter": false,
-        "minutes": 1932
+        "minutes": 1932,
+        "jerseyNumber": "30",
+        "points": 9.9,
+        "rebounds": 3.9,
+        "assists": 1.4,
+        "steals": 0.7,
+        "blocks": 0.4,
+        "fgPct": 41.5,
+        "threePtPct": 37.1,
+        "ftPct": 90.4,
+        "usage": 17.2
     },
     {
         "id": "1630230",
@@ -316,7 +619,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630230.png",
         "isStarter": false,
-        "minutes": 1919
+        "minutes": 1919,
+        "jerseyNumber": "13",
+        "points": 13.2,
+        "rebounds": 4.8,
+        "assists": 3,
+        "steals": 1,
+        "blocks": 0.2,
+        "fgPct": 50.8,
+        "threePtPct": 27.5,
+        "ftPct": 81.3,
+        "usage": 20
     },
     {
         "id": "1627824",
@@ -324,7 +637,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627824.png",
         "isStarter": true,
-        "minutes": 1895
+        "minutes": 1895,
+        "jerseyNumber": "28",
+        "points": 11,
+        "rebounds": 5.6,
+        "assists": 2.1,
+        "steals": 0.8,
+        "blocks": 0.3,
+        "fgPct": 50.1,
+        "threePtPct": 38,
+        "ftPct": 72.5,
+        "usage": 16.3
     },
     {
         "id": "1630182",
@@ -332,7 +655,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630182.png",
         "isStarter": true,
-        "minutes": 1887
+        "minutes": 1887,
+        "jerseyNumber": "10",
+        "points": 7.4,
+        "rebounds": 2.5,
+        "assists": 1.6,
+        "steals": 1.1,
+        "blocks": 0.2,
+        "fgPct": 42.8,
+        "threePtPct": 39.1,
+        "ftPct": 68.1,
+        "usage": 11.8
     },
     {
         "id": "1629651",
@@ -340,7 +673,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629651.png",
         "isStarter": true,
-        "minutes": 1882
+        "minutes": 1882,
+        "jerseyNumber": "33",
+        "points": 10.3,
+        "rebounds": 7.4,
+        "assists": 2.2,
+        "steals": 0.9,
+        "blocks": 1.4,
+        "fgPct": 56.3,
+        "threePtPct": 23.8,
+        "ftPct": 51.3,
+        "usage": 16.8
     },
     {
         "id": "1629628",
@@ -348,7 +691,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629628.png",
         "isStarter": true,
-        "minutes": 1869
+        "minutes": 1869,
+        "jerseyNumber": "9",
+        "points": 21.1,
+        "rebounds": 6.3,
+        "assists": 5.4,
+        "steals": 0.8,
+        "blocks": 0.3,
+        "fgPct": 46.8,
+        "threePtPct": 35,
+        "ftPct": 63,
+        "usage": 28.7
     },
     {
         "id": "1630530",
@@ -356,7 +709,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630530.png",
         "isStarter": true,
-        "minutes": 1854
+        "minutes": 1854,
+        "jerseyNumber": "25",
+        "points": 21.2,
+        "rebounds": 5.1,
+        "assists": 3.5,
+        "steals": 1.1,
+        "blocks": 0.7,
+        "fgPct": 45.4,
+        "threePtPct": 36.1,
+        "ftPct": 88.7,
+        "usage": 23.7
     },
     {
         "id": "1642258",
@@ -364,7 +727,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642258.png",
         "isStarter": true,
-        "minutes": 1843
+        "minutes": 1843,
+        "jerseyNumber": "10",
+        "points": 12.6,
+        "rebounds": 3.6,
+        "assists": 1.2,
+        "steals": 0.7,
+        "blocks": 0.5,
+        "fgPct": 45.8,
+        "threePtPct": 35.5,
+        "ftPct": 71.1,
+        "usage": 20.9
     },
     {
         "id": "1626220",
@@ -372,7 +745,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626220.png",
         "isStarter": false,
-        "minutes": 1837
+        "minutes": 1837,
+        "jerseyNumber": "00",
+        "points": 9.1,
+        "rebounds": 4.7,
+        "assists": 2.2,
+        "steals": 0.9,
+        "blocks": 0.5,
+        "fgPct": 42.3,
+        "threePtPct": 40.6,
+        "ftPct": 73.1,
+        "usage": 15.5
     },
     {
         "id": "1629023",
@@ -380,7 +763,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629023.png",
         "isStarter": true,
-        "minutes": 1835
+        "minutes": 1835,
+        "jerseyNumber": "25",
+        "points": 14.7,
+        "rebounds": 7.8,
+        "assists": 2.3,
+        "steals": 1.1,
+        "blocks": 1.1,
+        "fgPct": 45.3,
+        "threePtPct": 38.1,
+        "ftPct": 72.2,
+        "usage": 20.4
     },
     {
         "id": "203468",
@@ -388,7 +781,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203468.png",
         "isStarter": true,
-        "minutes": 1832
+        "minutes": 1832,
+        "jerseyNumber": "3",
+        "points": 21.1,
+        "rebounds": 3.8,
+        "assists": 4.1,
+        "steals": 0.8,
+        "blocks": 0.4,
+        "fgPct": 44.4,
+        "threePtPct": 37.3,
+        "ftPct": 71.7,
+        "usage": 27.2
     },
     {
         "id": "1642259",
@@ -396,7 +799,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642259.png",
         "isStarter": true,
-        "minutes": 1814
+        "minutes": 1814,
+        "jerseyNumber": "20",
+        "points": 13,
+        "rebounds": 6.5,
+        "assists": 2.4,
+        "steals": 0.7,
+        "blocks": 1.5,
+        "fgPct": 39.4,
+        "threePtPct": 30.8,
+        "ftPct": 67.9,
+        "usage": 23.5
     },
     {
         "id": "202681",
@@ -404,7 +817,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202681.png",
         "isStarter": true,
-        "minutes": 1804
+        "minutes": 1804,
+        "jerseyNumber": "11",
+        "points": 24.7,
+        "rebounds": 4.8,
+        "assists": 4.6,
+        "steals": 1.3,
+        "blocks": 0.5,
+        "fgPct": 47.3,
+        "threePtPct": 40.1,
+        "ftPct": 91.6,
+        "usage": 27.4
     },
     {
         "id": "1642273",
@@ -412,7 +835,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642273.png",
         "isStarter": true,
-        "minutes": 1802
+        "minutes": 1802,
+        "jerseyNumber": "18",
+        "points": 8.7,
+        "rebounds": 4.2,
+        "assists": 2.5,
+        "steals": 1,
+        "blocks": 0.7,
+        "fgPct": 37.2,
+        "threePtPct": 32.2,
+        "ftPct": 75.3,
+        "usage": 15.9
     },
     {
         "id": "1630703",
@@ -420,7 +853,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630703.png",
         "isStarter": false,
-        "minutes": 1759
+        "minutes": 1759,
+        "jerseyNumber": "00",
+        "points": 12.7,
+        "rebounds": 3,
+        "assists": 5.1,
+        "steals": 1,
+        "blocks": 0.2,
+        "fgPct": 41.9,
+        "threePtPct": 35.4,
+        "ftPct": 76.7,
+        "usage": 22.5
     },
     {
         "id": "1631117",
@@ -428,7 +871,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631117.png",
         "isStarter": true,
-        "minutes": 1740
+        "minutes": 1740,
+        "jerseyNumber": "24",
+        "points": 11.1,
+        "rebounds": 12.2,
+        "assists": 1.7,
+        "steals": 0.6,
+        "blocks": 2.4,
+        "fgPct": 66.3,
+        "threePtPct": 17.6,
+        "ftPct": 52,
+        "usage": 13.7
     },
     {
         "id": "1630534",
@@ -436,7 +889,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630534.png",
         "isStarter": true,
-        "minutes": 1739
+        "minutes": 1739,
+        "jerseyNumber": "30",
+        "points": 10.4,
+        "rebounds": 3.8,
+        "assists": 1.5,
+        "steals": 0.9,
+        "blocks": 0.5,
+        "fgPct": 49.8,
+        "threePtPct": 39.9,
+        "ftPct": 70.8,
+        "usage": 14.6
     },
     {
         "id": "1627751",
@@ -444,7 +907,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627751.png",
         "isStarter": true,
-        "minutes": 1686
+        "minutes": 1686,
+        "jerseyNumber": "19",
+        "points": 14.5,
+        "rebounds": 9.6,
+        "assists": 2.8,
+        "steals": 1.2,
+        "blocks": 1.2,
+        "fgPct": 62.7,
+        "threePtPct": 33.3,
+        "ftPct": 67.4,
+        "usage": 18.7
     },
     {
         "id": "1626179",
@@ -452,7 +925,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626179.png",
         "isStarter": false,
-        "minutes": 1658
+        "minutes": 1658,
+        "jerseyNumber": "2",
+        "points": 10.6,
+        "rebounds": 3.7,
+        "assists": 2.6,
+        "steals": 0.6,
+        "blocks": 0.2,
+        "fgPct": 39.1,
+        "threePtPct": 29.5,
+        "ftPct": 85.2,
+        "usage": 20.4
     },
     {
         "id": "1630557",
@@ -460,7 +943,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630557.png",
         "isStarter": false,
-        "minutes": 1602
+        "minutes": 1602,
+        "jerseyNumber": "24",
+        "points": 11.6,
+        "rebounds": 3,
+        "assists": 1.7,
+        "steals": 0.4,
+        "blocks": 0.2,
+        "fgPct": 45.1,
+        "threePtPct": 36.4,
+        "ftPct": 85.2,
+        "usage": 17.5
     },
     {
         "id": "1641711",
@@ -468,7 +961,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641711.png",
         "isStarter": true,
-        "minutes": 1587
+        "minutes": 1587,
+        "jerseyNumber": "1",
+        "points": 14.4,
+        "rebounds": 3.6,
+        "assists": 1.8,
+        "steals": 0.9,
+        "blocks": 0.2,
+        "fgPct": 41,
+        "threePtPct": 35,
+        "ftPct": 85.8,
+        "usage": 21
     },
     {
         "id": "1630172",
@@ -476,7 +979,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630172.png",
         "isStarter": true,
-        "minutes": 1576
+        "minutes": 1576,
+        "jerseyNumber": "44",
+        "points": 9,
+        "rebounds": 3.8,
+        "assists": 2,
+        "steals": 0.8,
+        "blocks": 0.5,
+        "fgPct": 39.7,
+        "threePtPct": 35.3,
+        "ftPct": 72.3,
+        "usage": 16.9
     },
     {
         "id": "1628960",
@@ -484,7 +997,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628960.png",
         "isStarter": false,
-        "minutes": 1544
+        "minutes": 1544,
+        "jerseyNumber": "8",
+        "points": 10.6,
+        "rebounds": 3,
+        "assists": 2.1,
+        "steals": 0.8,
+        "blocks": 0.3,
+        "fgPct": 44.8,
+        "threePtPct": 42.6,
+        "ftPct": 81.6,
+        "usage": 17.6
     },
     {
         "id": "1641705",
@@ -492,7 +1015,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641705.png",
         "isStarter": true,
-        "minutes": 1527
+        "minutes": 1527,
+        "jerseyNumber": "1",
+        "points": 24.3,
+        "rebounds": 11,
+        "assists": 3.7,
+        "steals": 1.1,
+        "blocks": 3.8,
+        "fgPct": 47.6,
+        "threePtPct": 35.2,
+        "ftPct": 83.6,
+        "usage": 30.4
     },
     {
         "id": "203924",
@@ -500,7 +1033,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203924.png",
         "isStarter": true,
-        "minutes": 1524
+        "minutes": 1524,
+        "jerseyNumber": "9",
+        "points": 14.4,
+        "rebounds": 3.5,
+        "assists": 2.1,
+        "steals": 0.9,
+        "blocks": 1,
+        "fgPct": 37.3,
+        "threePtPct": 36.5,
+        "ftPct": 84.9,
+        "usage": 19.4
     },
     {
         "id": "1642271",
@@ -508,7 +1051,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642271.png",
         "isStarter": false,
-        "minutes": 1522
+        "minutes": 1522,
+        "jerseyNumber": "22",
+        "points": 9.6,
+        "rebounds": 6.1,
+        "assists": 1.9,
+        "steals": 0.7,
+        "blocks": 0.3,
+        "fgPct": 50.2,
+        "threePtPct": 35,
+        "ftPct": 65,
+        "usage": 18.7
     },
     {
         "id": "1641824",
@@ -516,7 +1069,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641824.png",
         "isStarter": false,
-        "minutes": 1511
+        "minutes": 1511,
+        "jerseyNumber": "14",
+        "points": 8.6,
+        "rebounds": 3.5,
+        "assists": 1,
+        "steals": 0.4,
+        "blocks": 0.9,
+        "fgPct": 45.4,
+        "threePtPct": 36.1,
+        "ftPct": 81.5,
+        "usage": 18.7
     },
     {
         "id": "1630163",
@@ -524,7 +1087,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630163.png",
         "isStarter": true,
-        "minutes": 1505
+        "minutes": 1505,
+        "jerseyNumber": "1",
+        "points": 25.2,
+        "rebounds": 4.9,
+        "assists": 7.4,
+        "steals": 1.1,
+        "blocks": 0.3,
+        "fgPct": 40.5,
+        "threePtPct": 33.9,
+        "ftPct": 84.3,
+        "usage": 35.9
     },
     {
         "id": "1628374",
@@ -532,7 +1105,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628374.png",
         "isStarter": true,
-        "minutes": 1476
+        "minutes": 1476,
+        "jerseyNumber": "23",
+        "points": 19,
+        "rebounds": 5.9,
+        "assists": 1.5,
+        "steals": 0.7,
+        "blocks": 0.4,
+        "fgPct": 42.3,
+        "threePtPct": 34.6,
+        "ftPct": 87.6,
+        "usage": 24
     },
     {
         "id": "1642347",
@@ -540,7 +1123,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642347.png",
         "isStarter": false,
-        "minutes": 1467
+        "minutes": 1467,
+        "jerseyNumber": "23",
+        "points": 7.1,
+        "rebounds": 1.5,
+        "assists": 4.2,
+        "steals": 0.8,
+        "blocks": 0.1,
+        "fgPct": 40.5,
+        "threePtPct": 32.3,
+        "ftPct": 76.8,
+        "usage": 18.6
     },
     {
         "id": "1641729",
@@ -548,7 +1141,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641729.png",
         "isStarter": false,
-        "minutes": 1432
+        "minutes": 1432,
+        "jerseyNumber": "28",
+        "points": 10.9,
+        "rebounds": 3,
+        "assists": 1.5,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 45.9,
+        "threePtPct": 42.2,
+        "ftPct": 89,
+        "usage": 21.5
     },
     {
         "id": "1642346",
@@ -556,7 +1159,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642346.png",
         "isStarter": true,
-        "minutes": 1410
+        "minutes": 1410,
+        "jerseyNumber": "0",
+        "points": 6.9,
+        "rebounds": 3.6,
+        "assists": 0.8,
+        "steals": 0.6,
+        "blocks": 0.5,
+        "fgPct": 43,
+        "threePtPct": 31.1,
+        "ftPct": 48.7,
+        "usage": 16.7
     },
     {
         "id": "1630245",
@@ -564,7 +1177,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630245.png",
         "isStarter": true,
-        "minutes": 1394
+        "minutes": 1394,
+        "jerseyNumber": "11",
+        "points": 12.3,
+        "rebounds": 3.5,
+        "assists": 4.5,
+        "steals": 0.9,
+        "blocks": 0.4,
+        "fgPct": 49.2,
+        "threePtPct": 32.8,
+        "ftPct": 78.5,
+        "usage": 16.6
     },
     {
         "id": "1630631",
@@ -572,7 +1195,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630631.png",
         "isStarter": false,
-        "minutes": 1366
+        "minutes": 1366,
+        "jerseyNumber": "15",
+        "points": 10.3,
+        "rebounds": 2.4,
+        "assists": 4.6,
+        "steals": 1.3,
+        "blocks": 0.3,
+        "fgPct": 39.2,
+        "threePtPct": 35.9,
+        "ftPct": 81.1,
+        "usage": 19.8
     },
     {
         "id": "1631110",
@@ -580,7 +1213,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631110.png",
         "isStarter": false,
-        "minutes": 1364
+        "minutes": 1364,
+        "jerseyNumber": "10",
+        "points": 11.4,
+        "rebounds": 6.5,
+        "assists": 2.4,
+        "steals": 0.8,
+        "blocks": 0.5,
+        "fgPct": 53.5,
+        "threePtPct": 30.8,
+        "ftPct": 69.6,
+        "usage": 19
     },
     {
         "id": "1630551",
@@ -588,7 +1231,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630551.png",
         "isStarter": true,
-        "minutes": 1340
+        "minutes": 1340,
+        "jerseyNumber": "9",
+        "points": 8.8,
+        "rebounds": 5.7,
+        "assists": 1,
+        "steals": 1,
+        "blocks": 0.6,
+        "fgPct": 51.1,
+        "threePtPct": 38.3,
+        "ftPct": 68.5,
+        "usage": 15.6
     },
     {
         "id": "202331",
@@ -596,7 +1249,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202331.png",
         "isStarter": true,
-        "minutes": 1334
+        "minutes": 1334,
+        "jerseyNumber": "8",
+        "points": 16.2,
+        "rebounds": 5.3,
+        "assists": 4.3,
+        "steals": 1.8,
+        "blocks": 0.5,
+        "fgPct": 43,
+        "threePtPct": 35.8,
+        "ftPct": 81.4,
+        "usage": 23.5
     },
     {
         "id": "1642270",
@@ -604,7 +1267,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642270.png",
         "isStarter": true,
-        "minutes": 1324
+        "minutes": 1324,
+        "jerseyNumber": "23",
+        "points": 6.5,
+        "rebounds": 7.9,
+        "assists": 1.1,
+        "steals": 0.5,
+        "blocks": 1.6,
+        "fgPct": 53.9,
+        "threePtPct": 28.6,
+        "ftPct": 59.6,
+        "usage": 14.2
     },
     {
         "id": "1641722",
@@ -612,7 +1285,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641722.png",
         "isStarter": false,
-        "minutes": 1321
+        "minutes": 1321,
+        "jerseyNumber": "24",
+        "points": 10.8,
+        "rebounds": 2.8,
+        "assists": 1.2,
+        "steals": 0.5,
+        "blocks": 0.4,
+        "fgPct": 37.2,
+        "threePtPct": 33.1,
+        "ftPct": 81.6,
+        "usage": 21
     },
     {
         "id": "1631213",
@@ -620,7 +1303,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631213.png",
         "isStarter": false,
-        "minutes": 1315
+        "minutes": 1315,
+        "jerseyNumber": "13",
+        "points": 8.7,
+        "rebounds": 3.6,
+        "assists": 2,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 40.6,
+        "threePtPct": 35.1,
+        "ftPct": 79.3,
+        "usage": 18.8
     },
     {
         "id": "203486",
@@ -628,7 +1321,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203486.png",
         "isStarter": false,
-        "minutes": 1300
+        "minutes": 1300,
+        "jerseyNumber": "22",
+        "points": 4.5,
+        "rebounds": 6.1,
+        "assists": 1.8,
+        "steals": 0.4,
+        "blocks": 0.6,
+        "fgPct": 61.9,
+        "threePtPct": 0,
+        "ftPct": 64.8,
+        "usage": 10.8
     },
     {
         "id": "1642367",
@@ -636,7 +1339,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642367.png",
         "isStarter": false,
-        "minutes": 1286
+        "minutes": 1286,
+        "jerseyNumber": "2",
+        "points": 6.2,
+        "rebounds": 4.9,
+        "assists": 2.3,
+        "steals": 0.9,
+        "blocks": 0.5,
+        "fgPct": 43.8,
+        "threePtPct": 24.3,
+        "ftPct": 73.2,
+        "usage": 15
     },
     {
         "id": "1630552",
@@ -644,7 +1357,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630552.png",
         "isStarter": true,
-        "minutes": 1284
+        "minutes": 1284,
+        "jerseyNumber": "1",
+        "points": 18.9,
+        "rebounds": 10,
+        "assists": 5,
+        "steals": 1.6,
+        "blocks": 1,
+        "fgPct": 50,
+        "threePtPct": 31.2,
+        "ftPct": 74.6,
+        "usage": 22.5
     },
     {
         "id": "1642275",
@@ -652,7 +1375,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642275.png",
         "isStarter": false,
-        "minutes": 1244
+        "minutes": 1244,
+        "jerseyNumber": "31",
+        "points": 5.9,
+        "rebounds": 4.7,
+        "assists": 1.2,
+        "steals": 0.5,
+        "blocks": 0.2,
+        "fgPct": 33,
+        "threePtPct": 28.3,
+        "ftPct": 71.3,
+        "usage": 15.2
     },
     {
         "id": "1631217",
@@ -660,7 +1393,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631217.png",
         "isStarter": false,
-        "minutes": 1241
+        "minutes": 1241,
+        "jerseyNumber": "14",
+        "points": 5.7,
+        "rebounds": 6.2,
+        "assists": 0.8,
+        "steals": 0.6,
+        "blocks": 0.6,
+        "fgPct": 59.6,
+        "threePtPct": 0,
+        "ftPct": 59.5,
+        "usage": 13.4
     },
     {
         "id": "1629655",
@@ -668,7 +1411,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629655.png",
         "isStarter": true,
-        "minutes": 1226
+        "minutes": 1226,
+        "jerseyNumber": "21",
+        "points": 12.3,
+        "rebounds": 6.8,
+        "assists": 1.4,
+        "steals": 0.4,
+        "blocks": 1.8,
+        "fgPct": 70.2,
+        "threePtPct": 0,
+        "ftPct": 68.9,
+        "usage": 19.5
     },
     {
         "id": "1628381",
@@ -676,7 +1429,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628381.png",
         "isStarter": true,
-        "minutes": 1220
+        "minutes": 1220,
+        "jerseyNumber": "20",
+        "points": 18.9,
+        "rebounds": 8.2,
+        "assists": 2,
+        "steals": 1,
+        "blocks": 1,
+        "fgPct": 52.7,
+        "threePtPct": 39.9,
+        "ftPct": 84.8,
+        "usage": 24.2
     },
     {
         "id": "1629634",
@@ -684,7 +1447,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629634.png",
         "isStarter": false,
-        "minutes": 1207
+        "minutes": 1207,
+        "jerseyNumber": "15",
+        "points": 8.3,
+        "rebounds": 5.1,
+        "assists": 1,
+        "steals": 0.8,
+        "blocks": 0.6,
+        "fgPct": 62.1,
+        "threePtPct": 5.9,
+        "ftPct": 70.1,
+        "usage": 15.3
     },
     {
         "id": "203897",
@@ -692,7 +1465,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203897.png",
         "isStarter": true,
-        "minutes": 1170
+        "minutes": 1170,
+        "jerseyNumber": "8",
+        "points": 22.4,
+        "rebounds": 3.5,
+        "assists": 3.8,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 51.1,
+        "threePtPct": 44.6,
+        "ftPct": 87.4,
+        "usage": 23.7
     },
     {
         "id": "1630249",
@@ -700,7 +1483,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630249.png",
         "isStarter": false,
-        "minutes": 1153
+        "minutes": 1153,
+        "jerseyNumber": "27",
+        "points": 7.2,
+        "rebounds": 2.7,
+        "assists": 2.6,
+        "steals": 0.6,
+        "blocks": 0.5,
+        "fgPct": 49.7,
+        "threePtPct": 43.7,
+        "ftPct": 71.1,
+        "usage": 12.9
     },
     {
         "id": "1641763",
@@ -708,7 +1501,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641763.png",
         "isStarter": false,
-        "minutes": 1123
+        "minutes": 1123,
+        "jerseyNumber": "15",
+        "points": 4.6,
+        "rebounds": 2.1,
+        "assists": 0.5,
+        "steals": 0.5,
+        "blocks": 0.3,
+        "fgPct": 44.6,
+        "threePtPct": 32.7,
+        "ftPct": 78.9,
+        "usage": 12.9
     },
     {
         "id": "1642266",
@@ -716,7 +1519,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642266.png",
         "isStarter": false,
-        "minutes": 1103
+        "minutes": 1103,
+        "jerseyNumber": "14",
+        "points": 8.6,
+        "rebounds": 3.1,
+        "assists": 1.6,
+        "steals": 0.8,
+        "blocks": 0.2,
+        "fgPct": 40.5,
+        "threePtPct": 34.9,
+        "ftPct": 79.5,
+        "usage": 18.2
     },
     {
         "id": "1642262",
@@ -724,7 +1537,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642262.png",
         "isStarter": false,
-        "minutes": 1060
+        "minutes": 1060,
+        "jerseyNumber": "5",
+        "points": 4.6,
+        "rebounds": 2.3,
+        "assists": 1.2,
+        "steals": 0.5,
+        "blocks": 0.3,
+        "fgPct": 32.3,
+        "threePtPct": 25.9,
+        "ftPct": 72.5,
+        "usage": 12.5
     },
     {
         "id": "1641730",
@@ -732,7 +1555,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641730.png",
         "isStarter": false,
-        "minutes": 1042
+        "minutes": 1042,
+        "jerseyNumber": "21",
+        "points": 9.1,
+        "rebounds": 3.9,
+        "assists": 0.9,
+        "steals": 0.5,
+        "blocks": 0.5,
+        "fgPct": 35.8,
+        "threePtPct": 33.3,
+        "ftPct": 83.8,
+        "usage": 19
     },
     {
         "id": "1642419",
@@ -740,7 +1573,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642419.png",
         "isStarter": false,
-        "minutes": 1042
+        "minutes": 1042,
+        "jerseyNumber": "77",
+        "points": 7.1,
+        "rebounds": 2.7,
+        "assists": 0.9,
+        "steals": 0.3,
+        "blocks": 0.2,
+        "fgPct": 42.9,
+        "threePtPct": 40.5,
+        "ftPct": 88.9,
+        "usage": 15.3
     },
     {
         "id": "1631200",
@@ -748,7 +1591,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631200.png",
         "isStarter": false,
-        "minutes": 1040
+        "minutes": 1040,
+        "jerseyNumber": "24",
+        "points": 4.2,
+        "rebounds": 2.6,
+        "assists": 1,
+        "steals": 0.5,
+        "blocks": 0.2,
+        "fgPct": 41.9,
+        "threePtPct": 22.5,
+        "ftPct": 45.6,
+        "usage": 13.9
     },
     {
         "id": "1627749",
@@ -756,7 +1609,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627749.png",
         "isStarter": true,
-        "minutes": 1012
+        "minutes": 1012,
+        "jerseyNumber": "5",
+        "points": 17.5,
+        "rebounds": 6.5,
+        "assists": 7.4,
+        "steals": 2,
+        "blocks": 0.4,
+        "fgPct": 39.3,
+        "threePtPct": 29.9,
+        "ftPct": 82.3,
+        "usage": 27.3
     },
     {
         "id": "1630591",
@@ -764,7 +1627,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630591.png",
         "isStarter": true,
-        "minutes": 1002
+        "minutes": 1002,
+        "jerseyNumber": "4",
+        "points": 16.2,
+        "rebounds": 4,
+        "assists": 3.7,
+        "steals": 1.5,
+        "blocks": 0.9,
+        "fgPct": 41,
+        "threePtPct": 31.4,
+        "ftPct": 88.2,
+        "usage": 27.5
     },
     {
         "id": "1631108",
@@ -772,7 +1645,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631108.png",
         "isStarter": false,
-        "minutes": 973
+        "minutes": 973,
+        "jerseyNumber": "00",
+        "points": 11.2,
+        "rebounds": 4.2,
+        "assists": 2.5,
+        "steals": 0.9,
+        "blocks": 0.3,
+        "fgPct": 41.1,
+        "threePtPct": 36.4,
+        "ftPct": 86.2,
+        "usage": 16.8
     },
     {
         "id": "203903",
@@ -780,7 +1663,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203903.png",
         "isStarter": false,
-        "minutes": 962
+        "minutes": 962,
+        "jerseyNumber": "00",
+        "points": 16.2,
+        "rebounds": 3.2,
+        "assists": 3.7,
+        "steals": 0.8,
+        "blocks": 0.2,
+        "fgPct": 40.8,
+        "threePtPct": 36.2,
+        "ftPct": 79.7,
+        "usage": 27.8
     },
     {
         "id": "1629656",
@@ -788,7 +1681,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629656.png",
         "isStarter": true,
-        "minutes": 943
+        "minutes": 943,
+        "jerseyNumber": "5",
+        "points": 21.9,
+        "rebounds": 5.2,
+        "assists": 4.5,
+        "steals": 1.5,
+        "blocks": 0.4,
+        "fgPct": 46.9,
+        "threePtPct": 37.3,
+        "ftPct": 75.2,
+        "usage": 27.5
     },
     {
         "id": "1641706",
@@ -796,7 +1699,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641706.png",
         "isStarter": true,
-        "minutes": 924
+        "minutes": 924,
+        "jerseyNumber": "24",
+        "points": 21,
+        "rebounds": 4.9,
+        "assists": 3.6,
+        "steals": 1.1,
+        "blocks": 0.7,
+        "fgPct": 40.3,
+        "threePtPct": 35.5,
+        "ftPct": 86.1,
+        "usage": 27.7
     },
     {
         "id": "1630193",
@@ -804,7 +1717,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630193.png",
         "isStarter": true,
-        "minutes": 918
+        "minutes": 918,
+        "jerseyNumber": "5",
+        "points": 17.1,
+        "rebounds": 3.5,
+        "assists": 5.8,
+        "steals": 0.7,
+        "blocks": 0.1,
+        "fgPct": 42,
+        "threePtPct": 37.8,
+        "ftPct": 86.7,
+        "usage": 25.1
     },
     {
         "id": "1630549",
@@ -812,7 +1735,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630549.png",
         "isStarter": false,
-        "minutes": 907
+        "minutes": 907,
+        "jerseyNumber": "20",
+        "points": 7.9,
+        "rebounds": 6.6,
+        "assists": 1.8,
+        "steals": 0.8,
+        "blocks": 0.8,
+        "fgPct": 52.1,
+        "threePtPct": 24.4,
+        "ftPct": 75.7,
+        "usage": 19.9
     },
     {
         "id": "1630702",
@@ -820,7 +1753,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630702.png",
         "isStarter": false,
-        "minutes": 907
+        "minutes": 907,
+        "jerseyNumber": "1",
+        "points": 8.7,
+        "rebounds": 1.6,
+        "assists": 1.4,
+        "steals": 0.5,
+        "blocks": 0.1,
+        "fgPct": 43.5,
+        "threePtPct": 38.6,
+        "ftPct": 69.8,
+        "usage": 25.3
     },
     {
         "id": "1641737",
@@ -828,7 +1771,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641737.png",
         "isStarter": false,
-        "minutes": 905
+        "minutes": 905,
+        "jerseyNumber": "30",
+        "points": 5.8,
+        "rebounds": 4.2,
+        "assists": 0.5,
+        "steals": 0.4,
+        "blocks": 1.2,
+        "fgPct": 70.3,
+        "threePtPct": 0,
+        "ftPct": 67,
+        "usage": 14.3
     },
     {
         "id": "1631093",
@@ -836,7 +1789,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631093.png",
         "isStarter": true,
-        "minutes": 898
+        "minutes": 898,
+        "jerseyNumber": "23",
+        "points": 17.6,
+        "rebounds": 4.1,
+        "assists": 4,
+        "steals": 0.9,
+        "blocks": 0.4,
+        "fgPct": 46,
+        "threePtPct": 40.9,
+        "ftPct": 73.3,
+        "usage": 26
     },
     {
         "id": "1629627",
@@ -844,7 +1807,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629627.png",
         "isStarter": true,
-        "minutes": 857
+        "minutes": 857,
+        "jerseyNumber": "1",
+        "points": 24.6,
+        "rebounds": 7.2,
+        "assists": 5.3,
+        "steals": 1.2,
+        "blocks": 0.9,
+        "fgPct": 56.7,
+        "threePtPct": 23.1,
+        "ftPct": 65.6,
+        "usage": 34.7
     },
     {
         "id": "1628983",
@@ -852,7 +1825,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628983.png",
         "isStarter": true,
-        "minutes": 851
+        "minutes": 851,
+        "jerseyNumber": "2",
+        "points": 29.9,
+        "rebounds": 5.3,
+        "assists": 6.5,
+        "steals": 1.7,
+        "blocks": 0.9,
+        "fgPct": 46.2,
+        "threePtPct": 28.3,
+        "ftPct": 87.6,
+        "usage": 32.9
     },
     {
         "id": "1642354",
@@ -860,7 +1843,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642354.png",
         "isStarter": false,
-        "minutes": 842
+        "minutes": 842,
+        "jerseyNumber": "25",
+        "points": 7.8,
+        "rebounds": 3,
+        "assists": 3.1,
+        "steals": 0.9,
+        "blocks": 0.2,
+        "fgPct": 34.6,
+        "threePtPct": 25.4,
+        "ftPct": 82,
+        "usage": 19.1
     },
     {
         "id": "1641726",
@@ -868,7 +1861,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641726.png",
         "isStarter": true,
-        "minutes": 833
+        "minutes": 833,
+        "jerseyNumber": "2",
+        "points": 8.7,
+        "rebounds": 7.5,
+        "assists": 2.4,
+        "steals": 0.6,
+        "blocks": 1.6,
+        "fgPct": 70.2,
+        "threePtPct": 0,
+        "ftPct": 63,
+        "usage": 13.6
     },
     {
         "id": "1629726",
@@ -876,7 +1879,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629726.png",
         "isStarter": false,
-        "minutes": 830
+        "minutes": 830,
+        "jerseyNumber": "24",
+        "points": 7.5,
+        "rebounds": 1.9,
+        "assists": 1.3,
+        "steals": 0.6,
+        "blocks": 0.3,
+        "fgPct": 39.7,
+        "threePtPct": 39,
+        "ftPct": 82.1,
+        "usage": 15.9
     },
     {
         "id": "1630208",
@@ -884,7 +1897,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630208.png",
         "isStarter": true,
-        "minutes": 816
+        "minutes": 816,
+        "jerseyNumber": "2",
+        "points": 9.5,
+        "rebounds": 8.6,
+        "assists": 0.6,
+        "steals": 0.2,
+        "blocks": 0.8,
+        "fgPct": 60.5,
+        "threePtPct": 0,
+        "ftPct": 82.2,
+        "usage": 17
     },
     {
         "id": "1631204",
@@ -892,7 +1915,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631204.png",
         "isStarter": false,
-        "minutes": 811
+        "minutes": 811,
+        "jerseyNumber": "25",
+        "points": 6.6,
+        "rebounds": 1.2,
+        "assists": 2.3,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 46.3,
+        "threePtPct": 38.2,
+        "ftPct": 84.3,
+        "usage": 19.4
     },
     {
         "id": "1631114",
@@ -900,7 +1933,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631114.png",
         "isStarter": true,
-        "minutes": 796
+        "minutes": 796,
+        "jerseyNumber": "8",
+        "points": 21.4,
+        "rebounds": 5.5,
+        "assists": 4.8,
+        "steals": 1.4,
+        "blocks": 0.4,
+        "fgPct": 44.9,
+        "threePtPct": 30.4,
+        "ftPct": 78.9,
+        "usage": 26.3
     },
     {
         "id": "1631255",
@@ -908,7 +1951,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631255.png",
         "isStarter": false,
-        "minutes": 791
+        "minutes": 791,
+        "jerseyNumber": "17",
+        "points": 7.7,
+        "rebounds": 5,
+        "assists": 1.1,
+        "steals": 0.5,
+        "blocks": 1,
+        "fgPct": 57.4,
+        "threePtPct": 31.8,
+        "ftPct": 77.3,
+        "usage": 15.9
     },
     {
         "id": "1630560",
@@ -916,7 +1969,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630560.png",
         "isStarter": true,
-        "minutes": 781
+        "minutes": 781,
+        "jerseyNumber": "24",
+        "points": 24,
+        "rebounds": 3.3,
+        "assists": 3.8,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 43.8,
+        "threePtPct": 34.9,
+        "ftPct": 88.1,
+        "usage": 32.6
     },
     {
         "id": "1628989",
@@ -924,7 +1987,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628989.png",
         "isStarter": true,
-        "minutes": 780
+        "minutes": 780,
+        "jerseyNumber": "13",
+        "points": 13.2,
+        "rebounds": 3.3,
+        "assists": 3.2,
+        "steals": 1.2,
+        "blocks": 0.3,
+        "fgPct": 43.9,
+        "threePtPct": 37.6,
+        "ftPct": 71.4,
+        "usage": 17.8
     },
     {
         "id": "1628366",
@@ -932,7 +2005,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628366.png",
         "isStarter": false,
-        "minutes": 777
+        "minutes": 777,
+        "jerseyNumber": "2",
+        "points": 7.6,
+        "rebounds": 3.4,
+        "assists": 3.3,
+        "steals": 1.3,
+        "blocks": 0.5,
+        "fgPct": 36.6,
+        "threePtPct": 34.4,
+        "ftPct": 81.5,
+        "usage": 15.9
     },
     {
         "id": "1630169",
@@ -940,7 +2023,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630169.png",
         "isStarter": true,
-        "minutes": 772
+        "minutes": 772,
+        "jerseyNumber": "0",
+        "points": 17.3,
+        "rebounds": 5.3,
+        "assists": 8.6,
+        "steals": 1.3,
+        "blocks": 0.7,
+        "fgPct": 46.3,
+        "threePtPct": 34,
+        "ftPct": 82.8,
+        "usage": 22.7
     },
     {
         "id": "1627783",
@@ -948,7 +2041,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627783.png",
         "isStarter": true,
-        "minutes": 771
+        "minutes": 771,
+        "jerseyNumber": "43",
+        "points": 20.5,
+        "rebounds": 6.3,
+        "assists": 3.4,
+        "steals": 1.2,
+        "blocks": 0.7,
+        "fgPct": 51.3,
+        "threePtPct": 42.7,
+        "ftPct": 71.3,
+        "usage": 24.4
     },
     {
         "id": "1629614",
@@ -956,7 +2059,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629614.png",
         "isStarter": true,
-        "minutes": 769
+        "minutes": 769,
+        "jerseyNumber": "2",
+        "points": 12.5,
+        "rebounds": 3.2,
+        "assists": 4.7,
+        "steals": 1.5,
+        "blocks": 0.2,
+        "fgPct": 47.1,
+        "threePtPct": 46.5,
+        "ftPct": 80.4,
+        "usage": 16.4
     },
     {
         "id": "201569",
@@ -964,7 +2077,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201569.png",
         "isStarter": false,
-        "minutes": 768
+        "minutes": 768,
+        "jerseyNumber": "23",
+        "points": 6.8,
+        "rebounds": 1.2,
+        "assists": 1.7,
+        "steals": 0.7,
+        "blocks": 0.3,
+        "fgPct": 42.6,
+        "threePtPct": 40.9,
+        "ftPct": 75,
+        "usage": 14.4
     },
     {
         "id": "203083",
@@ -972,7 +2095,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203083.png",
         "isStarter": true,
-        "minutes": 751
+        "minutes": 751,
+        "jerseyNumber": "1",
+        "points": 7.3,
+        "rebounds": 7.8,
+        "assists": 0.8,
+        "steals": 1,
+        "blocks": 0.5,
+        "fgPct": 50,
+        "threePtPct": 15,
+        "ftPct": 62.2,
+        "usage": 19.1
     },
     {
         "id": "1628969",
@@ -980,7 +2113,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628969.png",
         "isStarter": true,
-        "minutes": 706
+        "minutes": 706,
+        "jerseyNumber": "25",
+        "points": 15.6,
+        "rebounds": 4.5,
+        "assists": 2.9,
+        "steals": 1.7,
+        "blocks": 0.9,
+        "fgPct": 45.6,
+        "threePtPct": 33.3,
+        "ftPct": 75,
+        "usage": 19
     },
     {
         "id": "1628384",
@@ -988,7 +2131,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628384.png",
         "isStarter": true,
-        "minutes": 705
+        "minutes": 705,
+        "jerseyNumber": "8",
+        "points": 16.3,
+        "rebounds": 4.6,
+        "assists": 1.3,
+        "steals": 2,
+        "blocks": 1.2,
+        "fgPct": 41.7,
+        "threePtPct": 33.9,
+        "ftPct": 81,
+        "usage": 18.7
     },
     {
         "id": "1631096",
@@ -996,7 +2149,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631096.png",
         "isStarter": true,
-        "minutes": 686
+        "minutes": 686,
+        "jerseyNumber": "7",
+        "points": 15.2,
+        "rebounds": 8.7,
+        "assists": 1,
+        "steals": 0.7,
+        "blocks": 1.9,
+        "fgPct": 46.2,
+        "threePtPct": 29.7,
+        "ftPct": 78.4,
+        "usage": 20.8
     },
     {
         "id": "1629611",
@@ -1004,7 +2167,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629611.png",
         "isStarter": false,
-        "minutes": 682
+        "minutes": 682,
+        "jerseyNumber": "14",
+        "points": 9.8,
+        "rebounds": 3.1,
+        "assists": 2.1,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 54.1,
+        "threePtPct": 38.6,
+        "ftPct": 66.7,
+        "usage": 15.4
     },
     {
         "id": "1630572",
@@ -1012,7 +2185,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630572.png",
         "isStarter": false,
-        "minutes": 681
+        "minutes": 681,
+        "jerseyNumber": "54",
+        "points": 6.3,
+        "rebounds": 3.1,
+        "assists": 0.8,
+        "steals": 0.4,
+        "blocks": 0.3,
+        "fgPct": 50.2,
+        "threePtPct": 37.3,
+        "ftPct": 74.1,
+        "usage": 20.8
     },
     {
         "id": "1628973",
@@ -1020,7 +2203,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628973.png",
         "isStarter": true,
-        "minutes": 680
+        "minutes": 680,
+        "jerseyNumber": "11",
+        "points": 29.4,
+        "rebounds": 3.4,
+        "assists": 7,
+        "steals": 0.4,
+        "blocks": 0.3,
+        "fgPct": 46.1,
+        "threePtPct": 35.8,
+        "ftPct": 85.1,
+        "usage": 32.6
     },
     {
         "id": "1629652",
@@ -1028,7 +2221,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629652.png",
         "isStarter": true,
-        "minutes": 666
+        "minutes": 666,
+        "jerseyNumber": "5",
+        "points": 7.9,
+        "rebounds": 3.9,
+        "assists": 0.9,
+        "steals": 1.3,
+        "blocks": 0.4,
+        "fgPct": 36.6,
+        "threePtPct": 34.3,
+        "ftPct": 63.6,
+        "usage": 12.3
     },
     {
         "id": "1641810",
@@ -1036,7 +2239,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641810.png",
         "isStarter": false,
-        "minutes": 660
+        "minutes": 660,
+        "jerseyNumber": "12",
+        "points": 6.9,
+        "rebounds": 1.4,
+        "assists": 0.9,
+        "steals": 0.5,
+        "blocks": 0.1,
+        "fgPct": 45.6,
+        "threePtPct": 39.5,
+        "ftPct": 80,
+        "usage": 18.8
     },
     {
         "id": "200768",
@@ -1044,7 +2257,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/200768.png",
         "isStarter": false,
-        "minutes": 659
+        "minutes": 659,
+        "jerseyNumber": "7",
+        "points": 3.9,
+        "rebounds": 1.9,
+        "assists": 2.7,
+        "steals": 0.9,
+        "blocks": 0.3,
+        "fgPct": 35,
+        "threePtPct": 33,
+        "ftPct": 81.8,
+        "usage": 10.1
     },
     {
         "id": "1630174",
@@ -1052,7 +2275,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630174.png",
         "isStarter": true,
-        "minutes": 650
+        "minutes": 650,
+        "jerseyNumber": "23",
+        "points": 12.7,
+        "rebounds": 5.7,
+        "assists": 1.1,
+        "steals": 0.9,
+        "blocks": 0.8,
+        "fgPct": 47.2,
+        "threePtPct": 49.2,
+        "ftPct": 86.1,
+        "usage": 17.1
     },
     {
         "id": "1630529",
@@ -1060,7 +2293,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630529.png",
         "isStarter": true,
-        "minutes": 648
+        "minutes": 648,
+        "jerseyNumber": "2",
+        "points": 10.3,
+        "rebounds": 3.9,
+        "assists": 3.3,
+        "steals": 1.9,
+        "blocks": 0.5,
+        "fgPct": 43.6,
+        "threePtPct": 30.6,
+        "ftPct": 82.5,
+        "usage": 14.6
     },
     {
         "id": "1628404",
@@ -1068,7 +2311,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628404.png",
         "isStarter": true,
-        "minutes": 642
+        "minutes": 642,
+        "jerseyNumber": "3",
+        "points": 11.6,
+        "rebounds": 8.8,
+        "assists": 4.4,
+        "steals": 1.1,
+        "blocks": 0.6,
+        "fgPct": 47.2,
+        "threePtPct": 37,
+        "ftPct": 77.6,
+        "usage": 14.1
     },
     {
         "id": "1626157",
@@ -1076,7 +2329,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626157.png",
         "isStarter": true,
-        "minutes": 639
+        "minutes": 639,
+        "jerseyNumber": "32",
+        "points": 21.4,
+        "rebounds": 11.6,
+        "assists": 1.3,
+        "steals": 0.7,
+        "blocks": 0.7,
+        "fgPct": 48.8,
+        "threePtPct": 35.1,
+        "ftPct": 84.5,
+        "usage": 25
     },
     {
         "id": "1642272",
@@ -1084,7 +2347,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642272.png",
         "isStarter": false,
-        "minutes": 592
+        "minutes": 592,
+        "jerseyNumber": "20",
+        "points": 15.3,
+        "rebounds": 2.4,
+        "assists": 2.6,
+        "steals": 0.7,
+        "blocks": 0,
+        "fgPct": 46,
+        "threePtPct": 38.3,
+        "ftPct": 87.5,
+        "usage": 24.7
     },
     {
         "id": "1630256",
@@ -1092,7 +2365,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630256.png",
         "isStarter": false,
-        "minutes": 588
+        "minutes": 588,
+        "jerseyNumber": "8",
+        "points": 3.6,
+        "rebounds": 2.3,
+        "assists": 0.9,
+        "steals": 0.5,
+        "blocks": 0.1,
+        "fgPct": 47.3,
+        "threePtPct": 34.8,
+        "ftPct": 68.1,
+        "usage": 13.3
     },
     {
         "id": "1630162",
@@ -1100,7 +2383,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630162.png",
         "isStarter": true,
-        "minutes": 585
+        "minutes": 585,
+        "jerseyNumber": "5",
+        "points": 25.3,
+        "rebounds": 7.8,
+        "assists": 5.5,
+        "steals": 1.1,
+        "blocks": 0.7,
+        "fgPct": 45.3,
+        "threePtPct": 35.4,
+        "ftPct": 71.9,
+        "usage": 27.9
     },
     {
         "id": "1627750",
@@ -1108,7 +2401,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627750.png",
         "isStarter": true,
-        "minutes": 578
+        "minutes": 578,
+        "jerseyNumber": "27",
+        "points": 21.8,
+        "rebounds": 4.9,
+        "assists": 5.2,
+        "steals": 1.2,
+        "blocks": 0.8,
+        "fgPct": 44.4,
+        "threePtPct": 35.4,
+        "ftPct": 87.5,
+        "usage": 23.8
     },
     {
         "id": "1628368",
@@ -1116,7 +2419,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628368.png",
         "isStarter": true,
-        "minutes": 578
+        "minutes": 578,
+        "jerseyNumber": "4",
+        "points": 19.7,
+        "rebounds": 4.3,
+        "assists": 6.8,
+        "steals": 1.5,
+        "blocks": 0.3,
+        "fgPct": 44.6,
+        "threePtPct": 27.4,
+        "ftPct": 81.9,
+        "usage": 26
     },
     {
         "id": "203954",
@@ -1124,7 +2437,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203954.png",
         "isStarter": true,
-        "minutes": 574
+        "minutes": 574,
+        "jerseyNumber": "21",
+        "points": 23.8,
+        "rebounds": 8.2,
+        "assists": 4.5,
+        "steals": 0.7,
+        "blocks": 0.9,
+        "fgPct": 44.4,
+        "threePtPct": 29.9,
+        "ftPct": 88.2,
+        "usage": 34.2
     },
     {
         "id": "1629021",
@@ -1132,7 +2455,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629021.png",
         "isStarter": false,
-        "minutes": 564
+        "minutes": 564,
+        "jerseyNumber": "21",
+        "points": 12.9,
+        "rebounds": 4.9,
+        "assists": 1.4,
+        "steals": 0.8,
+        "blocks": 0.4,
+        "fgPct": 56.2,
+        "threePtPct": 36,
+        "ftPct": 71.8,
+        "usage": 26.8
     },
     {
         "id": "203999",
@@ -1140,7 +2473,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203999.png",
         "isStarter": true,
-        "minutes": 563
+        "minutes": 563,
+        "jerseyNumber": "15",
+        "points": 26.2,
+        "rebounds": 12.7,
+        "assists": 8,
+        "steals": 2,
+        "blocks": 0.9,
+        "fgPct": 48.9,
+        "threePtPct": 38,
+        "ftPct": 77.2,
+        "usage": 28.2
     },
     {
         "id": "1627936",
@@ -1148,7 +2491,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627936.png",
         "isStarter": false,
-        "minutes": 562
+        "minutes": 562,
+        "jerseyNumber": "9",
+        "points": 9.2,
+        "rebounds": 2.7,
+        "assists": 2.2,
+        "steals": 2,
+        "blocks": 0.6,
+        "fgPct": 45,
+        "threePtPct": 41.1,
+        "ftPct": 79.5,
+        "usage": 14.8
     },
     {
         "id": "1628380",
@@ -1156,7 +2509,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628380.png",
         "isStarter": false,
-        "minutes": 552
+        "minutes": 552,
+        "jerseyNumber": "12",
+        "points": 8.6,
+        "rebounds": 6.7,
+        "assists": 2.1,
+        "steals": 0.5,
+        "blocks": 0.5,
+        "fgPct": 54.1,
+        "threePtPct": 30,
+        "ftPct": 88.4,
+        "usage": 17.1
     },
     {
         "id": "203939",
@@ -1164,7 +2527,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203939.png",
         "isStarter": false,
-        "minutes": 551
+        "minutes": 551,
+        "jerseyNumber": "7",
+        "points": 2.1,
+        "rebounds": 2.1,
+        "assists": 1,
+        "steals": 0.3,
+        "blocks": 0.4,
+        "fgPct": 68.9,
+        "threePtPct": 40,
+        "ftPct": 65.1,
+        "usage": 7.6
     },
     {
         "id": "1631128",
@@ -1172,7 +2545,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631128.png",
         "isStarter": true,
-        "minutes": 544
+        "minutes": 544,
+        "jerseyNumber": "0",
+        "points": 12.6,
+        "rebounds": 6.4,
+        "assists": 2.4,
+        "steals": 1.2,
+        "blocks": 0.7,
+        "fgPct": 45.3,
+        "threePtPct": 29.6,
+        "ftPct": 71,
+        "usage": 14
     },
     {
         "id": "202685",
@@ -1180,7 +2563,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202685.png",
         "isStarter": false,
-        "minutes": 541
+        "minutes": 541,
+        "jerseyNumber": "17",
+        "points": 8.7,
+        "rebounds": 7,
+        "assists": 1.8,
+        "steals": 0.5,
+        "blocks": 0.6,
+        "fgPct": 55.6,
+        "threePtPct": 10,
+        "ftPct": 84.7,
+        "usage": 20.9
     },
     {
         "id": "203944",
@@ -1188,7 +2581,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203944.png",
         "isStarter": true,
-        "minutes": 533
+        "minutes": 533,
+        "jerseyNumber": "30",
+        "points": 21.7,
+        "rebounds": 5.9,
+        "assists": 4.9,
+        "steals": 0.8,
+        "blocks": 0.1,
+        "fgPct": 50.2,
+        "threePtPct": 38.5,
+        "ftPct": 88,
+        "usage": 25.3
     },
     {
         "id": "1631243",
@@ -1196,7 +2599,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631243.png",
         "isStarter": true,
-        "minutes": 533
+        "minutes": 533,
+        "jerseyNumber": "18",
+        "points": 6,
+        "rebounds": 4.2,
+        "assists": 0.8,
+        "steals": 0.8,
+        "blocks": 1,
+        "fgPct": 42.1,
+        "threePtPct": 25.9,
+        "ftPct": 76.2,
+        "usage": 15.7
     },
     {
         "id": "202687",
@@ -1204,7 +2617,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202687.png",
         "isStarter": true,
-        "minutes": 528
+        "minutes": 528,
+        "jerseyNumber": "18",
+        "points": 5.1,
+        "rebounds": 5.6,
+        "assists": 1.1,
+        "steals": 0.6,
+        "blocks": 0.8,
+        "fgPct": 58.8,
+        "threePtPct": 0,
+        "ftPct": 40,
+        "usage": 12.3
     },
     {
         "id": "203932",
@@ -1212,7 +2635,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203932.png",
         "isStarter": true,
-        "minutes": 522
+        "minutes": 522,
+        "jerseyNumber": "32",
+        "points": 16.2,
+        "rebounds": 7.6,
+        "assists": 2.7,
+        "steals": 0.6,
+        "blocks": 0.4,
+        "fgPct": 48.5,
+        "threePtPct": 37.9,
+        "ftPct": 86,
+        "usage": 17.8
     },
     {
         "id": "1641717",
@@ -1220,7 +2653,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641717.png",
         "isStarter": false,
-        "minutes": 516
+        "minutes": 516,
+        "jerseyNumber": "22",
+        "points": 5.6,
+        "rebounds": 2.7,
+        "assists": 2.1,
+        "steals": 1.4,
+        "blocks": 0.4,
+        "fgPct": 42.9,
+        "threePtPct": 32.3,
+        "ftPct": 66.7,
+        "usage": 11.4
     },
     {
         "id": "1628392",
@@ -1228,7 +2671,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628392.png",
         "isStarter": true,
-        "minutes": 516
+        "minutes": 516,
+        "jerseyNumber": "55",
+        "points": 8.1,
+        "rebounds": 7.5,
+        "assists": 2.2,
+        "steals": 0.8,
+        "blocks": 0.5,
+        "fgPct": 61.9,
+        "threePtPct": 0,
+        "ftPct": 66.7,
+        "usage": 14.3
     },
     {
         "id": "1641774",
@@ -1236,7 +2689,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641774.png",
         "isStarter": false,
-        "minutes": 513
+        "minutes": 513,
+        "jerseyNumber": "00",
+        "points": 9.4,
+        "rebounds": 3.7,
+        "assists": 1.1,
+        "steals": 0.3,
+        "blocks": 0.7,
+        "fgPct": 49.6,
+        "threePtPct": 37.3,
+        "ftPct": 77.6,
+        "usage": 25.7
     },
     {
         "id": "1630811",
@@ -1244,7 +2707,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630811.png",
         "isStarter": false,
-        "minutes": 501
+        "minutes": 501,
+        "jerseyNumber": "2",
+        "points": 5.4,
+        "rebounds": 1.6,
+        "assists": 2.6,
+        "steals": 0.9,
+        "blocks": 0.3,
+        "fgPct": 40.1,
+        "threePtPct": 32.9,
+        "ftPct": 100,
+        "usage": 16.4
     },
     {
         "id": "1630183",
@@ -1252,7 +2725,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630183.png",
         "isStarter": true,
-        "minutes": 497
+        "minutes": 497,
+        "jerseyNumber": "3",
+        "points": 14.7,
+        "rebounds": 5.6,
+        "assists": 1.5,
+        "steals": 1.3,
+        "blocks": 0.9,
+        "fgPct": 51.5,
+        "threePtPct": 38.2,
+        "ftPct": 89.3,
+        "usage": 17.4
     },
     {
         "id": "1630314",
@@ -1260,7 +2743,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630314.png",
         "isStarter": false,
-        "minutes": 487
+        "minutes": 487,
+        "jerseyNumber": "10",
+        "points": 8.3,
+        "rebounds": 1.8,
+        "assists": 2.3,
+        "steals": 0.7,
+        "blocks": 0.2,
+        "fgPct": 52.1,
+        "threePtPct": 40,
+        "ftPct": 83.3,
+        "usage": 22.6
     },
     {
         "id": "1630639",
@@ -1268,7 +2761,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630639.png",
         "isStarter": false,
-        "minutes": 486
+        "minutes": 486,
+        "jerseyNumber": "0",
+        "points": 9.1,
+        "rebounds": 3.3,
+        "assists": 1.2,
+        "steals": 0.5,
+        "blocks": 0.2,
+        "fgPct": 42.1,
+        "threePtPct": 32.7,
+        "ftPct": 68.3,
+        "usage": 20
     },
     {
         "id": "1629684",
@@ -1276,7 +2779,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629684.png",
         "isStarter": false,
-        "minutes": 479
+        "minutes": 479,
+        "jerseyNumber": "2",
+        "points": 10.4,
+        "rebounds": 5.1,
+        "assists": 2.3,
+        "steals": 1.1,
+        "blocks": 0.8,
+        "fgPct": 43.9,
+        "threePtPct": 36.5,
+        "ftPct": 83.8,
+        "usage": 14.8
     },
     {
         "id": "1641871",
@@ -1284,7 +2797,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641871.png",
         "isStarter": false,
-        "minutes": 469
+        "minutes": 469,
+        "jerseyNumber": "26",
+        "points": 4.2,
+        "rebounds": 2,
+        "assists": 0.6,
+        "steals": 0.3,
+        "blocks": 0.3,
+        "fgPct": 42.2,
+        "threePtPct": 32.1,
+        "ftPct": 90.9,
+        "usage": 17
     },
     {
         "id": "1626204",
@@ -1292,7 +2815,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626204.png",
         "isStarter": false,
-        "minutes": 463
+        "minutes": 463,
+        "jerseyNumber": "22",
+        "points": 8.5,
+        "rebounds": 4.3,
+        "assists": 1.6,
+        "steals": 0.8,
+        "blocks": 0.5,
+        "fgPct": 51.6,
+        "threePtPct": 44.7,
+        "ftPct": 69.2,
+        "usage": 15.7
     },
     {
         "id": "1631221",
@@ -1300,7 +2833,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631221.png",
         "isStarter": false,
-        "minutes": 461
+        "minutes": 461,
+        "jerseyNumber": "12",
+        "points": 5.9,
+        "rebounds": 2.4,
+        "assists": 2.4,
+        "steals": 0.6,
+        "blocks": 0.2,
+        "fgPct": 43,
+        "threePtPct": 43.3,
+        "ftPct": 86.4,
+        "usage": 17.7
     },
     {
         "id": "1641712",
@@ -1308,7 +2851,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641712.png",
         "isStarter": false,
-        "minutes": 460
+        "minutes": 460,
+        "jerseyNumber": "21",
+        "points": 3,
+        "rebounds": 1.3,
+        "assists": 0.5,
+        "steals": 0.3,
+        "blocks": 0.1,
+        "fgPct": 40.8,
+        "threePtPct": 27.1,
+        "ftPct": 76.7,
+        "usage": 16.8
     },
     {
         "id": "1641713",
@@ -1316,7 +2869,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641713.png",
         "isStarter": false,
-        "minutes": 459
+        "minutes": 459,
+        "jerseyNumber": "45",
+        "points": 7.2,
+        "rebounds": 3.2,
+        "assists": 1,
+        "steals": 0.4,
+        "blocks": 0.2,
+        "fgPct": 37.2,
+        "threePtPct": 33.7,
+        "ftPct": 72.5,
+        "usage": 21.7
     },
     {
         "id": "1630200",
@@ -1324,7 +2887,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630200.png",
         "isStarter": true,
-        "minutes": 455
+        "minutes": 455,
+        "jerseyNumber": "30",
+        "points": 11.5,
+        "rebounds": 3.2,
+        "assists": 4.9,
+        "steals": 1.1,
+        "blocks": 0.3,
+        "fgPct": 57.2,
+        "threePtPct": 50,
+        "ftPct": 88.2,
+        "usage": 16
     },
     {
         "id": "1630167",
@@ -1332,7 +2905,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630167.png",
         "isStarter": false,
-        "minutes": 440
+        "minutes": 440,
+        "jerseyNumber": "1",
+        "points": 9.4,
+        "rebounds": 3.8,
+        "assists": 1.3,
+        "steals": 0.7,
+        "blocks": 0.3,
+        "fgPct": 48.5,
+        "threePtPct": 32.1,
+        "ftPct": 69.4,
+        "usage": 21.2
     },
     {
         "id": "1628401",
@@ -1340,7 +2923,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628401.png",
         "isStarter": true,
-        "minutes": 415
+        "minutes": 415,
+        "jerseyNumber": "9",
+        "points": 18.8,
+        "rebounds": 5.1,
+        "assists": 3.5,
+        "steals": 0.6,
+        "blocks": 1.1,
+        "fgPct": 46.3,
+        "threePtPct": 38.5,
+        "ftPct": 86.1,
+        "usage": 19.3
     },
     {
         "id": "203497",
@@ -1348,7 +2941,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203497.png",
         "isStarter": true,
-        "minutes": 411
+        "minutes": 411,
+        "jerseyNumber": "27",
+        "points": 7.9,
+        "rebounds": 8.6,
+        "assists": 0.7,
+        "steals": 0.5,
+        "blocks": 1.2,
+        "fgPct": 58.2,
+        "threePtPct": 0,
+        "ftPct": 52,
+        "usage": 12
     },
     {
         "id": "1627759",
@@ -1356,7 +2959,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627759.png",
         "isStarter": true,
-        "minutes": 402
+        "minutes": 402,
+        "jerseyNumber": "7",
+        "points": 22.1,
+        "rebounds": 7.1,
+        "assists": 3.9,
+        "steals": 1,
+        "blocks": 0.3,
+        "fgPct": 44.1,
+        "threePtPct": 33.3,
+        "ftPct": 75.8,
+        "usage": 29.9
     },
     {
         "id": "204456",
@@ -1364,7 +2977,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/204456.png",
         "isStarter": false,
-        "minutes": 402
+        "minutes": 402,
+        "jerseyNumber": "9",
+        "points": 9.5,
+        "rebounds": 3.3,
+        "assists": 4,
+        "steals": 0.9,
+        "blocks": 0.1,
+        "fgPct": 53.7,
+        "threePtPct": 42.1,
+        "ftPct": 81.5,
+        "usage": 25.4
     },
     {
         "id": "202710",
@@ -1372,7 +2995,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202710.png",
         "isStarter": true,
-        "minutes": 397
+        "minutes": 397,
+        "jerseyNumber": "10",
+        "points": 19.2,
+        "rebounds": 6.6,
+        "assists": 5.2,
+        "steals": 1.3,
+        "blocks": 0.3,
+        "fgPct": 44.7,
+        "threePtPct": 30.6,
+        "ftPct": 80,
+        "usage": 22.2
     },
     {
         "id": "1630264",
@@ -1380,7 +3013,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630264.png",
         "isStarter": false,
-        "minutes": 397
+        "minutes": 397,
+        "jerseyNumber": "16",
+        "points": 2.5,
+        "rebounds": 1.3,
+        "assists": 0.3,
+        "steals": 0.2,
+        "blocks": 0,
+        "fgPct": 48.9,
+        "threePtPct": 32.3,
+        "ftPct": 66,
+        "usage": 12.7
     },
     {
         "id": "1642269",
@@ -1388,7 +3031,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642269.png",
         "isStarter": false,
-        "minutes": 396
+        "minutes": 396,
+        "jerseyNumber": "22",
+        "points": 3.8,
+        "rebounds": 2.1,
+        "assists": 1.1,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 37,
+        "threePtPct": 29.5,
+        "ftPct": 59.1,
+        "usage": 17.9
     },
     {
         "id": "203110",
@@ -1396,7 +3049,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203110.png",
         "isStarter": true,
-        "minutes": 389
+        "minutes": 389,
+        "jerseyNumber": "23",
+        "points": 9.1,
+        "rebounds": 5.5,
+        "assists": 3.8,
+        "steals": 1.4,
+        "blocks": 0.9,
+        "fgPct": 38.9,
+        "threePtPct": 26.7,
+        "ftPct": 69.2,
+        "usage": 17
     },
     {
         "id": "1631097",
@@ -1404,7 +3067,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631097.png",
         "isStarter": false,
-        "minutes": 385
+        "minutes": 385,
+        "jerseyNumber": "00",
+        "points": 11,
+        "rebounds": 3.3,
+        "assists": 0.9,
+        "steals": 0.4,
+        "blocks": 0.3,
+        "fgPct": 45.9,
+        "threePtPct": 30,
+        "ftPct": 86.4,
+        "usage": 25.2
     },
     {
         "id": "1641764",
@@ -1412,7 +3085,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641764.png",
         "isStarter": true,
-        "minutes": 385
+        "minutes": 385,
+        "jerseyNumber": "2",
+        "points": 11.3,
+        "rebounds": 5,
+        "assists": 3.1,
+        "steals": 1.3,
+        "blocks": 0.2,
+        "fgPct": 36.4,
+        "threePtPct": 32.8,
+        "ftPct": 70.8,
+        "usage": 18.4
     },
     {
         "id": "1631245",
@@ -1420,7 +3103,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631245.png",
         "isStarter": false,
-        "minutes": 381
+        "minutes": 381,
+        "jerseyNumber": "29",
+        "points": 5.8,
+        "rebounds": 1.6,
+        "assists": 1.9,
+        "steals": 0.8,
+        "blocks": 0.2,
+        "fgPct": 47.5,
+        "threePtPct": 37.5,
+        "ftPct": 77.5,
+        "usage": 17.7
     },
     {
         "id": "1628978",
@@ -1428,7 +3121,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628978.png",
         "isStarter": false,
-        "minutes": 377
+        "minutes": 377,
+        "jerseyNumber": "0",
+        "points": 8.7,
+        "rebounds": 3.1,
+        "assists": 3.3,
+        "steals": 1.4,
+        "blocks": 0.3,
+        "fgPct": 36.5,
+        "threePtPct": 31.8,
+        "ftPct": 76.9,
+        "usage": 18.4
     },
     {
         "id": "1629675",
@@ -1436,7 +3139,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629675.png",
         "isStarter": false,
-        "minutes": 375
+        "minutes": 375,
+        "jerseyNumber": "11",
+        "points": 10.4,
+        "rebounds": 4.7,
+        "assists": 1.7,
+        "steals": 0.7,
+        "blocks": 0.9,
+        "fgPct": 50.9,
+        "threePtPct": 39.7,
+        "ftPct": 76,
+        "usage": 17.2
     },
     {
         "id": "203957",
@@ -1444,7 +3157,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203957.png",
         "isStarter": true,
-        "minutes": 372
+        "minutes": 372,
+        "jerseyNumber": "0",
+        "points": 8.7,
+        "rebounds": 1.6,
+        "assists": 2.8,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 47.8,
+        "threePtPct": 43.4,
+        "ftPct": 74.2,
+        "usage": 19.6
     },
     {
         "id": "1629011",
@@ -1452,7 +3175,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629011.png",
         "isStarter": false,
-        "minutes": 370
+        "minutes": 370,
+        "jerseyNumber": "23",
+        "points": 4.7,
+        "rebounds": 7.1,
+        "assists": 0.4,
+        "steals": 0.9,
+        "blocks": 0.8,
+        "fgPct": 60.8,
+        "threePtPct": 0,
+        "ftPct": 39.3,
+        "usage": 10.4
     },
     {
         "id": "201144",
@@ -1460,7 +3193,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201144.png",
         "isStarter": true,
-        "minutes": 356
+        "minutes": 356,
+        "jerseyNumber": "10",
+        "points": 6,
+        "rebounds": 2.9,
+        "assists": 3.3,
+        "steals": 0.6,
+        "blocks": 0.2,
+        "fgPct": 30.2,
+        "threePtPct": 33.3,
+        "ftPct": 92.3,
+        "usage": 13.8
     },
     {
         "id": "1629057",
@@ -1468,7 +3211,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629057.png",
         "isStarter": false,
-        "minutes": 351
+        "minutes": 351,
+        "jerseyNumber": "35",
+        "points": 5.8,
+        "rebounds": 5.9,
+        "assists": 1.1,
+        "steals": 0.7,
+        "blocks": 1.6,
+        "fgPct": 64.1,
+        "threePtPct": 33.3,
+        "ftPct": 88.2,
+        "usage": 12.2
     },
     {
         "id": "203926",
@@ -1476,7 +3229,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203926.png",
         "isStarter": false,
-        "minutes": 342
+        "minutes": 342,
+        "jerseyNumber": "7",
+        "points": 3.5,
+        "rebounds": 0.5,
+        "assists": 0.2,
+        "steals": 0.1,
+        "blocks": 0,
+        "fgPct": 42.7,
+        "threePtPct": 43.6,
+        "ftPct": 60,
+        "usage": 15.7
     },
     {
         "id": "1630540",
@@ -1484,7 +3247,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630540.png",
         "isStarter": false,
-        "minutes": 341
+        "minutes": 341,
+        "jerseyNumber": "2",
+        "points": 5.8,
+        "rebounds": 1.2,
+        "assists": 1,
+        "steals": 0.4,
+        "blocks": 0.1,
+        "fgPct": 37.8,
+        "threePtPct": 37.3,
+        "ftPct": 82.4,
+        "usage": 13.8
     },
     {
         "id": "1627741",
@@ -1492,7 +3265,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627741.png",
         "isStarter": true,
-        "minutes": 327
+        "minutes": 327,
+        "jerseyNumber": "7",
+        "points": 12.5,
+        "rebounds": 3.5,
+        "assists": 1.8,
+        "steals": 1.2,
+        "blocks": 0.4,
+        "fgPct": 41.6,
+        "threePtPct": 42.9,
+        "ftPct": 92.9,
+        "usage": 19.4
     },
     {
         "id": "1628369",
@@ -1500,7 +3283,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628369.png",
         "isStarter": true,
-        "minutes": 322
+        "minutes": 322,
+        "jerseyNumber": "0",
+        "points": 28.1,
+        "rebounds": 11.5,
+        "assists": 5.4,
+        "steals": 2.1,
+        "blocks": 0.8,
+        "fgPct": 42.3,
+        "threePtPct": 37.2,
+        "ftPct": 88.9,
+        "usage": 31.9
     },
     {
         "id": "1628975",
@@ -1508,7 +3301,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628975.png",
         "isStarter": false,
-        "minutes": 321
+        "minutes": 321,
+        "jerseyNumber": "5",
+        "points": 4.3,
+        "rebounds": 1.1,
+        "assists": 1.1,
+        "steals": 0.4,
+        "blocks": 0.1,
+        "fgPct": 37.7,
+        "threePtPct": 33.3,
+        "ftPct": 80,
+        "usage": 21
     },
     {
         "id": "1630544",
@@ -1516,7 +3319,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630544.png",
         "isStarter": false,
-        "minutes": 319
+        "minutes": 319,
+        "jerseyNumber": "23",
+        "points": 14.1,
+        "rebounds": 2.9,
+        "assists": 3,
+        "steals": 0.5,
+        "blocks": 0.3,
+        "fgPct": 43.5,
+        "threePtPct": 40,
+        "ftPct": 90.5,
+        "usage": 26
     },
     {
         "id": "1629680",
@@ -1524,7 +3337,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629680.png",
         "isStarter": false,
-        "minutes": 312
+        "minutes": 312,
+        "jerseyNumber": "4",
+        "points": 7.5,
+        "rebounds": 3.5,
+        "assists": 1.9,
+        "steals": 2.2,
+        "blocks": 0.6,
+        "fgPct": 47.7,
+        "threePtPct": 43.8,
+        "ftPct": 46.7,
+        "usage": 14.4
     },
     {
         "id": "1630598",
@@ -1532,7 +3355,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630598.png",
         "isStarter": false,
-        "minutes": 303
+        "minutes": 303,
+        "jerseyNumber": "21",
+        "points": 6,
+        "rebounds": 2.3,
+        "assists": 0.9,
+        "steals": 0.5,
+        "blocks": 0.3,
+        "fgPct": 39.5,
+        "threePtPct": 36.2,
+        "ftPct": 76.5,
+        "usage": 20.1
     },
     {
         "id": "1630202",
@@ -1540,7 +3373,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630202.png",
         "isStarter": false,
-        "minutes": 302
+        "minutes": 302,
+        "jerseyNumber": "11",
+        "points": 11.9,
+        "rebounds": 2.3,
+        "assists": 1.5,
+        "steals": 0.5,
+        "blocks": 0,
+        "fgPct": 45.5,
+        "threePtPct": 40.3,
+        "ftPct": 82.4,
+        "usage": 17.5
     },
     {
         "id": "1641767",
@@ -1548,7 +3391,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641767.png",
         "isStarter": false,
-        "minutes": 293
+        "minutes": 293,
+        "jerseyNumber": "26",
+        "points": 3.2,
+        "rebounds": 1.9,
+        "assists": 0.4,
+        "steals": 0.4,
+        "blocks": 0,
+        "fgPct": 47.1,
+        "threePtPct": 39.5,
+        "ftPct": 100,
+        "usage": 9.6
     },
     {
         "id": "1628378",
@@ -1556,7 +3409,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628378.png",
         "isStarter": true,
-        "minutes": 288
+        "minutes": 288,
+        "jerseyNumber": "45",
+        "points": 29.6,
+        "rebounds": 4.7,
+        "assists": 3.9,
+        "steals": 1.9,
+        "blocks": 0.3,
+        "fgPct": 44.3,
+        "threePtPct": 33.3,
+        "ftPct": 74.2,
+        "usage": 37.2
     },
     {
         "id": "201939",
@@ -1564,7 +3427,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201939.png",
         "isStarter": true,
-        "minutes": 281
+        "minutes": 281,
+        "jerseyNumber": "30",
+        "points": 22.6,
+        "rebounds": 5.3,
+        "assists": 5.1,
+        "steals": 1,
+        "blocks": 0.8,
+        "fgPct": 47.7,
+        "threePtPct": 40,
+        "ftPct": 89.3,
+        "usage": 26.6
     },
     {
         "id": "1627832",
@@ -1572,7 +3445,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627832.png",
         "isStarter": true,
-        "minutes": 280
+        "minutes": 280,
+        "jerseyNumber": "5",
+        "points": 18.7,
+        "rebounds": 4.1,
+        "assists": 4.4,
+        "steals": 1,
+        "blocks": 0.3,
+        "fgPct": 43,
+        "threePtPct": 43.5,
+        "ftPct": 100,
+        "usage": 18.4
     },
     {
         "id": "203935",
@@ -1580,7 +3463,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203935.png",
         "isStarter": false,
-        "minutes": 280
+        "minutes": 280,
+        "jerseyNumber": "36",
+        "points": 9.3,
+        "rebounds": 1.9,
+        "assists": 2.5,
+        "steals": 1.1,
+        "blocks": 0.2,
+        "fgPct": 44,
+        "threePtPct": 39.2,
+        "ftPct": 68.6,
+        "usage": 21.5
     },
     {
         "id": "201935",
@@ -1588,7 +3481,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201935.png",
         "isStarter": true,
-        "minutes": 276
+        "minutes": 276,
+        "jerseyNumber": "1",
+        "points": 18.7,
+        "rebounds": 5.4,
+        "assists": 9.1,
+        "steals": 1.3,
+        "blocks": 1,
+        "fgPct": 43.6,
+        "threePtPct": 36.4,
+        "ftPct": 81.8,
+        "usage": 22.9
     },
     {
         "id": "1628997",
@@ -1596,7 +3499,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628997.png",
         "isStarter": false,
-        "minutes": 275
+        "minutes": 275,
+        "jerseyNumber": "16",
+        "points": 5.4,
+        "rebounds": 2.9,
+        "assists": 1.9,
+        "steals": 0.9,
+        "blocks": 0.2,
+        "fgPct": 38.9,
+        "threePtPct": 25,
+        "ftPct": 62.5,
+        "usage": 14.9
     },
     {
         "id": "1630696",
@@ -1604,7 +3517,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630696.png",
         "isStarter": false,
-        "minutes": 268
+        "minutes": 268,
+        "jerseyNumber": "12",
+        "points": 6.2,
+        "rebounds": 2.6,
+        "assists": 1.6,
+        "steals": 1.5,
+        "blocks": 0.4,
+        "fgPct": 50.8,
+        "threePtPct": 53.3,
+        "ftPct": 75,
+        "usage": 13.8
     },
     {
         "id": "203076",
@@ -1612,7 +3535,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203076.png",
         "isStarter": true,
-        "minutes": 266
+        "minutes": 266,
+        "jerseyNumber": "3",
+        "points": 20,
+        "rebounds": 10.1,
+        "assists": 4.4,
+        "steals": 0.6,
+        "blocks": 2.2,
+        "fgPct": 46.1,
+        "threePtPct": 23.3,
+        "ftPct": 68.8,
+        "usage": 31.2
     },
     {
         "id": "202695",
@@ -1620,7 +3553,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202695.png",
         "isStarter": true,
-        "minutes": 265
+        "minutes": 265,
+        "jerseyNumber": "2",
+        "points": 25,
+        "rebounds": 7.6,
+        "assists": 4.7,
+        "steals": 1.1,
+        "blocks": 0.7,
+        "fgPct": 53.7,
+        "threePtPct": 40.5,
+        "ftPct": 77.8,
+        "usage": 26.9
     },
     {
         "id": "1628386",
@@ -1628,7 +3571,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628386.png",
         "isStarter": true,
-        "minutes": 261
+        "minutes": 261,
+        "jerseyNumber": "31",
+        "points": 13.4,
+        "rebounds": 8.4,
+        "assists": 1.3,
+        "steals": 1.4,
+        "blocks": 0.9,
+        "fgPct": 72.1,
+        "threePtPct": 0,
+        "ftPct": 94.3,
+        "usage": 15.3
     },
     {
         "id": "1630596",
@@ -1636,7 +3589,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630596.png",
         "isStarter": true,
-        "minutes": 257
+        "minutes": 257,
+        "jerseyNumber": "4",
+        "points": 17.1,
+        "rebounds": 8.1,
+        "assists": 1.6,
+        "steals": 1.1,
+        "blocks": 1,
+        "fgPct": 58.6,
+        "threePtPct": 45.2,
+        "ftPct": 84,
+        "usage": 18.2
     },
     {
         "id": "1630578",
@@ -1644,7 +3607,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630578.png",
         "isStarter": true,
-        "minutes": 256
+        "minutes": 256,
+        "jerseyNumber": "28",
+        "points": 20.9,
+        "rebounds": 11.9,
+        "assists": 5.3,
+        "steals": 1.9,
+        "blocks": 0.4,
+        "fgPct": 45,
+        "threePtPct": 37.5,
+        "ftPct": 62.5,
+        "usage": 28.3
     },
     {
         "id": "1627826",
@@ -1652,7 +3625,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627826.png",
         "isStarter": true,
-        "minutes": 256
+        "minutes": 256,
+        "jerseyNumber": "40",
+        "points": 17.4,
+        "rebounds": 10.1,
+        "assists": 2.3,
+        "steals": 0.7,
+        "blocks": 1,
+        "fgPct": 65.9,
+        "threePtPct": 0,
+        "ftPct": 53.8,
+        "usage": 18.9
     },
     {
         "id": "1631131",
@@ -1660,7 +3643,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631131.png",
         "isStarter": false,
-        "minutes": 255
+        "minutes": 255,
+        "jerseyNumber": "34",
+        "points": 7.6,
+        "rebounds": 8.7,
+        "assists": 0.6,
+        "steals": 0.9,
+        "blocks": 0.1,
+        "fgPct": 60,
+        "threePtPct": 0,
+        "ftPct": 74.2,
+        "usage": 15.3
     },
     {
         "id": "1629622",
@@ -1668,7 +3661,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629622.png",
         "isStarter": true,
-        "minutes": 253
+        "minutes": 253,
+        "jerseyNumber": "1",
+        "points": 11.7,
+        "rebounds": 5.7,
+        "assists": 3.9,
+        "steals": 0.7,
+        "blocks": 0.2,
+        "fgPct": 41.6,
+        "threePtPct": 38.8,
+        "ftPct": 83.3,
+        "usage": 16.7
     },
     {
         "id": "1642285",
@@ -1676,7 +3679,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642285.png",
         "isStarter": false,
-        "minutes": 252
+        "minutes": 252,
+        "jerseyNumber": "24",
+        "points": 4.2,
+        "rebounds": 1.2,
+        "assists": 1.4,
+        "steals": 0.4,
+        "blocks": 0,
+        "fgPct": 41.5,
+        "threePtPct": 35.8,
+        "ftPct": 100,
+        "usage": 15.4
     },
     {
         "id": "201567",
@@ -1684,7 +3697,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201567.png",
         "isStarter": false,
-        "minutes": 251
+        "minutes": 251,
+        "jerseyNumber": "42",
+        "points": 5.3,
+        "rebounds": 4.1,
+        "assists": 1,
+        "steals": 0.7,
+        "blocks": 0.2,
+        "fgPct": 35.7,
+        "threePtPct": 35.8,
+        "ftPct": 69.6,
+        "usage": 24.6
     },
     {
         "id": "1630595",
@@ -1692,7 +3715,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630595.png",
         "isStarter": true,
-        "minutes": 248
+        "minutes": 248,
+        "jerseyNumber": "2",
+        "points": 25,
+        "rebounds": 8.3,
+        "assists": 8.7,
+        "steals": 1.8,
+        "blocks": 1.3,
+        "fgPct": 42.6,
+        "threePtPct": 17.9,
+        "ftPct": 83.3,
+        "usage": 31.2
     },
     {
         "id": "1642382",
@@ -1700,7 +3733,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642382.png",
         "isStarter": false,
-        "minutes": 246
+        "minutes": 246,
+        "jerseyNumber": "15",
+        "points": 3.8,
+        "rebounds": 1.7,
+        "assists": 0.4,
+        "steals": 0.2,
+        "blocks": 0.7,
+        "fgPct": 44.3,
+        "threePtPct": 33.3,
+        "ftPct": 77.8,
+        "usage": 19.3
     },
     {
         "id": "1626181",
@@ -1708,7 +3751,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626181.png",
         "isStarter": true,
-        "minutes": 238
+        "minutes": 238,
+        "jerseyNumber": "24",
+        "points": 16,
+        "rebounds": 2.4,
+        "assists": 2.4,
+        "steals": 1.1,
+        "blocks": 0.3,
+        "fgPct": 47.2,
+        "threePtPct": 35,
+        "ftPct": 77.8,
+        "usage": 21.2
     },
     {
         "id": "202699",
@@ -1716,7 +3769,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202699.png",
         "isStarter": true,
-        "minutes": 233
+        "minutes": 233,
+        "jerseyNumber": "12",
+        "points": 15.7,
+        "rebounds": 7.7,
+        "assists": 0.5,
+        "steals": 1,
+        "blocks": 1.2,
+        "fgPct": 47.9,
+        "threePtPct": 43.5,
+        "ftPct": 100,
+        "usage": 15.5
     },
     {
         "id": "204001",
@@ -1724,7 +3787,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/204001.png",
         "isStarter": true,
-        "minutes": 231
+        "minutes": 231,
+        "jerseyNumber": "8",
+        "points": 7.7,
+        "rebounds": 4.6,
+        "assists": 0.7,
+        "steals": 0.9,
+        "blocks": 0.8,
+        "fgPct": 31.6,
+        "threePtPct": 15.4,
+        "ftPct": 68.9,
+        "usage": 21.5
     },
     {
         "id": "1641708",
@@ -1732,7 +3805,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641708.png",
         "isStarter": true,
-        "minutes": 231
+        "minutes": 231,
+        "jerseyNumber": "1",
+        "points": 15.7,
+        "rebounds": 6.9,
+        "assists": 3.3,
+        "steals": 1.7,
+        "blocks": 0.9,
+        "fgPct": 49.4,
+        "threePtPct": 25,
+        "ftPct": 69.4,
+        "usage": 21.6
     },
     {
         "id": "202066",
@@ -1740,7 +3823,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/202066.png",
         "isStarter": false,
-        "minutes": 227
+        "minutes": 227,
+        "jerseyNumber": "17",
+        "points": 1.9,
+        "rebounds": 1,
+        "assists": 1.1,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 30,
+        "threePtPct": 21.4,
+        "ftPct": 91.7,
+        "usage": 13.9
     },
     {
         "id": "1630224",
@@ -1748,7 +3841,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630224.png",
         "isStarter": true,
-        "minutes": 219
+        "minutes": 219,
+        "jerseyNumber": "4",
+        "points": 13.3,
+        "rebounds": 5.4,
+        "assists": 2.9,
+        "steals": 0.6,
+        "blocks": 0.3,
+        "fgPct": 37.2,
+        "threePtPct": 29.5,
+        "ftPct": 66.7,
+        "usage": 21.5
     },
     {
         "id": "1630198",
@@ -1756,7 +3859,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630198.png",
         "isStarter": false,
-        "minutes": 211
+        "minutes": 211,
+        "jerseyNumber": "11",
+        "points": 5.1,
+        "rebounds": 1.4,
+        "assists": 0.7,
+        "steals": 0.3,
+        "blocks": 0.1,
+        "fgPct": 49.3,
+        "threePtPct": 41.1,
+        "ftPct": 85.7,
+        "usage": 17.3
     },
     {
         "id": "1629029",
@@ -1764,7 +3877,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/1610612742/2018/260x190/1629029.png",
         "isStarter": true,
-        "minutes": 208
+        "minutes": 208,
+        "jerseyNumber": "77",
+        "points": 30.2,
+        "rebounds": 7,
+        "assists": 5.8,
+        "steals": 1,
+        "blocks": 0.6,
+        "fgPct": 45.2,
+        "threePtPct": 34.8,
+        "ftPct": 89.1,
+        "usage": 32.4
     },
     {
         "id": "2544",
@@ -1772,7 +3895,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/2544.png",
         "isStarter": true,
-        "minutes": 204
+        "minutes": 204,
+        "jerseyNumber": "23",
+        "points": 25.4,
+        "rebounds": 9,
+        "assists": 5.6,
+        "steals": 2,
+        "blocks": 1.8,
+        "fgPct": 48.9,
+        "threePtPct": 35.7,
+        "ftPct": 77.5,
+        "usage": 27.2
     },
     {
         "id": "1631105",
@@ -1780,7 +3913,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631105.png",
         "isStarter": true,
-        "minutes": 203
+        "minutes": 203,
+        "jerseyNumber": "0",
+        "points": 11.8,
+        "rebounds": 10.7,
+        "assists": 3.5,
+        "steals": 0.3,
+        "blocks": 1.7,
+        "fgPct": 65,
+        "threePtPct": 0,
+        "ftPct": 82.6,
+        "usage": 12.8
     },
     {
         "id": "1631212",
@@ -1788,7 +3931,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631212.png",
         "isStarter": false,
-        "minutes": 199
+        "minutes": 199,
+        "jerseyNumber": "8",
+        "points": 4.5,
+        "rebounds": 2.9,
+        "assists": 0.3,
+        "steals": 0.8,
+        "blocks": 0.6,
+        "fgPct": 40.7,
+        "threePtPct": 36.8,
+        "ftPct": 50,
+        "usage": 16.1
     },
     {
         "id": "1631094",
@@ -1796,7 +3949,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631094.png",
         "isStarter": true,
-        "minutes": 197
+        "minutes": 197,
+        "jerseyNumber": "5",
+        "points": 29.4,
+        "rebounds": 8.4,
+        "assists": 4.2,
+        "steals": 0.6,
+        "blocks": 0.8,
+        "fgPct": 43.5,
+        "threePtPct": 44.4,
+        "ftPct": 65.9,
+        "usage": 36.4
     },
     {
         "id": "1630559",
@@ -1804,7 +3967,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630559.png",
         "isStarter": true,
-        "minutes": 196
+        "minutes": 196,
+        "jerseyNumber": "15",
+        "points": 16.2,
+        "rebounds": 5.4,
+        "assists": 3.6,
+        "steals": 0.2,
+        "blocks": 0.6,
+        "fgPct": 41.1,
+        "threePtPct": 31.9,
+        "ftPct": 85.7,
+        "usage": 21.5
     },
     {
         "id": "1630532",
@@ -1812,7 +3985,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630532.png",
         "isStarter": true,
-        "minutes": 195
+        "minutes": 195,
+        "jerseyNumber": "22",
+        "points": 25.8,
+        "rebounds": 4.8,
+        "assists": 5.6,
+        "steals": 1.2,
+        "blocks": 0.4,
+        "fgPct": 44.3,
+        "threePtPct": 18.9,
+        "ftPct": 76.9,
+        "usage": 32
     },
     {
         "id": "1630541",
@@ -1820,7 +4003,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630541.png",
         "isStarter": false,
-        "minutes": 193
+        "minutes": 193,
+        "jerseyNumber": "4",
+        "points": 7.1,
+        "rebounds": 2.2,
+        "assists": 1.2,
+        "steals": 0.5,
+        "blocks": 0.3,
+        "fgPct": 35,
+        "threePtPct": 33.3,
+        "ftPct": 82.4,
+        "usage": 20.9
     },
     {
         "id": "1629660",
@@ -1828,7 +4021,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629660.png",
         "isStarter": false,
-        "minutes": 191
+        "minutes": 191,
+        "jerseyNumber": "2",
+        "points": 11.7,
+        "rebounds": 2.4,
+        "assists": 3.6,
+        "steals": 0.6,
+        "blocks": 0.1,
+        "fgPct": 40.2,
+        "threePtPct": 38.9,
+        "ftPct": 85,
+        "usage": 25.1
     },
     {
         "id": "1629631",
@@ -1836,7 +4039,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629631.png",
         "isStarter": false,
-        "minutes": 185
+        "minutes": 185,
+        "jerseyNumber": "12",
+        "points": 11,
+        "rebounds": 3.6,
+        "assists": 1,
+        "steals": 0.5,
+        "blocks": 0.1,
+        "fgPct": 42.9,
+        "threePtPct": 46.2,
+        "ftPct": 84.6,
+        "usage": 18.8
     },
     {
         "id": "1629060",
@@ -1844,7 +4057,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629060.png",
         "isStarter": true,
-        "minutes": 182
+        "minutes": 182,
+        "jerseyNumber": "28",
+        "points": 14.8,
+        "rebounds": 4.6,
+        "assists": 1,
+        "steals": 0.6,
+        "blocks": 0.6,
+        "fgPct": 49.1,
+        "threePtPct": 48.4,
+        "ftPct": 100,
+        "usage": 16.8
     },
     {
         "id": "1627780",
@@ -1852,7 +4075,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627780.png",
         "isStarter": false,
-        "minutes": 180
+        "minutes": 180,
+        "jerseyNumber": "0",
+        "points": 4.6,
+        "rebounds": 2.2,
+        "assists": 1.5,
+        "steals": 0.9,
+        "blocks": 0,
+        "fgPct": 44.7,
+        "threePtPct": 39.1,
+        "ftPct": 0,
+        "usage": 13
     },
     {
         "id": "1629107",
@@ -1860,7 +4093,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629107.png",
         "isStarter": true,
-        "minutes": 171
+        "minutes": 171,
+        "jerseyNumber": "5",
+        "points": 18.8,
+        "rebounds": 2.2,
+        "assists": 1.2,
+        "steals": 2.6,
+        "blocks": 0,
+        "fgPct": 51.6,
+        "threePtPct": 50,
+        "ftPct": 80,
+        "usage": 18
     },
     {
         "id": "1628418",
@@ -1868,7 +4111,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628418.png",
         "isStarter": false,
-        "minutes": 167
+        "minutes": 167,
+        "jerseyNumber": "3",
+        "points": 2.6,
+        "rebounds": 1.4,
+        "assists": 0.2,
+        "steals": 0.2,
+        "blocks": 0.3,
+        "fgPct": 48.5,
+        "threePtPct": 50,
+        "ftPct": 78.6,
+        "usage": 12.2
     },
     {
         "id": "203471",
@@ -1876,7 +4129,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203471.png",
         "isStarter": false,
-        "minutes": 164
+        "minutes": 164,
+        "jerseyNumber": "17",
+        "points": 12.5,
+        "rebounds": 2.3,
+        "assists": 3.7,
+        "steals": 1.2,
+        "blocks": 0.2,
+        "fgPct": 49.1,
+        "threePtPct": 47.6,
+        "ftPct": 81.3,
+        "usage": 17.6
     },
     {
         "id": "203484",
@@ -1884,7 +4147,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203484.png",
         "isStarter": true,
-        "minutes": 163
+        "minutes": 163,
+        "jerseyNumber": "3",
+        "points": 5,
+        "rebounds": 3,
+        "assists": 1.8,
+        "steals": 1.4,
+        "blocks": 0.6,
+        "fgPct": 26.7,
+        "threePtPct": 26.1,
+        "ftPct": 75,
+        "usage": 9.5
     },
     {
         "id": "1628976",
@@ -1892,7 +4165,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628976.png",
         "isStarter": true,
-        "minutes": 162
+        "minutes": 162,
+        "jerseyNumber": "34",
+        "points": 10.2,
+        "rebounds": 10.8,
+        "assists": 1.2,
+        "steals": 0.4,
+        "blocks": 0.4,
+        "fgPct": 52.5,
+        "threePtPct": 27.3,
+        "ftPct": 60,
+        "usage": 14.8
     },
     {
         "id": "1630241",
@@ -1900,7 +4183,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630241.png",
         "isStarter": false,
-        "minutes": 159
+        "minutes": 159,
+        "jerseyNumber": "5",
+        "points": 5.8,
+        "rebounds": 2.5,
+        "assists": 1.8,
+        "steals": 0.5,
+        "blocks": 0.3,
+        "fgPct": 37.5,
+        "threePtPct": 35.9,
+        "ftPct": 66.7,
+        "usage": 11.7
     },
     {
         "id": "1626171",
@@ -1908,7 +4201,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626171.png",
         "isStarter": false,
-        "minutes": 158
+        "minutes": 158,
+        "jerseyNumber": "9",
+        "points": 14,
+        "rebounds": 8.2,
+        "assists": 1.4,
+        "steals": 0.4,
+        "blocks": 0.4,
+        "fgPct": 44.1,
+        "threePtPct": 35.7,
+        "ftPct": 0,
+        "usage": 20.9
     },
     {
         "id": "203500",
@@ -1916,7 +4219,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203500.png",
         "isStarter": false,
-        "minutes": 155
+        "minutes": 155,
+        "jerseyNumber": "12",
+        "points": 5.7,
+        "rebounds": 6.6,
+        "assists": 0.6,
+        "steals": 0.4,
+        "blocks": 1.1,
+        "fgPct": 60,
+        "threePtPct": 0,
+        "ftPct": 53.3,
+        "usage": 10.9
     },
     {
         "id": "1628389",
@@ -1924,7 +4237,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628389.png",
         "isStarter": true,
-        "minutes": 153
+        "minutes": 153,
+        "jerseyNumber": "13",
+        "points": 17.5,
+        "rebounds": 11,
+        "assists": 4.3,
+        "steals": 1,
+        "blocks": 0.3,
+        "fgPct": 43.8,
+        "threePtPct": 33.3,
+        "ftPct": 63.6,
+        "usage": 24.5
     },
     {
         "id": "1627739",
@@ -1932,7 +4255,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627739.png",
         "isStarter": true,
-        "minutes": 153
+        "minutes": 153,
+        "jerseyNumber": "8",
+        "points": 6.3,
+        "rebounds": 3.4,
+        "assists": 1.3,
+        "steals": 1.1,
+        "blocks": 0.6,
+        "fgPct": 38.6,
+        "threePtPct": 35.7,
+        "ftPct": 0,
+        "usage": 13.6
     },
     {
         "id": "1630623",
@@ -1940,7 +4273,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630623.png",
         "isStarter": false,
-        "minutes": 151
+        "minutes": 151,
+        "jerseyNumber": "10",
+        "points": 7.9,
+        "rebounds": 1.3,
+        "assists": 1.7,
+        "steals": 0.4,
+        "blocks": 0.1,
+        "fgPct": 32.7,
+        "threePtPct": 29.5,
+        "ftPct": 80,
+        "usage": 18.6
     },
     {
         "id": "1629636",
@@ -1948,7 +4291,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629636.png",
         "isStarter": true,
-        "minutes": 148
+        "minutes": 148,
+        "jerseyNumber": "10",
+        "points": 18,
+        "rebounds": 2.2,
+        "assists": 5.2,
+        "steals": 0.4,
+        "blocks": 0,
+        "fgPct": 42,
+        "threePtPct": 28.6,
+        "ftPct": 91.7,
+        "usage": 27.3
     },
     {
         "id": "1642366",
@@ -1956,7 +4309,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642366.png",
         "isStarter": false,
-        "minutes": 146
+        "minutes": 146,
+        "jerseyNumber": "21",
+        "points": 3.8,
+        "rebounds": 2.3,
+        "assists": 1,
+        "steals": 0.3,
+        "blocks": 0.3,
+        "fgPct": 33.3,
+        "threePtPct": 31.3,
+        "ftPct": 75,
+        "usage": 16.8
     },
     {
         "id": "1629639",
@@ -1964,7 +4327,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629639.png",
         "isStarter": true,
-        "minutes": 144
+        "minutes": 144,
+        "jerseyNumber": "14",
+        "points": 17.8,
+        "rebounds": 3.5,
+        "assists": 2.8,
+        "steals": 0.5,
+        "blocks": 0,
+        "fgPct": 41.5,
+        "threePtPct": 31,
+        "ftPct": 80,
+        "usage": 25.3
     },
     {
         "id": "1631095",
@@ -1972,7 +4345,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631095.png",
         "isStarter": false,
-        "minutes": 143
+        "minutes": 143,
+        "jerseyNumber": "10",
+        "points": 7.4,
+        "rebounds": 3.9,
+        "assists": 0.6,
+        "steals": 0.1,
+        "blocks": 0.7,
+        "fgPct": 50,
+        "threePtPct": 45.5,
+        "ftPct": 80,
+        "usage": 15
     },
     {
         "id": "1629731",
@@ -1980,7 +4363,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629731.png",
         "isStarter": false,
-        "minutes": 142
+        "minutes": 142,
+        "jerseyNumber": "32",
+        "points": 1.7,
+        "rebounds": 4.2,
+        "assists": 0.7,
+        "steals": 0.3,
+        "blocks": 0.1,
+        "fgPct": 33.3,
+        "threePtPct": 21.4,
+        "ftPct": 0,
+        "usage": 6.3
     },
     {
         "id": "1630558",
@@ -1988,7 +4381,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630558.png",
         "isStarter": true,
-        "minutes": 142
+        "minutes": 142,
+        "jerseyNumber": "45",
+        "points": 15,
+        "rebounds": 2.3,
+        "assists": 6.3,
+        "steals": 0.8,
+        "blocks": 0.3,
+        "fgPct": 61,
+        "threePtPct": 50,
+        "ftPct": 42.9,
+        "usage": 17
     },
     {
         "id": "1631119",
@@ -1996,7 +4399,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631119.png",
         "isStarter": false,
-        "minutes": 141
+        "minutes": 141,
+        "jerseyNumber": "6",
+        "points": 2.6,
+        "rebounds": 1.9,
+        "assists": 1,
+        "steals": 0.5,
+        "blocks": 0.1,
+        "fgPct": 42.9,
+        "threePtPct": 36,
+        "ftPct": 54.5,
+        "usage": 15.6
     },
     {
         "id": "1641989",
@@ -2004,7 +4417,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641989.png",
         "isStarter": false,
-        "minutes": 138
+        "minutes": 138,
+        "jerseyNumber": "16",
+        "points": 3.2,
+        "rebounds": 2.1,
+        "assists": 0.8,
+        "steals": 1,
+        "blocks": 0.1,
+        "fgPct": 31.4,
+        "threePtPct": 28,
+        "ftPct": 50,
+        "usage": 12.3
     },
     {
         "id": "1629026",
@@ -2012,7 +4435,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629026.png",
         "isStarter": false,
-        "minutes": 137
+        "minutes": 137,
+        "jerseyNumber": "34",
+        "points": 2.4,
+        "rebounds": 2.2,
+        "assists": 0.4,
+        "steals": 0.4,
+        "blocks": 0.1,
+        "fgPct": 40,
+        "threePtPct": 20,
+        "ftPct": 50,
+        "usage": 15.4
     },
     {
         "id": "1641709",
@@ -2020,7 +4453,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641709.png",
         "isStarter": true,
-        "minutes": 135
+        "minutes": 135,
+        "jerseyNumber": "9",
+        "points": 11.5,
+        "rebounds": 5.2,
+        "assists": 1,
+        "steals": 1.2,
+        "blocks": 0.8,
+        "fgPct": 57.1,
+        "threePtPct": 0,
+        "ftPct": 58.3,
+        "usage": 22
     },
     {
         "id": "1631260",
@@ -2028,7 +4471,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631260.png",
         "isStarter": false,
-        "minutes": 135
+        "minutes": 135,
+        "jerseyNumber": "20",
+        "points": 11,
+        "rebounds": 2.8,
+        "assists": 2,
+        "steals": 0,
+        "blocks": 0.2,
+        "fgPct": 46.2,
+        "threePtPct": 51.4,
+        "ftPct": 50,
+        "usage": 13.1
     },
     {
         "id": "1631106",
@@ -2036,7 +4489,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631106.png",
         "isStarter": false,
-        "minutes": 132
+        "minutes": 132,
+        "jerseyNumber": "17",
+        "points": 7.6,
+        "rebounds": 4.3,
+        "assists": 0.7,
+        "steals": 1.1,
+        "blocks": 1,
+        "fgPct": 47.7,
+        "threePtPct": 36.8,
+        "ftPct": 50,
+        "usage": 19.3
     },
     {
         "id": "1630590",
@@ -2044,7 +4507,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630590.png",
         "isStarter": true,
-        "minutes": 129
+        "minutes": 129,
+        "jerseyNumber": "1",
+        "points": 18.3,
+        "rebounds": 5.5,
+        "assists": 3.5,
+        "steals": 1,
+        "blocks": 0.3,
+        "fgPct": 37.9,
+        "threePtPct": 35.7,
+        "ftPct": 100,
+        "usage": 26
     },
     {
         "id": "1630171",
@@ -2052,7 +4525,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630171.png",
         "isStarter": false,
-        "minutes": 128
+        "minutes": 128,
+        "jerseyNumber": "35",
+        "points": 4.6,
+        "rebounds": 1.2,
+        "assists": 0.6,
+        "steals": 0.7,
+        "blocks": 0.1,
+        "fgPct": 50,
+        "threePtPct": 37.5,
+        "ftPct": 62.5,
+        "usage": 12.5
     },
     {
         "id": "1642461",
@@ -2060,7 +4543,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642461.png",
         "isStarter": false,
-        "minutes": 125
+        "minutes": 125,
+        "jerseyNumber": "21",
+        "points": 1.3,
+        "rebounds": 0.8,
+        "assists": 0.3,
+        "steals": 0.3,
+        "blocks": 0.3,
+        "fgPct": 32.4,
+        "threePtPct": 5.9,
+        "ftPct": 100,
+        "usage": 13.7
     },
     {
         "id": "1630322",
@@ -2068,7 +4561,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/gleague/260x190/1630322.png",
         "isStarter": false,
-        "minutes": 123
+        "minutes": 123,
+        "jerseyNumber": "43",
+        "points": 3.4,
+        "rebounds": 1,
+        "assists": 0.7,
+        "steals": 0.4,
+        "blocks": 0.1,
+        "fgPct": 36.4,
+        "threePtPct": 39.5,
+        "ftPct": 0,
+        "usage": 16.1
     },
     {
         "id": "203952",
@@ -2076,7 +4579,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203952.png",
         "isStarter": true,
-        "minutes": 122
+        "minutes": 122,
+        "jerseyNumber": "22",
+        "points": 11.5,
+        "rebounds": 3.3,
+        "assists": 2.3,
+        "steals": 0.3,
+        "blocks": 1.3,
+        "fgPct": 37.2,
+        "threePtPct": 35,
+        "ftPct": 70,
+        "usage": 22.2
     },
     {
         "id": "1630583",
@@ -2084,7 +4597,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630583.png",
         "isStarter": false,
-        "minutes": 122
+        "minutes": 122,
+        "jerseyNumber": "7",
+        "points": 13,
+        "rebounds": 6,
+        "assists": 1.8,
+        "steals": 0,
+        "blocks": 0.3,
+        "fgPct": 47.7,
+        "threePtPct": 41.7,
+        "ftPct": 0,
+        "usage": 16.8
     },
     {
         "id": "1641890",
@@ -2092,7 +4615,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641890.png",
         "isStarter": false,
-        "minutes": 122
+        "minutes": 122,
+        "jerseyNumber": "21",
+        "points": 2.9,
+        "rebounds": 1.1,
+        "assists": 0.2,
+        "steals": 0.1,
+        "blocks": 0.2,
+        "fgPct": 48,
+        "threePtPct": 43.3,
+        "ftPct": 75,
+        "usage": 22.1
     },
     {
         "id": "1629001",
@@ -2100,7 +4633,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629001.png",
         "isStarter": false,
-        "minutes": 121
+        "minutes": 121,
+        "jerseyNumber": "8",
+        "points": 10.3,
+        "rebounds": 3.3,
+        "assists": 2.8,
+        "steals": 1.2,
+        "blocks": 0.3,
+        "fgPct": 40.7,
+        "threePtPct": 37.1,
+        "ftPct": 62.5,
+        "usage": 23.5
     },
     {
         "id": "203992",
@@ -2108,7 +4651,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203992.png",
         "isStarter": false,
-        "minutes": 117
+        "minutes": 117,
+        "jerseyNumber": "10",
+        "points": 6.4,
+        "rebounds": 2.9,
+        "assists": 2.1,
+        "steals": 0.4,
+        "blocks": 0,
+        "fgPct": 36.4,
+        "threePtPct": 29.2,
+        "ftPct": 85.7,
+        "usage": 23
     },
     {
         "id": "1641716",
@@ -2116,7 +4669,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641716.png",
         "isStarter": false,
-        "minutes": 117
+        "minutes": 117,
+        "jerseyNumber": "5",
+        "points": 3,
+        "rebounds": 1.8,
+        "assists": 0.7,
+        "steals": 0.2,
+        "blocks": 0.2,
+        "fgPct": 38.2,
+        "threePtPct": 40,
+        "ftPct": 50,
+        "usage": 16.2
     },
     {
         "id": "1641725",
@@ -2124,7 +4687,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641725.png",
         "isStarter": false,
-        "minutes": 117
+        "minutes": 117,
+        "jerseyNumber": "23",
+        "points": 1.3,
+        "rebounds": 0.5,
+        "assists": 0.5,
+        "steals": 0.1,
+        "blocks": 0,
+        "fgPct": 31.7,
+        "threePtPct": 17.6,
+        "ftPct": 75,
+        "usage": 17.3
     },
     {
         "id": "204060",
@@ -2132,7 +4705,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/204060.png",
         "isStarter": false,
-        "minutes": 114
+        "minutes": 114,
+        "jerseyNumber": "7",
+        "points": 0.8,
+        "rebounds": 0.6,
+        "assists": 1.2,
+        "steals": 0.1,
+        "blocks": 0,
+        "fgPct": 26.1,
+        "threePtPct": 20,
+        "ftPct": 0,
+        "usage": 12.2
     },
     {
         "id": "1641744",
@@ -2140,7 +4723,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641744.png",
         "isStarter": true,
-        "minutes": 108
+        "minutes": 108,
+        "jerseyNumber": "14",
+        "points": 6.3,
+        "rebounds": 7.8,
+        "assists": 1.8,
+        "steals": 0,
+        "blocks": 2.5,
+        "fgPct": 66.7,
+        "threePtPct": 0,
+        "ftPct": 71.4,
+        "usage": 9.3
     },
     {
         "id": "1630573",
@@ -2148,7 +4741,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630573.png",
         "isStarter": false,
-        "minutes": 108
+        "minutes": 108,
+        "jerseyNumber": "30",
+        "points": 3.5,
+        "rebounds": 1.5,
+        "assists": 0.5,
+        "steals": 0.1,
+        "blocks": 0.1,
+        "fgPct": 41.7,
+        "threePtPct": 33.3,
+        "ftPct": 100,
+        "usage": 11.6
     },
     {
         "id": "1628398",
@@ -2156,7 +4759,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628398.png",
         "isStarter": true,
-        "minutes": 102
+        "minutes": 102,
+        "jerseyNumber": "18",
+        "points": 5.8,
+        "rebounds": 2.2,
+        "assists": 0.8,
+        "steals": 0,
+        "blocks": 0.2,
+        "fgPct": 34.3,
+        "threePtPct": 20,
+        "ftPct": 50,
+        "usage": 17.6
     },
     {
         "id": "1629216",
@@ -2164,7 +4777,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629216.png",
         "isStarter": false,
-        "minutes": 99
+        "minutes": 99,
+        "jerseyNumber": "7",
+        "points": 2.8,
+        "rebounds": 1,
+        "assists": 1,
+        "steals": 0.2,
+        "blocks": 0.4,
+        "fgPct": 35.7,
+        "threePtPct": 30.8,
+        "ftPct": 0,
+        "usage": 7.1
     },
     {
         "id": "1641710",
@@ -2172,7 +4795,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641710.png",
         "isStarter": false,
-        "minutes": 89
+        "minutes": 89,
+        "jerseyNumber": "0",
+        "points": 8.2,
+        "rebounds": 4.4,
+        "assists": 0,
+        "steals": 0.8,
+        "blocks": 0.2,
+        "fgPct": 40.5,
+        "threePtPct": 15.4,
+        "ftPct": 69.2,
+        "usage": 23
     },
     {
         "id": "1631124",
@@ -2180,7 +4813,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631124.png",
         "isStarter": false,
-        "minutes": 88
+        "minutes": 88,
+        "jerseyNumber": "3",
+        "points": 4.2,
+        "rebounds": 1,
+        "assists": 0.2,
+        "steals": 0.2,
+        "blocks": 0.1,
+        "fgPct": 43.3,
+        "threePtPct": 50,
+        "ftPct": 85.7,
+        "usage": 18.7
     },
     {
         "id": "1631247",
@@ -2188,7 +4831,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631247.png",
         "isStarter": false,
-        "minutes": 88
+        "minutes": 88,
+        "jerseyNumber": "33",
+        "points": 1,
+        "rebounds": 1.7,
+        "assists": 0.7,
+        "steals": 0.1,
+        "blocks": 0.1,
+        "fgPct": 25,
+        "threePtPct": 0,
+        "ftPct": 100,
+        "usage": 13.9
     },
     {
         "id": "1630543",
@@ -2196,7 +4849,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630543.png",
         "isStarter": false,
-        "minutes": 84
+        "minutes": 84,
+        "jerseyNumber": "22",
+        "points": 7,
+        "rebounds": 5.6,
+        "assists": 1,
+        "steals": 0.6,
+        "blocks": 1.6,
+        "fgPct": 60.9,
+        "threePtPct": 0,
+        "ftPct": 50,
+        "usage": 17.6
     },
     {
         "id": "1642349",
@@ -2204,7 +4867,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642349.png",
         "isStarter": false,
-        "minutes": 84
+        "minutes": 84,
+        "jerseyNumber": "25",
+        "points": 3.4,
+        "rebounds": 0.8,
+        "assists": 0.8,
+        "steals": 0.2,
+        "blocks": 0,
+        "fgPct": 45.7,
+        "threePtPct": 38.5,
+        "ftPct": 80,
+        "usage": 21.8
     },
     {
         "id": "1629013",
@@ -2212,7 +4885,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629013.png",
         "isStarter": false,
-        "minutes": 83
+        "minutes": 83,
+        "jerseyNumber": "44",
+        "points": 2.4,
+        "rebounds": 0.4,
+        "assists": 0.7,
+        "steals": 0.1,
+        "blocks": 0,
+        "fgPct": 45,
+        "threePtPct": 46.7,
+        "ftPct": 25,
+        "usage": 13.5
     },
     {
         "id": "1629630",
@@ -2220,7 +4903,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629630.png",
         "isStarter": true,
-        "minutes": 82
+        "minutes": 82,
+        "jerseyNumber": "12",
+        "points": 18.3,
+        "rebounds": 2,
+        "assists": 5,
+        "steals": 0.7,
+        "blocks": 0.7,
+        "fgPct": 41.5,
+        "threePtPct": 25,
+        "ftPct": 63.6,
+        "usage": 32.5
     },
     {
         "id": "1631218",
@@ -2228,7 +4921,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631218.png",
         "isStarter": false,
-        "minutes": 80
+        "minutes": 80,
+        "jerseyNumber": "32",
+        "points": 4.1,
+        "rebounds": 2.3,
+        "assists": 0.2,
+        "steals": 0.3,
+        "blocks": 0.2,
+        "fgPct": 88.9,
+        "threePtPct": 0,
+        "ftPct": 38.5,
+        "usage": 13.6
     },
     {
         "id": "1628396",
@@ -2236,7 +4939,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628396.png",
         "isStarter": false,
-        "minutes": 78
+        "minutes": 78,
+        "jerseyNumber": "13",
+        "points": 1.5,
+        "rebounds": 1.9,
+        "assists": 0.3,
+        "steals": 0,
+        "blocks": 0.1,
+        "fgPct": 44.4,
+        "threePtPct": 0,
+        "ftPct": 75,
+        "usage": 10.4
     },
     {
         "id": "1631107",
@@ -2244,7 +4957,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631107.png",
         "isStarter": false,
-        "minutes": 75
+        "minutes": 75,
+        "jerseyNumber": "5",
+        "points": 9.5,
+        "rebounds": 4,
+        "assists": 1.5,
+        "steals": 0.8,
+        "blocks": 0.3,
+        "fgPct": 37.1,
+        "threePtPct": 25,
+        "ftPct": 100,
+        "usage": 26.4
     },
     {
         "id": "203081",
@@ -2252,7 +4975,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203081.png",
         "isStarter": true,
-        "minutes": 75
+        "minutes": 75,
+        "jerseyNumber": "0",
+        "points": 7,
+        "rebounds": 2.7,
+        "assists": 4.7,
+        "steals": 0.7,
+        "blocks": 0.7,
+        "fgPct": 22.2,
+        "threePtPct": 18.8,
+        "ftPct": 85.7,
+        "usage": 19.5
     },
     {
         "id": "1641707",
@@ -2260,7 +4993,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641707.png",
         "isStarter": true,
-        "minutes": 75
+        "minutes": 75,
+        "jerseyNumber": "0",
+        "points": 4.7,
+        "rebounds": 5,
+        "assists": 0.7,
+        "steals": 1.7,
+        "blocks": 1.3,
+        "fgPct": 22.2,
+        "threePtPct": 25,
+        "ftPct": 75,
+        "usage": 12.1
     },
     {
         "id": "201572",
@@ -2268,7 +5011,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201572.png",
         "isStarter": true,
-        "minutes": 74
+        "minutes": 74,
+        "jerseyNumber": "11",
+        "points": 5,
+        "rebounds": 1.6,
+        "assists": 0.8,
+        "steals": 0.2,
+        "blocks": 1,
+        "fgPct": 36.4,
+        "threePtPct": 26.7,
+        "ftPct": 100,
+        "usage": 16.9
     },
     {
         "id": "1642276",
@@ -2276,7 +5029,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642276.png",
         "isStarter": true,
-        "minutes": 73
+        "minutes": 73,
+        "jerseyNumber": "7",
+        "points": 4.8,
+        "rebounds": 4.8,
+        "assists": 1,
+        "steals": 0.3,
+        "blocks": 0.5,
+        "fgPct": 44.4,
+        "threePtPct": 27.3,
+        "ftPct": 0,
+        "usage": 12.7
     },
     {
         "id": "1630611",
@@ -2284,7 +5047,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630611.png",
         "isStarter": false,
-        "minutes": 72
+        "minutes": 72,
+        "jerseyNumber": "15",
+        "points": 2.6,
+        "rebounds": 1.2,
+        "assists": 0.8,
+        "steals": 0.3,
+        "blocks": 0.1,
+        "fgPct": 52.9,
+        "threePtPct": 40,
+        "ftPct": 66.7,
+        "usage": 15.7
     },
     {
         "id": "1631342",
@@ -2292,7 +5065,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631342.png",
         "isStarter": false,
-        "minutes": 72
+        "minutes": 72,
+        "jerseyNumber": "29",
+        "points": 7.2,
+        "rebounds": 1.8,
+        "assists": 0.3,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 64,
+        "threePtPct": 52.9,
+        "ftPct": 100,
+        "usage": 17
     },
     {
         "id": "1631250",
@@ -2300,7 +5083,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631250.png",
         "isStarter": false,
-        "minutes": 70
+        "minutes": 70,
+        "jerseyNumber": "35",
+        "points": 3.8,
+        "rebounds": 1.8,
+        "assists": 1.2,
+        "steals": 0.2,
+        "blocks": 0.3,
+        "fgPct": 52.9,
+        "threePtPct": 41.7,
+        "ftPct": 0,
+        "usage": 13.2
     },
     {
         "id": "1628371",
@@ -2308,7 +5101,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628371.png",
         "isStarter": false,
-        "minutes": 69
+        "minutes": 69,
+        "jerseyNumber": "1",
+        "points": 3.6,
+        "rebounds": 2,
+        "assists": 0.4,
+        "steals": 0.4,
+        "blocks": 0.2,
+        "fgPct": 58.3,
+        "threePtPct": 25,
+        "ftPct": 60,
+        "usage": 10.7
     },
     {
         "id": "1629723",
@@ -2316,7 +5119,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629723.png",
         "isStarter": false,
-        "minutes": 69
+        "minutes": 69,
+        "jerseyNumber": "46",
+        "points": 2.8,
+        "rebounds": 3.3,
+        "assists": 1.5,
+        "steals": 0.5,
+        "blocks": 0.5,
+        "fgPct": 33.3,
+        "threePtPct": 16.7,
+        "ftPct": 100,
+        "usage": 7.7
     },
     {
         "id": "1641772",
@@ -2324,7 +5137,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641772.png",
         "isStarter": false,
-        "minutes": 63
+        "minutes": 63,
+        "jerseyNumber": "30",
+        "points": 7.2,
+        "rebounds": 4.2,
+        "assists": 0.4,
+        "steals": 0,
+        "blocks": 0.2,
+        "fgPct": 40.6,
+        "threePtPct": 20,
+        "ftPct": 72.7,
+        "usage": 26.1
     },
     {
         "id": "1630311",
@@ -2332,7 +5155,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630311.png",
         "isStarter": false,
-        "minutes": 63
+        "minutes": 63,
+        "jerseyNumber": "61",
+        "points": 4.5,
+        "rebounds": 1.4,
+        "assists": 0.8,
+        "steals": 0.4,
+        "blocks": 0,
+        "fgPct": 64,
+        "threePtPct": 33.3,
+        "ftPct": 100,
+        "usage": 22.6
     },
     {
         "id": "1627752",
@@ -2340,7 +5173,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627752.png",
         "isStarter": false,
-        "minutes": 61
+        "minutes": 61,
+        "jerseyNumber": "12",
+        "points": 1.2,
+        "rebounds": 1,
+        "assists": 1.6,
+        "steals": 0.4,
+        "blocks": 0.2,
+        "fgPct": 20,
+        "threePtPct": 22.2,
+        "ftPct": 0,
+        "usage": 10.9
     },
     {
         "id": "1629020",
@@ -2348,7 +5191,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629020.png",
         "isStarter": false,
-        "minutes": 60
+        "minutes": 60,
+        "jerseyNumber": "2",
+        "points": 1.4,
+        "rebounds": 3.8,
+        "assists": 1,
+        "steals": 0.6,
+        "blocks": 0.2,
+        "fgPct": 33.3,
+        "threePtPct": 0,
+        "ftPct": 75,
+        "usage": 8.4
     },
     {
         "id": "1631321",
@@ -2356,7 +5209,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631321.png",
         "isStarter": false,
-        "minutes": 60
+        "minutes": 60,
+        "jerseyNumber": "91",
+        "points": 2,
+        "rebounds": 2.2,
+        "assists": 1.8,
+        "steals": 0.2,
+        "blocks": 0.2,
+        "fgPct": 33.3,
+        "threePtPct": 0,
+        "ftPct": 66.7,
+        "usage": 15.5
     },
     {
         "id": "1629130",
@@ -2364,7 +5227,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629130.png",
         "isStarter": false,
-        "minutes": 59
+        "minutes": 59,
+        "jerseyNumber": "55",
+        "points": 4.3,
+        "rebounds": 1,
+        "assists": 0.3,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 35.7,
+        "threePtPct": 33.3,
+        "ftPct": 75,
+        "usage": 17.1
     },
     {
         "id": "1630579",
@@ -2372,7 +5245,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630579.png",
         "isStarter": false,
-        "minutes": 58
+        "minutes": 58,
+        "jerseyNumber": "00",
+        "points": 2.8,
+        "rebounds": 4,
+        "assists": 0.2,
+        "steals": 0,
+        "blocks": 0.2,
+        "fgPct": 100,
+        "threePtPct": 0,
+        "ftPct": 66.7,
+        "usage": 9.4
     },
     {
         "id": "1629618",
@@ -2380,7 +5263,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1629618.png",
         "isStarter": false,
-        "minutes": 57
+        "minutes": 57,
+        "jerseyNumber": "24",
+        "points": 1.6,
+        "rebounds": 0.9,
+        "assists": 0.6,
+        "steals": 0,
+        "blocks": 0.1,
+        "fgPct": 33.3,
+        "threePtPct": 33.3,
+        "ftPct": 0,
+        "usage": 15.9
     },
     {
         "id": "1630194",
@@ -2388,7 +5281,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630194.png",
         "isStarter": false,
-        "minutes": 53
+        "minutes": 53,
+        "jerseyNumber": "7",
+        "points": 2.8,
+        "rebounds": 3,
+        "assists": 0.2,
+        "steals": 1,
+        "blocks": 0.6,
+        "fgPct": 62.5,
+        "threePtPct": 0,
+        "ftPct": 66.7,
+        "usage": 12.7
     },
     {
         "id": "1641796",
@@ -2396,7 +5299,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641796.png",
         "isStarter": false,
-        "minutes": 52
+        "minutes": 52,
+        "jerseyNumber": "9",
+        "points": 5,
+        "rebounds": 2.3,
+        "assists": 1,
+        "steals": 0.3,
+        "blocks": 0,
+        "fgPct": 53.3,
+        "threePtPct": 37.5,
+        "ftPct": 33.3,
+        "usage": 16.4
     },
     {
         "id": "1630175",
@@ -2404,7 +5317,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630175.png",
         "isStarter": false,
-        "minutes": 51
+        "minutes": 51,
+        "jerseyNumber": "50",
+        "points": 2.2,
+        "rebounds": 1.4,
+        "assists": 1.2,
+        "steals": 0,
+        "blocks": 0.2,
+        "fgPct": 28.6,
+        "threePtPct": 0,
+        "ftPct": 75,
+        "usage": 22.2
     },
     {
         "id": "1641752",
@@ -2412,7 +5335,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641752.png",
         "isStarter": false,
-        "minutes": 42
+        "minutes": 42,
+        "jerseyNumber": "34",
+        "points": 1.9,
+        "rebounds": 0.9,
+        "assists": 0.9,
+        "steals": 0.3,
+        "blocks": 0.1,
+        "fgPct": 60,
+        "threePtPct": 40,
+        "ftPct": 50,
+        "usage": 11.9
     },
     {
         "id": "1631246",
@@ -2420,7 +5353,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631246.png",
         "isStarter": false,
-        "minutes": 38
+        "minutes": 38,
+        "jerseyNumber": "5",
+        "points": 4.7,
+        "rebounds": 2.3,
+        "assists": 1.3,
+        "steals": 0.7,
+        "blocks": 0.3,
+        "fgPct": 57.1,
+        "threePtPct": 57.1,
+        "ftPct": 100,
+        "usage": 11.9
     },
     {
         "id": "1641854",
@@ -2428,7 +5371,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641854.png",
         "isStarter": false,
-        "minutes": 35
+        "minutes": 35,
+        "jerseyNumber": "9",
+        "points": 2,
+        "rebounds": 1,
+        "assists": 1.5,
+        "steals": 0.5,
+        "blocks": 0.3,
+        "fgPct": 50,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 17.1
     },
     {
         "id": "1642277",
@@ -2436,7 +5389,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642277.png",
         "isStarter": false,
-        "minutes": 35
+        "minutes": 35,
+        "jerseyNumber": "12",
+        "points": 0.2,
+        "rebounds": 0.5,
+        "assists": 0.1,
+        "steals": 0,
+        "blocks": 0.1,
+        "fgPct": 25,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 6.9
     },
     {
         "id": "1631127",
@@ -2444,7 +5407,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631127.png",
         "isStarter": false,
-        "minutes": 35
+        "minutes": 35,
+        "jerseyNumber": "55",
+        "points": 0.8,
+        "rebounds": 1.8,
+        "assists": 0.6,
+        "steals": 0.6,
+        "blocks": 0,
+        "fgPct": 50,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 6.1
     },
     {
         "id": "1630192",
@@ -2452,7 +5425,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630192.png",
         "isStarter": false,
-        "minutes": 34
+        "minutes": 34,
+        "jerseyNumber": "22",
+        "points": 1.2,
+        "rebounds": 1.2,
+        "assists": 0.3,
+        "steals": 0.2,
+        "blocks": 0.3,
+        "fgPct": 12.5,
+        "threePtPct": 16.7,
+        "ftPct": 57.1,
+        "usage": 16.6
     },
     {
         "id": "1631172",
@@ -2460,7 +5443,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631172.png",
         "isStarter": false,
-        "minutes": 32
+        "minutes": 32,
+        "jerseyNumber": "13",
+        "points": 1.6,
+        "rebounds": 0.4,
+        "assists": 0.3,
+        "steals": 0,
+        "blocks": 0.1,
+        "fgPct": 40,
+        "threePtPct": 57.1,
+        "ftPct": 100,
+        "usage": 14.4
     },
     {
         "id": "1631121",
@@ -2468,7 +5461,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631121.png",
         "isStarter": false,
-        "minutes": 32
+        "minutes": 32,
+        "jerseyNumber": "11",
+        "points": 1,
+        "rebounds": 0.2,
+        "assists": 0.2,
+        "steals": 0.1,
+        "blocks": 0,
+        "fgPct": 28.6,
+        "threePtPct": 0,
+        "ftPct": 83.3,
+        "usage": 26.8
     },
     {
         "id": "1629637",
@@ -2476,7 +5479,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629637.png",
         "isStarter": true,
-        "minutes": 31
+        "minutes": 31,
+        "jerseyNumber": "11",
+        "points": 1.8,
+        "rebounds": 2,
+        "assists": 0.3,
+        "steals": 0,
+        "blocks": 0.3,
+        "fgPct": 37.5,
+        "threePtPct": 0,
+        "ftPct": 50,
+        "usage": 14.9
     },
     {
         "id": "1641816",
@@ -2484,7 +5497,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641816.png",
         "isStarter": false,
-        "minutes": 30
+        "minutes": 30,
+        "jerseyNumber": "5",
+        "points": 3,
+        "rebounds": 1.6,
+        "assists": 0.4,
+        "steals": 0.2,
+        "blocks": 0,
+        "fgPct": 50,
+        "threePtPct": 20,
+        "ftPct": 100,
+        "usage": 18.4
     },
     {
         "id": "1631157",
@@ -2492,7 +5515,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631157.png",
         "isStarter": false,
-        "minutes": 30
+        "minutes": 30,
+        "jerseyNumber": "13",
+        "points": 3.3,
+        "rebounds": 0.7,
+        "assists": 1.3,
+        "steals": 0.3,
+        "blocks": 0,
+        "fgPct": 30.8,
+        "threePtPct": 28.6,
+        "ftPct": 0,
+        "usage": 19.2
     },
     {
         "id": "1642443",
@@ -2500,7 +5533,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642443.png",
         "isStarter": false,
-        "minutes": 30
+        "minutes": 30,
+        "jerseyNumber": "17",
+        "points": 1.8,
+        "rebounds": 0.5,
+        "assists": 1,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 80,
+        "threePtPct": 50,
+        "ftPct": 100,
+        "usage": 9.6
     },
     {
         "id": "1641755",
@@ -2508,7 +5551,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641755.png",
         "isStarter": false,
-        "minutes": 29
+        "minutes": 29,
+        "jerseyNumber": "9",
+        "points": 1.5,
+        "rebounds": 2,
+        "assists": 0.5,
+        "steals": 0.3,
+        "blocks": 0.3,
+        "fgPct": 28.6,
+        "threePtPct": 0,
+        "ftPct": 100,
+        "usage": 11.8
     },
     {
         "id": "1628963",
@@ -2516,7 +5569,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628963.png",
         "isStarter": false,
-        "minutes": 28
+        "minutes": 28,
+        "jerseyNumber": "35",
+        "points": 8.5,
+        "rebounds": 3,
+        "assists": 0,
+        "steals": 1,
+        "blocks": 0.5,
+        "fgPct": 88.9,
+        "threePtPct": 100,
+        "ftPct": 0,
+        "usage": 17.9
     },
     {
         "id": "1641740",
@@ -2524,7 +5587,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641740.png",
         "isStarter": false,
-        "minutes": 28
+        "minutes": 28,
+        "jerseyNumber": "22",
+        "points": 2.2,
+        "rebounds": 1.4,
+        "assists": 0.2,
+        "steals": 0.4,
+        "blocks": 0,
+        "fgPct": 80,
+        "threePtPct": 0,
+        "ftPct": 75,
+        "usage": 12
     },
     {
         "id": "1628988",
@@ -2532,7 +5605,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628988.png",
         "isStarter": false,
-        "minutes": 27
+        "minutes": 27,
+        "jerseyNumber": "0",
+        "points": 4,
+        "rebounds": 0.7,
+        "assists": 1,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 40,
+        "threePtPct": 40,
+        "ftPct": 50,
+        "usage": 20.9
     },
     {
         "id": "1642280",
@@ -2540,7 +5623,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642280.png",
         "isStarter": false,
-        "minutes": 27
+        "minutes": 27,
+        "jerseyNumber": "9",
+        "points": 1.8,
+        "rebounds": 0.7,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 36.4,
+        "threePtPct": 0,
+        "ftPct": 100,
+        "usage": 21.5
     },
     {
         "id": "1631169",
@@ -2548,7 +5641,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631169.png",
         "isStarter": false,
-        "minutes": 23
+        "minutes": 23,
+        "jerseyNumber": "8",
+        "points": 1,
+        "rebounds": 0,
+        "assists": 0.4,
+        "steals": 0,
+        "blocks": 0.2,
+        "fgPct": 25,
+        "threePtPct": 16.7,
+        "ftPct": 0,
+        "usage": 18.8
     },
     {
         "id": "1642450",
@@ -2556,7 +5659,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642450.png",
         "isStarter": false,
-        "minutes": 23
+        "minutes": 23,
+        "jerseyNumber": "24",
+        "points": 1,
+        "rebounds": 0.3,
+        "assists": 0.4,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 30,
+        "threePtPct": 14.3,
+        "ftPct": 0,
+        "usage": 21.8
     },
     {
         "id": "1642449",
@@ -2564,7 +5677,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642449.png",
         "isStarter": false,
-        "minutes": 22
+        "minutes": 22,
+        "jerseyNumber": "35",
+        "points": 14,
+        "rebounds": 8,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 66.7,
+        "threePtPct": 0,
+        "ftPct": 66.7,
+        "usage": 23.6
     },
     {
         "id": "1631248",
@@ -2572,7 +5695,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631248.png",
         "isStarter": false,
-        "minutes": 22
+        "minutes": 22,
+        "jerseyNumber": "55",
+        "points": 2,
+        "rebounds": 1,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 30,
+        "threePtPct": 40,
+        "ftPct": 0,
+        "usage": 22.8
     },
     {
         "id": "1630191",
@@ -2580,7 +5713,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630191.png",
         "isStarter": false,
-        "minutes": 19
+        "minutes": 19,
+        "jerseyNumber": "28",
+        "points": 2,
+        "rebounds": 5,
+        "assists": 1,
+        "steals": 0,
+        "blocks": 2,
+        "fgPct": 50,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 4.5
     },
     {
         "id": "1631170",
@@ -2588,7 +5731,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631170.png",
         "isStarter": false,
-        "minutes": 19
+        "minutes": 19,
+        "jerseyNumber": "11",
+        "points": 1.3,
+        "rebounds": 1.3,
+        "assists": 0.3,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 16.7,
+        "threePtPct": 0,
+        "ftPct": 100,
+        "usage": 19.3
     },
     {
         "id": "1631199",
@@ -2596,7 +5749,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631199.png",
         "isStarter": false,
-        "minutes": 17
+        "minutes": 17,
+        "jerseyNumber": "13",
+        "points": 4,
+        "rebounds": 7,
+        "assists": 2,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 12.5,
+        "threePtPct": 0,
+        "ftPct": 100,
+        "usage": 22
     },
     {
         "id": "1642265",
@@ -2604,7 +5767,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642265.png",
         "isStarter": false,
-        "minutes": 16
+        "minutes": 16,
+        "jerseyNumber": "4",
+        "points": 2.7,
+        "rebounds": 0.7,
+        "assists": 2.3,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 37.5,
+        "threePtPct": 50,
+        "ftPct": 50,
+        "usage": 24.1
     },
     {
         "id": "1641775",
@@ -2612,7 +5785,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1641775.png",
         "isStarter": false,
-        "minutes": 15
+        "minutes": 15,
+        "jerseyNumber": "27",
+        "points": 0,
+        "rebounds": 0.2,
+        "assists": 0.2,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 3
     },
     {
         "id": "1629674",
@@ -2620,7 +5803,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629674.png",
         "isStarter": false,
-        "minutes": 13
+        "minutes": 13,
+        "jerseyNumber": "88",
+        "points": 2.5,
+        "rebounds": 0.5,
+        "assists": 0.5,
+        "steals": 0.3,
+        "blocks": 0,
+        "fgPct": 83.3,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 21.1
     },
     {
         "id": "1642353",
@@ -2628,7 +5821,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642353.png",
         "isStarter": false,
-        "minutes": 13
+        "minutes": 13,
+        "jerseyNumber": "12",
+        "points": 1.7,
+        "rebounds": 0.7,
+        "assists": 0,
+        "steals": 0.3,
+        "blocks": 0,
+        "fgPct": 66.7,
+        "threePtPct": 50,
+        "ftPct": 0,
+        "usage": 14.3
     },
     {
         "id": "1631159",
@@ -2636,7 +5839,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631159.png",
         "isStarter": false,
-        "minutes": 13
+        "minutes": 13,
+        "jerseyNumber": "33",
+        "points": 4.3,
+        "rebounds": 1.7,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 75,
+        "threePtPct": 100,
+        "ftPct": 0,
+        "usage": 30
     },
     {
         "id": "1629048",
@@ -2644,7 +5857,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629048.png",
         "isStarter": false,
-        "minutes": 11
+        "minutes": 11,
+        "jerseyNumber": "35",
+        "points": 0.7,
+        "rebounds": 1,
+        "assists": 0.3,
+        "steals": 0,
+        "blocks": 0.3,
+        "fgPct": 100,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 4.2
     },
     {
         "id": "1642263",
@@ -2652,7 +5875,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642263.png",
         "isStarter": false,
-        "minutes": 10
+        "minutes": 10,
+        "jerseyNumber": "15",
+        "points": 0,
+        "rebounds": 0.3,
+        "assists": 0.3,
+        "steals": 0.7,
+        "blocks": 0.3,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 13.3
     },
     {
         "id": "1642352",
@@ -2660,7 +5893,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642352.png",
         "isStarter": false,
-        "minutes": 8
+        "minutes": 8,
+        "jerseyNumber": "16",
+        "points": 1,
+        "rebounds": 0.5,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 100,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 11.6
     },
     {
         "id": "1630214",
@@ -2668,7 +5911,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630214.png",
         "isStarter": false,
-        "minutes": 8
+        "minutes": 8,
+        "jerseyNumber": "26",
+        "points": 2,
+        "rebounds": 3,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 25,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 22.8
     },
     {
         "id": "1642278",
@@ -2676,7 +5929,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642278.png",
         "isStarter": false,
-        "minutes": 6
+        "minutes": 6,
+        "jerseyNumber": "13",
+        "points": 1,
+        "rebounds": 0.3,
+        "assists": 1,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 100,
+        "threePtPct": 100,
+        "ftPct": 0,
+        "usage": 7.2
     },
     {
         "id": "1628467",
@@ -2684,7 +5947,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628467.png",
         "isStarter": false,
-        "minutes": 5
+        "minutes": 5,
+        "jerseyNumber": "14",
+        "points": 2,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 100,
+        "usage": 26.9
     },
     {
         "id": "201145",
@@ -2692,7 +5965,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201145.png",
         "isStarter": false,
-        "minutes": 5
+        "minutes": 5,
+        "jerseyNumber": "32",
+        "points": 1,
+        "rebounds": 0.3,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 33.3,
+        "threePtPct": 100,
+        "ftPct": 0,
+        "usage": 26.6
     },
     {
         "id": "1641783",
@@ -2700,7 +5983,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641783.png",
         "isStarter": false,
-        "minutes": 5
+        "minutes": 5,
+        "jerseyNumber": "23",
+        "points": 0,
+        "rebounds": 2,
+        "assists": 0.5,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 27.4
     },
     {
         "id": "1630574",
@@ -2708,7 +6001,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630574.png",
         "isStarter": false,
-        "minutes": 5
+        "minutes": 5,
+        "jerseyNumber": "55",
+        "points": 1.3,
+        "rebounds": 0.7,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 100,
+        "threePtPct": 0,
+        "ftPct": 200,
+        "usage": 25
     },
     {
         "id": "1641748",
@@ -2716,7 +6019,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641748.png",
         "isStarter": false,
-        "minutes": 5
+        "minutes": 5,
+        "jerseyNumber": "44",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 8.9
     },
     {
         "id": "203648",
@@ -2724,7 +6037,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203648.png",
         "isStarter": false,
-        "minutes": 5
+        "minutes": 5,
+        "jerseyNumber": "43",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0.5,
+        "blocks": 0.5,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642261",
@@ -2732,7 +6055,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642261.png",
         "isStarter": false,
-        "minutes": 4
+        "minutes": 4,
+        "jerseyNumber": "4",
+        "points": 2.5,
+        "rebounds": 1.5,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 40,
+        "threePtPct": 25,
+        "ftPct": 0,
+        "usage": 58.4
     },
     {
         "id": "1642355",
@@ -2740,7 +6073,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642355.png",
         "isStarter": false,
-        "minutes": 4
+        "minutes": 4,
+        "jerseyNumber": "9",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 23.4
     },
     {
         "id": "1642359",
@@ -2748,7 +6091,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642359.png",
         "isStarter": false,
-        "minutes": 4
+        "minutes": 4,
+        "jerseyNumber": "4",
+        "points": 1,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 100,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 10.9
     },
     {
         "id": "1641724",
@@ -2756,7 +6109,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641724.png",
         "isStarter": false,
-        "minutes": 4
+        "minutes": 4,
+        "jerseyNumber": "13",
+        "points": 6,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 100,
+        "threePtPct": 100,
+        "ftPct": 0,
+        "usage": 22.8
     },
     {
         "id": "1626167",
@@ -2764,7 +6127,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626167.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "3",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "201950",
@@ -2772,7 +6145,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201950.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "5",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629008",
@@ -2780,7 +6163,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629008.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "17",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629012",
@@ -2788,7 +6181,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629012.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642843",
@@ -2796,7 +6199,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642843.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1627742",
@@ -2804,7 +6217,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627742.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "3",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629661",
@@ -2812,7 +6235,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629661.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "23",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630217",
@@ -2820,7 +6253,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630217.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "3",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1627827",
@@ -2828,7 +6271,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627827.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "2",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631109",
@@ -2836,7 +6289,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631109.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "15",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "201143",
@@ -2844,7 +6307,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201143.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "20",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203114",
@@ -2852,7 +6325,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203114.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "22",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1628415",
@@ -2860,7 +6343,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628415.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "3",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1627884",
@@ -2868,7 +6361,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627884.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "5",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203991",
@@ -2876,7 +6379,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203991.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "30",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203501",
@@ -2884,7 +6397,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203501.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "10",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629028",
@@ -2892,7 +6415,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629028.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "5",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1626145",
@@ -2900,7 +6433,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626145.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "2",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629312",
@@ -2908,7 +6451,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/dleague/1629312.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203994",
@@ -2916,7 +6469,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203994.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "30",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1628991",
@@ -2924,7 +6487,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628991.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631323",
@@ -2932,7 +6505,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631323.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "0",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642905",
@@ -2940,7 +6523,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642905.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1627747",
@@ -2948,7 +6541,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627747.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1628502",
@@ -2956,7 +6559,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1628502.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "21",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "201566",
@@ -2964,7 +6577,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201566.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "18",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642867",
@@ -2972,7 +6595,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642867.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1628971",
@@ -2980,7 +6613,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628971.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "11",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629640",
@@ -2988,7 +6631,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629640.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "3",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641738",
@@ -2996,7 +6649,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641738.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "24",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629673",
@@ -3004,7 +6667,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629673.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "3",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630228",
@@ -3012,7 +6685,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630228.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "1",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642879",
@@ -3020,7 +6703,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642879.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642846",
@@ -3028,7 +6721,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642846.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642267",
@@ -3036,7 +6739,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642267.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641715",
@@ -3044,7 +6757,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641715.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "1",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641842",
@@ -3052,7 +6775,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641842.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "5",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642880",
@@ -3060,7 +6793,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642880.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629638",
@@ -3068,7 +6811,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629638.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630188",
@@ -3076,7 +6829,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630188.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "25",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642851",
@@ -3084,7 +6847,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642851.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1626156",
@@ -3092,7 +6865,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 7,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626156.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "5",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629014",
@@ -3100,7 +6883,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629014.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "4",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642857",
@@ -3108,7 +6901,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642857.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1626172",
@@ -3116,7 +6919,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626172.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "55",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1626192",
@@ -3124,7 +6937,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1626192.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "21",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642844",
@@ -3132,7 +6955,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642844.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642855",
@@ -3140,7 +6973,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642855.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629599",
@@ -3148,7 +6991,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629599.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "17",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642875",
@@ -3156,7 +7009,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642875.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629006",
@@ -3164,7 +7027,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629006.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "20",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203967",
@@ -3172,7 +7045,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203967.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "20",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630173",
@@ -3180,7 +7063,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630173.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "9",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642883",
@@ -3188,7 +7081,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642883.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631207",
@@ -3196,7 +7099,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631207.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203482",
@@ -3204,7 +7117,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203482.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1628436",
@@ -3212,7 +7135,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1628436.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1627777",
@@ -3220,7 +7153,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1627777.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "31",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203937",
@@ -3228,7 +7171,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203937.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "2",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629111",
@@ -3236,7 +7189,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629111.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "31",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642949",
@@ -3244,7 +7207,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642949.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642863",
@@ -3252,7 +7225,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642863.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631222",
@@ -3260,7 +7243,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631222.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "12",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630538",
@@ -3268,7 +7261,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630538.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203552",
@@ -3276,7 +7279,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203552.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "31",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629645",
@@ -3284,7 +7297,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629645.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642859",
@@ -3292,7 +7315,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642859.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642281",
@@ -3300,7 +7333,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642281.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "20",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "203914",
@@ -3308,7 +7351,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/203914.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "11",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629234",
@@ -3316,7 +7369,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629234.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "19",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642876",
@@ -3324,7 +7387,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642876.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642856",
@@ -3332,7 +7405,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642856.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1628379",
@@ -3340,7 +7423,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628379.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "3",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629750",
@@ -3348,7 +7441,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629750.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "31",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642868",
@@ -3356,7 +7459,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642868.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631103",
@@ -3364,7 +7477,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631103.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642358",
@@ -3372,7 +7495,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642358.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "4",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629162",
@@ -3380,7 +7513,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629162.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "0",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642345",
@@ -3388,7 +7531,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642345.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "11",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642885",
@@ -3396,7 +7549,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642885.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630533",
@@ -3404,7 +7567,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630533.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "1",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641747",
@@ -3412,7 +7585,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641747.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642954",
@@ -3420,7 +7603,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642954.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642849",
@@ -3428,7 +7621,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642849.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630568",
@@ -3436,7 +7639,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630568.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "52",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1628449",
@@ -3444,7 +7657,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1628449.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "99",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642860",
@@ -3452,7 +7675,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642860.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642864",
@@ -3460,7 +7693,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642864.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630545",
@@ -3468,7 +7711,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630545.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "1",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631104",
@@ -3476,7 +7729,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631104.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "1",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642383",
@@ -3484,7 +7747,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642383.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630692",
@@ -3492,7 +7765,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630692.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "23",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642878",
@@ -3500,7 +7783,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642878.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641757",
@@ -3508,7 +7801,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641757.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "22",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642845",
@@ -3516,7 +7819,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642845.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630570",
@@ -3524,7 +7837,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630570.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "12",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641801",
@@ -3532,7 +7855,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641801.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "2",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642850",
@@ -3540,7 +7873,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642850.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642348",
@@ -3548,7 +7891,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642348.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "11",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642502",
@@ -3556,7 +7909,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 10,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642502.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "33",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642848",
@@ -3564,7 +7927,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642848.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "201599",
@@ -3572,7 +7945,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/201599.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "9",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642260",
@@ -3580,7 +7963,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642260.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "44",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642907",
@@ -3588,7 +7981,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642907.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642869",
@@ -3596,7 +7999,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642869.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641780",
@@ -3604,7 +8017,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641780.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642938",
@@ -3612,7 +8035,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642938.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641753",
@@ -3620,7 +8053,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 6,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641753.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642862",
@@ -3628,7 +8071,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642862.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630643",
@@ -3636,7 +8089,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630643.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "32",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642874",
@@ -3644,7 +8107,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642874.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641813",
@@ -3652,7 +8125,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641813.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642866",
@@ -3660,7 +8143,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642866.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630658",
@@ -3668,7 +8161,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630658.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "14",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642852",
@@ -3676,7 +8179,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642852.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642847",
@@ -3684,7 +8197,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642847.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630828",
@@ -3692,7 +8215,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 17,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630828.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642853",
@@ -3700,7 +8233,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642853.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641750",
@@ -3708,7 +8251,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641750.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631123",
@@ -3716,7 +8269,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631123.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "17",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642884",
@@ -3724,7 +8287,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642884.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642282",
@@ -3732,7 +8305,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642282.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641765",
@@ -3740,7 +8323,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641765.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "18",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641733",
@@ -3748,7 +8341,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641733.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "20",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631166",
@@ -3756,7 +8359,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631166.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "17",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642886",
@@ -3764,7 +8377,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642886.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642854",
@@ -3772,7 +8395,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642854.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630679",
@@ -3780,7 +8413,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630679.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642365",
@@ -3788,7 +8431,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642365.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642363",
@@ -3796,7 +8449,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642363.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1643024",
@@ -3804,7 +8467,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 14,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1643024.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642268",
@@ -3812,7 +8485,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642268.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642959",
@@ -3820,7 +8503,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642959.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630548",
@@ -3828,7 +8521,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630548.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "9",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1629004",
@@ -3836,7 +8539,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1629004.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "10",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642873",
@@ -3844,7 +8557,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642873.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1643007",
@@ -3852,7 +8575,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 12,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1643007.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630587",
@@ -3860,7 +8593,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 24,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630587.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "18",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642964",
@@ -3868,7 +8611,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 21,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642964.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631115",
@@ -3876,7 +8629,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631115.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631120",
@@ -3884,7 +8647,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631120.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "4",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642910",
@@ -3892,7 +8665,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 29,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642910.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631133",
@@ -3900,7 +8683,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631133.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "33",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642877",
@@ -3908,7 +8701,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642877.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630536",
@@ -3916,7 +8719,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630536.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "13",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631451",
@@ -3924,7 +8737,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/gleague/260x190/1631451.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630621",
@@ -3932,7 +8755,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 19,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1630621.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630667",
@@ -3940,7 +8773,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/gleague/260x190/1630667.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642368",
@@ -3948,7 +8791,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642368.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "12",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642962",
@@ -3956,7 +8809,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642962.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631230",
@@ -3964,7 +8827,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 23,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631230.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "25",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642484",
@@ -3972,7 +8845,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642484.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "7",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641998",
@@ -3980,7 +8863,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1641998.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "50",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631216",
@@ -3988,7 +8881,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631216.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "33",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631111",
@@ -3996,7 +8899,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 9,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1631111.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "14",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642066",
@@ -4004,7 +8917,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 16,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642066.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642911",
@@ -4012,7 +8935,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642911.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1630604",
@@ -4020,7 +8953,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 3,
         "headshotUrl": "https://ak-static.cms.nba.com/wp-content/uploads/headshots/nba/latest/260x190/1630604.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "9",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641787",
@@ -4028,7 +8971,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 20,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641787.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "20",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641809",
@@ -4036,7 +8989,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 4,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641809.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "9",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631288",
@@ -4044,7 +9007,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 22,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631288.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "8",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642914",
@@ -4052,7 +9025,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 15,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642914.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642947",
@@ -4060,7 +9043,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 1,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642947.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642935",
@@ -4068,7 +9061,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642935.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1641815",
@@ -4076,7 +9079,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1641815.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "24",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642364",
@@ -4084,7 +9097,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 30,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642364.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642384",
@@ -4092,7 +9115,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 11,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642384.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "27",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642402",
@@ -4100,7 +9133,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 18,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642402.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "25",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642357",
@@ -4108,7 +9151,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 27,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642357.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642928",
@@ -4116,7 +9169,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 26,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642928.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642917",
@@ -4124,7 +9187,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 2,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642917.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642918",
@@ -4132,7 +9205,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 28,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642918.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642920",
@@ -4140,7 +9223,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 13,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642920.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642926",
@@ -4148,7 +9241,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 8,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642926.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1642950",
@@ -4156,7 +9259,17 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 5,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1642950.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     },
     {
         "id": "1631126",
@@ -4164,6 +9277,16 @@ export const ALL_PLAYERS: PlayerStar[] = [
         "teamId": 25,
         "headshotUrl": "https://cdn.nba.com/headshots/nba/latest/260x190/1631126.png",
         "isStarter": false,
-        "minutes": 0
+        "minutes": 0,
+        "jerseyNumber": "00",
+        "points": 0,
+        "rebounds": 0,
+        "assists": 0,
+        "steals": 0,
+        "blocks": 0,
+        "fgPct": 0,
+        "threePtPct": 0,
+        "ftPct": 0,
+        "usage": 0
     }
 ];

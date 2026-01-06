@@ -9,11 +9,6 @@ import Jersey from '@/components/ui/Jersey';
 import { ALL_TEAMS } from '@/lib/data/allTeams';
 import { ALL_PLAYERS } from '@/lib/data/allPlayers';
 
-// Mock map for popular jersey numbers (duplicated from ProfilePage for now)
-const POPULAR_NUMBERS: Record<string, string> = {
-    '1626164': '1', '201942': '11', '1629027': '11', '201142': '35',
-    '203999': '15', '203507': '34', '1628366': '2', '2544': '23', '201939': '30',
-};
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -53,7 +48,7 @@ export default function Navbar() {
 
     const favoriteTeam = ALL_TEAMS.find(t => t.id === (prefs.teamRanks?.[0] || 14));
     const goatPlayer = ALL_PLAYERS.find(p => p.id === prefs.goatId);
-    const jerseyNumber = goatPlayer ? (POPULAR_NUMBERS[goatPlayer.id] || '00') : '00';
+    const jerseyNumber = goatPlayer?.jerseyNumber || '00';
 
     // Dynamic Icon logic
     const leftIcon = pathname === '/' ? (
