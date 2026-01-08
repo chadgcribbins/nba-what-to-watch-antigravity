@@ -30,7 +30,7 @@ export default function Footer() {
                         <h4 className="text-xl font-black italic text-arcade-yellow tracking-tighter text-shadow-arcade uppercase group-hover:scale-105 transition-transform">
                             Neat-O <span className="text-arcade-red">Slate</span>
                         </h4>
-                        <p className="text-[9px] font-bold text-gray-500 uppercase tracking-[0.4em] opacity-60 group-hover:opacity-100">The pure fan's companion</p>
+                        <p className="text-[9px] font-bold text-gray-500 uppercase tracking-[0.4em] opacity-60 group-hover:opacity-100">The pure fan’s companion</p>
                     </Link>
                 </div>
 

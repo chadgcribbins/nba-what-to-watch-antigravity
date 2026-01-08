@@ -1,13 +1,13 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import { Team, UserPreferences } from '@/types/schema';
+import { UserPreferences } from '@/types/schema';
 import { ALL_TEAMS, TEAM_STANDINGS_2024 } from '@/lib/data/allTeams';
 
 const DEFAULT_PREFS: UserPreferences = {
   teamRanks: ALL_TEAMS.sort((a, b) => {
-    const winsA = (TEAM_STANDINGS_2024 as any)[a.id] || 0;
-    const winsB = (TEAM_STANDINGS_2024 as any)[b.id] || 0;
+    const winsA = (TEAM_STANDINGS_2024 as Record<number, number>)[a.id] || 0;
+    const winsB = (TEAM_STANDINGS_2024 as Record<number, number>)[b.id] || 0;
     return winsB - winsA;
   }).map(t => t.id),
   playerBuckets: {
@@ -51,22 +51,18 @@ import { decodePrefs } from '@/lib/safety/share';
 
 export function usePreferences() {
   const [prefs, setPrefs] = useState<UserPreferences>(DEFAULT_PREFS);
-  const [sharedPrefs, setSharedPrefs] = useState<UserPreferences | null>(null);
+  const [sharedPrefs, setSharedPrefs] = useState<UserPreferences | null>(() => {
+    if (typeof window === 'undefined') return null;
+    const params = new URLSearchParams(window.location.search);
+    const sharedBase64 = params.get('p') ?? params.get('tune');
+    if (!sharedBase64) return null;
+    return decodePrefs(sharedBase64);
+  });
   const [isLoaded, setIsLoaded] = useState(false);
   const [isFirstRun, setIsFirstRun] = useState(false);
 
   useEffect(() => {
-    // 1. Check for shared settings in URL
-    const params = new URLSearchParams(window.location.search);
-    const sharedBase64 = params.get('tune');
-    if (sharedBase64) {
-      const decoded = decodePrefs(sharedBase64);
-      if (decoded) {
-        setSharedPrefs(decoded);
-      }
-    }
-
-    // 2. Load from local storage
+    // Load from local storage
     const saved = localStorage.getItem('nba_prefs_v1');
     if (saved) {
       try {

@@ -253,7 +253,7 @@ function generateTags(game: Game, score: number): string[] {
 }
 
 function determineSuggestion(score: number, game: Game): WatchSuggestion {
-    if (game.status === 'Scheduled') return 'set a reminder' as any;
+    if (game.status === 'Scheduled') return 'set a reminder';
     const s = game.signals;
     if (!s) return 'condensed is enough';
 

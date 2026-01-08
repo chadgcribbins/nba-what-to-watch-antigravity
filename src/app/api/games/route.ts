@@ -1,5 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+interface NbaNextData {
+    props?: {
+        pageProps?: {
+            gameCardFeed?: {
+                modules?: NbaGameCardModule[];
+            };
+        };
+    };
+}
+
+interface NbaGameCardModule {
+    moduleType?: string;
+    cards?: NbaGameCard[];
+}
+
+interface NbaGameCard {
+    cardData?: {
+        gameId?: string;
+        homeTeam?: { teamName?: string; teamTricode?: string };
+        awayTeam?: { teamName?: string; teamTricode?: string };
+    };
+}
+
 export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const source = searchParams.get('source') || 'espn';
@@ -37,26 +60,26 @@ export async function GET(request: NextRequest) {
                 return NextResponse.json({ error: 'Could not find __NEXT_DATA__' }, { status: 500 });
             }
 
-            const nextData = JSON.parse(nextDataMatch[1]);
+            const nextData = JSON.parse(nextDataMatch[1]) as NbaNextData;
 
             // Extract simplified scoreboard-like structure
-            const modules = nextData.props?.pageProps?.gameCardFeed?.modules || [];
-            const gamesModule = modules.find((m: any) => m.moduleType === 'list');
+            const modules = nextData.props?.pageProps?.gameCardFeed?.modules ?? [];
+            const gamesModule = modules.find((m) => m.moduleType === 'list');
 
             if (!gamesModule) {
                 return NextResponse.json({ scoreboard: { games: [] } });
             }
 
-            const games = gamesModule.cards.map((c: any) => ({
+            const games = (gamesModule.cards ?? []).map((c) => ({
                 gameId: c.cardData?.gameId,
                 homeTeam: {
                     teamName: c.cardData?.homeTeam?.teamName,
-                    teamTricode: c.cardData?.homeTeam?.teamTricode
+                    teamTricode: c.cardData?.homeTeam?.teamTricode,
                 },
                 awayTeam: {
                     teamName: c.cardData?.awayTeam?.teamName,
-                    teamTricode: c.cardData?.awayTeam?.teamTricode
-                }
+                    teamTricode: c.cardData?.awayTeam?.teamTricode,
+                },
             }));
 
             return NextResponse.json({ scoreboard: { games } });

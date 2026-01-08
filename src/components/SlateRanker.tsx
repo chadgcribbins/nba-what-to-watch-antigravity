@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 import { Game, RankedGame } from '@/types/schema';
 import { GameCard } from '@/components/ui/GameCard';
 import { usePreferences } from '@/lib/state/usePreferences';
@@ -12,11 +12,9 @@ interface SlateRankerProps {
 
 export default function SlateRanker({ initialGames }: SlateRankerProps) {
     const { prefs, setWinnerPick, toggleReminder, isLoaded } = usePreferences();
-    const [rankedSlate, setRankedSlate] = useState<RankedGame[]>([]);
-
-    useEffect(() => {
-        const ranked = rankGames(initialGames, prefs);
-        setRankedSlate(ranked);
+    const rankedSlate: RankedGame[] = useMemo(() => {
+        if (!isLoaded) return [];
+        return rankGames(initialGames, prefs);
     }, [initialGames, prefs, isLoaded]);
 
     if (!isLoaded) {
@@ -47,7 +45,6 @@ export default function SlateRanker({ initialGames }: SlateRankerProps) {
             {/* Main Rankings */}
             <div className="space-y-6">
                 {mainSlate.map((game) => {
-                    const isWatchable = game.status === 'Live' || game.status === 'Final';
                     const activePick = prefs.picks?.[game.id] || null;
                     const isReminded = prefs.reminders?.includes(game.id) || false;
 
@@ -85,7 +82,6 @@ export default function SlateRanker({ initialGames }: SlateRankerProps) {
                             Spotlights on rising rotation pieces & deep roster value
                         </p>
                         {discoverySlate.map((game) => {
-                            const isWatchable = game.status === 'Live' || game.status === 'Final';
                             const activePick = prefs.picks?.[game.id] || null;
                             const isReminded = prefs.reminders?.includes(game.id) || false;
 

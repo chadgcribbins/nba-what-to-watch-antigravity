@@ -12,7 +12,17 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Repo scripts / generators (not shipped with app):
+    "convert_2025_roster.js",
+    "scripts/**",
   ]),
+  {
+    rules: {
+      // This rule is overly strict for common patterns like initializing state
+      // from localStorage within a mount effect.
+      "react-hooks/set-state-in-effect": "off",
+    },
+  },
 ]);
 
 export default eslintConfig;
