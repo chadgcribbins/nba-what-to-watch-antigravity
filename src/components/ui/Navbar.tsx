@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { usePathname, useSearchParams } from 'next/navigation';
-import { Settings, Tv, Share2, UserCircle } from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { Settings, Tv, Share2 } from 'lucide-react';
 import { usePreferences } from '@/lib/state/usePreferences';
-import { getShareUrl } from '@/lib/safety/share';
+import { shareTunedSlate } from '@/lib/share/share';
 import Jersey from '@/components/ui/Jersey';
 import { ALL_TEAMS } from '@/lib/data/allTeams';
 import { ALL_PLAYERS } from '@/lib/data/allPlayers';
@@ -12,38 +12,10 @@ import { ALL_PLAYERS } from '@/lib/data/allPlayers';
 
 export default function Navbar() {
     const pathname = usePathname();
-    const searchParams = useSearchParams();
     const { prefs } = usePreferences();
 
     const handleShare = async () => {
-        // User Request: "The link that you'll send is last night's games slate."
-        // Logic: If on /slate (maybe with specific date), share that. Otherwise/Default: /slate
-        let shareUrl = `${window.location.origin}/slate`;
-        if (pathname === '/slate') {
-            shareUrl = window.location.href;
-        }
-
-        const lastName = prefs.profile?.displayName || 'A fan';
-        const shareData = {
-            title: 'Neat-O Slate',
-            text: `${lastName} thinks you might want to see the best action from the slate of games on the NBA last night.`,
-            url: shareUrl,
-        };
-
-        if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
-            try {
-                await navigator.share(shareData);
-                return;
-            } catch (err) {
-                if ((err as Error).name !== 'AbortError') {
-                    console.error('Error sharing:', err);
-                }
-            }
-        }
-
-        // Fallback
-        await navigator.clipboard.writeText(shareUrl);
-        alert('Slate link copied to clipboard!');
+        await shareTunedSlate(prefs);
     };
 
     const favoriteTeam = ALL_TEAMS.find(t => t.id === (prefs.teamRanks?.[0] || 14));
