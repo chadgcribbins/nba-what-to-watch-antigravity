@@ -8,8 +8,11 @@ export interface PlayerStats {
     stl: number;
     blk: number;
     three_pm: number;
-    fg: number; // percentage
-    to: number; // turnovers
+    three_pct: number;
+    fg_pct: number; // percentage
+    ft_pct: number;
+
+    tov: number; // turnovers
     min: number;
 }
 
@@ -33,7 +36,8 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
 
     // 2. Fetch from NBA.com
     console.log('Fetching fresh stats from NBA.com...');
-    const url = 'https://stats.nba.com/stats/leagueleaders?LeagueID=00&PerMode=PerGame&Scope=S&Season=2025-26&SeasonType=Regular+Season&StatCategory=PTS';
+    // Using leaguedashplayerstats for much better coverage of the whole league
+    const url = 'https://stats.nba.com/stats/leaguedashplayerstats?Conference=&DateFrom=&DateTo=&Division=&GameScope=&GameSegment=&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlayerExperience=&PlayerPosition=&PlusMinus=N&Rank=N&Season=2025-26&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&StarterBench=&TeamID=0&VsConference=&VsDivision=';
 
     const headers = {
         'Referer': 'https://www.nba.com/',
@@ -48,7 +52,8 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
         if (!response.ok) throw new Error(`NBA API error: ${response.status}`);
 
         const data = await response.json();
-        const resultSet = data.resultSet;
+        // leaguedashplayerstats returns resultSets array
+        const resultSet = data.resultSets ? data.resultSets[0] : data.resultSet;
         const headersList = resultSet.headers as string[];
         const rows = resultSet.rowSet as unknown[][];
 
@@ -61,7 +66,9 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
         const pStl = idx('STL');
         const pBlk = idx('BLK');
         const p3pm = idx('FG3M');
+        const p3pct = idx('FG3_PCT');
         const pFgPct = idx('FG_PCT');
+        const pFtPct = idx('FT_PCT');
         const pTov = idx('TOV');
         const pMin = idx('MIN');
 
@@ -69,6 +76,8 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
 
         rows.forEach((row) => {
             const playerId = String(row[pId] ?? '');
+            if (!playerId) return;
+
             statsMap[playerId] = {
                 pts: Number(row[pPts] ?? 0),
                 reb: Number(row[pReb] ?? 0),
@@ -76,8 +85,10 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
                 stl: Number(row[pStl] ?? 0),
                 blk: Number(row[pBlk] ?? 0),
                 three_pm: Number(row[p3pm] ?? 0),
-                fg: Number(row[pFgPct] ?? 0) * 100, // Convert to 0-100 scale
-                to: Number(row[pTov] ?? 0),
+                three_pct: parseFloat((Number(row[p3pct] ?? 0) * 100).toFixed(1)),
+                fg_pct: parseFloat((Number(row[pFgPct] ?? 0) * 100).toFixed(1)),
+                ft_pct: parseFloat((Number(row[pFtPct] ?? 0) * 100).toFixed(1)),
+                tov: Number(row[pTov] ?? 0),
                 min: Number(row[pMin] ?? 0),
             };
         });
@@ -91,4 +102,5 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
         console.error('Failed to fetch from NBA.com', error);
         throw error;
     }
+
 }

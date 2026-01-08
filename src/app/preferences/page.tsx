@@ -130,21 +130,56 @@ export default function PreferencesPage() {
         return undefined;
     };
 
-    // Sort Logic based on Mode
-    const sortedAvailablePlayers = [...filteredTrayPlayers].sort((a, b) => {
-        if (trayMode === 'STATS') {
-            const key = statKeyByFilter[statFilter];
-            const statA = stats[a.id]?.[key] ?? 0;
-            const statB = stats[b.id]?.[key] ?? 0;
+    const getPlayerStat = (p: typeof ALL_PLAYERS[0], filter: StatFilter): number => {
+        const key = statKeyByFilter[filter];
+        const apiVal = stats[p.id]?.[key];
 
-            return statB - statA;
+        // If API data is missing or zero (likely stale/not participating in current category leaders), fallback to static data
+        if (apiVal !== undefined && apiVal !== 0) return apiVal;
+
+        // Fallback Mapping
+        switch (filter) {
+            case 'pts': return p.points || 0;
+            case 'reb': return p.rebounds || 0;
+            case 'ast': return p.assists || 0;
+            case 'stl': return p.steals || 0;
+            case 'blk': return p.blocks || 0;
+            case 'fg%': return p.fgPct || 0;
+            case '3p%': return p.threePtPct || 0;
+            case 'ft%': return p.ftPct || 0;
+            case 'tov': return (p as any).turnovers || 0;
+            case 'min': return stats[p.id]?.min || (p.minutes / 82) || 0;
+            case '3pm': return stats[p.id]?.three_pm || ((p.threePtPct || 0) > 35 ? ((p.points || 0) / 10) : 0); // rough estimate for missing 3PM
+            default: return 0;
         }
-        // Discovery Mode: Sort by Minutes (Importance Proxy)
-        return b.minutes - a.minutes;
-    });
+    };
 
-    const topTalent = sortedAvailablePlayers.slice(0, 50);
-    const depthChart = sortedAvailablePlayers.slice(50, 150);
+    // Sort Logic based on Mode
+    const sortedAvailablePlayers = [...filteredTrayPlayers]
+        .filter(p => {
+            if (trayMode !== 'STATS') return true;
+
+            // Qualification Thresholds
+            const s = getPlayerStat(p, statFilter);
+            if (statFilter === '3p%') {
+                return getPlayerStat(p, '3pm') >= 2.0;
+            }
+            if (statFilter === 'fg%' || statFilter === 'ft%') {
+                return getPlayerStat(p, 'min') >= 15;
+            }
+            return s > 0;
+        })
+        .sort((a, b) => {
+            if (trayMode === 'STATS') {
+                return getPlayerStat(b, statFilter) - getPlayerStat(a, statFilter);
+            }
+            // Discovery Mode: Sort by Minutes (Importance Proxy)
+            return b.minutes - a.minutes;
+        });
+
+    const topTalent = sortedAvailablePlayers.slice(0, 100);
+    const depthChart = sortedAvailablePlayers.slice(100, 300);
+
 
     function handleDragStart(event: DragStartEvent) {
         const activeData = event.active.data.current;
@@ -246,9 +281,9 @@ export default function PreferencesPage() {
                     <div className="relative z-10 p-5">
                         <div className="flex justify-between items-start mb-4 border-b-2 border-dashed border-gray-700 pb-3">
                             <div>
-                                        <h2 className="text-xl font-black italic uppercase text-arcade-yellow text-shadow-arcade leading-none mb-1">
-                                            The Scorer’s Table
-                                        </h2>
+                                <h2 className="text-xl font-black italic uppercase text-arcade-yellow text-shadow-arcade leading-none mb-1">
+                                    The Scorer’s Table
+                                </h2>
                                 <p className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">
                                     The recipe for a perfect game
                                 </p>
@@ -456,19 +491,32 @@ export default function PreferencesPage() {
                                 <div className="overflow-x-auto pb-2 custom-scrollbar">
                                     <DroppableTray id="TRAY_TOP">
                                         {topTalent.map(p => {
-                                            const playerStats = stats[p.id];
-                                            const key = statKeyByFilter[statFilter];
-                                            const val = playerStats?.[key] ?? 0;
+                                            const val = getPlayerStat(p, statFilter);
                                             return (
                                                 <DraggablePlayer
                                                     key={p.id}
                                                     {...p}
-                                                    statValue={val?.toString()}
+                                                    statValue={val.toFixed(1)}
                                                     highlightColor={getHighlightColor(p.id)}
                                                 />
                                             );
                                         })}
                                     </DroppableTray>
+                                </div>
+                                {/* Subtle Player Data Sync Status */}
+                                <div className="mt-2 px-2 flex items-center justify-center gap-2 opacity-30 hover:opacity-100 transition-opacity">
+                                    <span className="text-[8px] font-bold uppercase tracking-widest text-gray-500">
+                                        Player Stats Last Sync: {new Date().toLocaleDateString()}
+                                    </span>
+                                    <button
+                                        onClick={() => window.location.reload()}
+                                        className="p-1 hover:text-arcade-yellow transition-colors"
+                                        title="Refresh Player Data"
+                                    >
+                                        <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3">
+                                            <path d="M21 2v6h-6M3 12a9 9 0 0115-6.7L21 8M3 22v-6h6M21 12a9 9 0 01-15 6.7L3 16" />
+                                        </svg>
+                                    </button>
                                 </div>
                                 <p className="text-[9px] text-gray-500 text-center mt-2 uppercase font-bold tracking-widest opacity-50">
                                     Showing top 50 {statFilter.toUpperCase()} leaders

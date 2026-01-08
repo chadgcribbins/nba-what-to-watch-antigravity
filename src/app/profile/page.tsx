@@ -1,14 +1,16 @@
 'use client';
 
+import { useState } from 'react';
 import { usePreferences } from '@/lib/state/usePreferences';
 import { ALL_TEAMS } from '@/lib/data/allTeams';
 import { ALL_PLAYERS } from '@/lib/data/allPlayers';
 import Jersey from '@/components/ui/Jersey';
+import ComingSoon from '@/components/ui/ComingSoon';
 import { Trophy, Star, History, Shield } from 'lucide-react';
-
 
 export default function ProfilePage() {
     const { prefs, setPrefs, isLoaded, updateEmail } = usePreferences();
+    const [comingSoonFeature, setComingSoonFeature] = useState<string | null>(null);
 
     if (!isLoaded) return null;
 
@@ -18,6 +20,12 @@ export default function ProfilePage() {
 
     return (
         <main className="p-4 pb-4 max-w-md mx-auto space-y-8">
+            <ComingSoon
+                isOpen={!!comingSoonFeature}
+                onClose={() => setComingSoonFeature(null)}
+                featureName={comingSoonFeature || ''}
+            />
+
             <div className="text-left space-y-2 pt-4">
                 <h2 className="text-3xl font-black uppercase italic tracking-tighter text-shadow-arcade">
                     <span className="text-arcade-yellow">@ Locker</span> <span className="text-arcade-red">Room</span>
@@ -156,11 +164,17 @@ export default function ProfilePage() {
             </div>
 
             {/* Action Links */}
-            <div className="space-y-4 pt-4">
-                <button className="w-full bg-gray-800 border-2 border-black p-3 text-[11px] font-black uppercase italic tracking-widest hover:bg-arcade-yellow hover:text-black transition-colors">
+            <div className="grid grid-cols-2 gap-4">
+                <button
+                    onClick={() => setComingSoonFeature('View Collection')}
+                    className="bg-gray-800 border-2 border-black p-3 text-[11px] font-black uppercase italic tracking-widest hover:bg-arcade-yellow hover:text-black transition-colors box-shadow-arcade-xs"
+                >
                     View Collection
                 </button>
-                <button className="w-full bg-gray-800 border-2 border-black p-3 text-[11px] font-black uppercase italic tracking-widest hover:bg-arcade-blue hover:text-white transition-colors">
+                <button
+                    onClick={() => setComingSoonFeature('Franchise History')}
+                    className="bg-gray-800 border-2 border-black p-3 text-[11px] font-black uppercase italic tracking-widest hover:bg-arcade-blue hover:text-white transition-colors box-shadow-arcade-xs"
+                >
                     Franchise History
                 </button>
             </div>
