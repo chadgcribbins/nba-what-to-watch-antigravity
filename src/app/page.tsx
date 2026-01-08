@@ -54,7 +54,7 @@ export default function Home() {
           </div>
 
           <p className="text-[11px] text-gray-400 leading-relaxed font-bold uppercase italic tracking-wide text-center w-full">
-            How many times have you opened the NBA App and had a classic spoiled by a score? We did too. Sure they have a no-spoiler flag, but when there are 12 games and you've only got an hour, what should you prioritize? WhatsApp groups have suggestions, but there's nothing reliable to find the games you actually want to see. So we built the ultimate spoiler-free rubric. <strong>The Algo</strong> scores and ranks every game based on intensity, style, and your personal tastes—so you only drop into the action that matters.
+            How many times have you opened the NBA App and had a classic spoiled by a score? We did too. Sure they have a no-spoiler flag, but when there are 12 games and you’ve only got an hour, what should you prioritize? WhatsApp groups have suggestions, but there’s nothing reliable to find the games you actually want to see. So we built the ultimate spoiler-free rubric. <strong>The Algo</strong> scores and ranks every game based on intensity, style, and your personal tastes—so you only drop into the action that matters.
           </p>
         </div>
 
@@ -134,7 +134,7 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-white/10 group-hover:bg-transparent" />
               <span className="relative z-10 text-base font-black italic text-white uppercase tracking-tighter flex items-center justify-center gap-3">
-                ⚙️ Let's Twiddle The Knobs 🤓
+                ⚙️ Let’s Twiddle The Knobs 🤓
               </span>
             </button>
 
@@ -147,7 +147,7 @@ export default function Home() {
           <div className="text-center">
             <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 mb-2">Unlocking for you:</p>
             <h4 className="text-lg font-black uppercase italic text-arcade-blue tracking-tighter text-shadow-arcade opacity-80">
-              The "Neat-O" Rubric
+              The “Neat-O” Rubric
             </h4>
           </div>
 

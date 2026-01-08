@@ -229,7 +229,7 @@ export function GameCard({
                         🔥
                     </div>
                     <div className="bg-arcade-red text-white text-[8px] font-black px-2 py-0.5 rounded-sm border-2 border-black box-shadow-arcade-xs uppercase italic tracking-tighter -rotate-12 relative z-10 shadow-[0_4px_10px_rgba(255,0,0,0.4)]">
-                        He's on fire!
+                        He’s on fire!
                     </div>
                 </div>
             )}

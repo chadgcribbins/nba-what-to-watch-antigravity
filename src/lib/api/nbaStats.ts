@@ -50,7 +50,7 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
         const data = await response.json();
         const resultSet = data.resultSet;
         const headersList = resultSet.headers as string[];
-        const rows = resultSet.rowSet as any[][];
+        const rows = resultSet.rowSet as unknown[][];
 
         // Map column indices
         const idx = (name: string) => headersList.indexOf(name);
@@ -67,18 +67,18 @@ export async function getLeagueLeaders(): Promise<Record<string, PlayerStats>> {
 
         const statsMap: Record<string, PlayerStats> = {};
 
-        rows.forEach(row => {
-            const playerId = row[pId].toString();
+        rows.forEach((row) => {
+            const playerId = String(row[pId] ?? '');
             statsMap[playerId] = {
-                pts: row[pPts],
-                reb: row[pReb],
-                ast: row[pAst],
-                stl: row[pStl],
-                blk: row[pBlk],
-                three_pm: row[p3pm],
-                fg: row[pFgPct] * 100, // Convert to 0-100 scale
-                to: row[pTov],
-                min: row[pMin]
+                pts: Number(row[pPts] ?? 0),
+                reb: Number(row[pReb] ?? 0),
+                ast: Number(row[pAst] ?? 0),
+                stl: Number(row[pStl] ?? 0),
+                blk: Number(row[pBlk] ?? 0),
+                three_pm: Number(row[p3pm] ?? 0),
+                fg: Number(row[pFgPct] ?? 0) * 100, // Convert to 0-100 scale
+                to: Number(row[pTov] ?? 0),
+                min: Number(row[pMin] ?? 0),
             };
         });
 

@@ -1,34 +1,33 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState, Suspense } from 'react';
+import { useEffect, useMemo, useState, Suspense } from 'react';
 import { decodePrefs } from '@/lib/safety/share';
+import type { Game, UserPreferences } from '@/types/schema';
 import { ALL_PLAYERS } from '@/lib/data/allPlayers';
 import SlateRanker from '@/components/SlateRanker';
 import { fetchESPNGames } from '@/lib/api/espn';
 import { subDays } from 'date-fns';
-import { UserCircle, Trophy } from 'lucide-react';
+import { Trophy } from 'lucide-react';
 
 function ShareContent() {
     const searchParams = useSearchParams();
-    const [prefs, setPrefs] = useState<any>(null);
-    const [games, setGames] = useState<any[]>([]);
+    const sharedPrefs: UserPreferences | null = useMemo(() => {
+        const p = searchParams.get('p');
+        return p ? decodePrefs(p) : null;
+    }, [searchParams]);
+
+    const [games, setGames] = useState<Game[]>([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const p = searchParams.get('p');
-        if (p) {
-            const decoded = decodePrefs(p);
-            setPrefs(decoded);
-        }
-
-        fetchESPNGames(subDays(new Date(), 1)).then(g => {
-            setGames(g);
+        fetchESPNGames(subDays(new Date(), 1)).then((g) => {
+            setGames(g ?? []);
             setLoading(false);
         });
     }, [searchParams]);
 
-    if (!prefs || loading) {
+    if (!sharedPrefs || loading) {
         return (
             <div className="min-h-screen bg-[#05080f] flex items-center justify-center p-8">
                 <div className="animate-pulse text-arcade-yellow font-black uppercase tracking-widest text-sm">
@@ -38,7 +37,7 @@ function ShareContent() {
         );
     }
 
-    const goat = ALL_PLAYERS.find(p => p.id === prefs.goatId);
+    const goat = ALL_PLAYERS.find(p => p.id === sharedPrefs.goatId);
 
     return (
         <main className="min-h-screen bg-[#05080f] text-gray-100 p-4 pb-20">
@@ -60,7 +59,7 @@ function ShareContent() {
                 </div>
 
                 <h1 className="text-4xl font-black uppercase italic tracking-tighter text-shadow-arcade leading-none mb-2">
-                    {prefs.profile?.displayName || 'Guest Player'}'s <span className="text-arcade-red">Slate</span>
+                    {sharedPrefs.profile?.displayName || 'Guest Player'}’s <span className="text-arcade-red">Slate</span>
                 </h1>
                 <p className="text-[10px] font-bold text-gray-500 uppercase tracking-[0.3em] flex items-center justify-center gap-2">
                     <Trophy className="w-3 h-3" /> Powered by The ❤️ of the 🏀 Game!

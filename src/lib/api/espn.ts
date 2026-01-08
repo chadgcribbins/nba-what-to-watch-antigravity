@@ -53,6 +53,16 @@ interface ESPNEvent {
     }>;
 }
 
+interface NbaScoreboardProxyResponse {
+    scoreboard?: {
+        games?: Array<{
+            gameId: string;
+            homeTeam: { teamName?: string; teamTricode?: string };
+            awayTeam: { teamName?: string; teamTricode?: string };
+        }>;
+    };
+}
+
 /**
  * Fetch NBA Scoreboard from ESPN for a specific date
  */
@@ -72,14 +82,14 @@ export async function fetchESPNGames(date: Date): Promise<Game[]> {
         if (!espnRes.ok) throw new Error(`ESPN API error: ${espnRes.statusText}`);
 
         const espnData: ESPNScoreboardResponse = await espnRes.json();
-        const nbaData = nbaRes.ok ? await nbaRes.json() : null;
+        const nbaData: NbaScoreboardProxyResponse | null = nbaRes.ok ? await nbaRes.json() : null;
 
         const games = (espnData.events || []).map(event => mapESPNEventToGame(event, dateStr));
 
         // Enrich with NBA.com IDs if available
         if (nbaData?.scoreboard?.games) {
             games.forEach(game => {
-                const nbaGame = nbaData.scoreboard.games.find((g: any) => {
+                const nbaGame = nbaData.scoreboard!.games!.find((g) => {
                     const homeMatch = g.homeTeam.teamTricode === game.homeTeam.abbreviation ||
                         g.homeTeam.teamName === game.homeTeam.name;
                     const awayMatch = g.awayTeam.teamTricode === game.awayTeam.abbreviation ||
@@ -89,7 +99,9 @@ export async function fetchESPNGames(date: Date): Promise<Game[]> {
                 if (nbaGame) {
                     game.nbaId = nbaGame.gameId;
                     // Update watch link to primary NBA.com version
-                    const nbaWatchUrl = `https://www.nba.com/game/${nbaGame.awayTeam.teamTricode.toLowerCase()}-vs-${nbaGame.homeTeam.teamTricode.toLowerCase()}-${nbaGame.gameId}?watchFullGame`;
+                    const awayTricode = (nbaGame.awayTeam.teamTricode ?? '').toLowerCase();
+                    const homeTricode = (nbaGame.homeTeam.teamTricode ?? '').toLowerCase();
+                    const nbaWatchUrl = `https://www.nba.com/game/${awayTricode}-vs-${homeTricode}-${nbaGame.gameId}?watchFullGame`;
                     game.watchLinks = {
                         webFallback: nbaWatchUrl,
                         primary: nbaWatchUrl,
@@ -200,8 +212,8 @@ function calculateSignals(comp: ESPNEvent['competitions'][0], isFinal: boolean, 
     const margin = Math.abs(hScore - aScore);
 
     // 1. Team Quality Index (0-1) based on 2024 standings
-    const hWins = (TEAM_STANDINGS_2024 as any)[home.team.id] || 30;
-    const aWins = (TEAM_STANDINGS_2024 as any)[away.team.id] || 30;
+    const hWins = (TEAM_STANDINGS_2024 as Record<string, number>)[home.team.id] || 30;
+    const aWins = (TEAM_STANDINGS_2024 as Record<string, number>)[away.team.id] || 30;
     // Normalize: (Wins / 68) * 0.5 for each team. Max wins = 68.
     const teamQualityIndex = Math.min(1, (hWins + aWins) / 120);
 

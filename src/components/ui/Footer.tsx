@@ -1,23 +1,18 @@
 'use client';
 
 import { useState } from 'react';
-import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Tv, Settings, Share2, MessageSquare, User } from 'lucide-react';
 import { usePreferences } from '@/lib/state/usePreferences';
-import { getShareUrl } from '@/lib/safety/share';
+import { shareTunedSlate } from '@/lib/share/share';
 import FeedbackModal from './FeedbackModal';
 
 export default function Footer() {
     const { prefs } = usePreferences();
     const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
-    // const pathname = usePathname();
-    // if (pathname === '/') return null;
 
     const handleShare = async () => {
-        const url = getShareUrl(prefs);
-        await navigator.clipboard.writeText(url);
-        alert('Share link copied to clipboard!');
+        await shareTunedSlate(prefs);
     };
 
     return (
@@ -30,7 +25,7 @@ export default function Footer() {
                         <h4 className="text-xl font-black italic text-arcade-yellow tracking-tighter text-shadow-arcade uppercase group-hover:scale-105 transition-transform">
                             Neat-O <span className="text-arcade-red">Slate</span>
                         </h4>
-                        <p className="text-[9px] font-bold text-gray-500 uppercase tracking-[0.4em] opacity-60 group-hover:opacity-100">The pure fan's companion</p>
+                        <p className="text-[9px] font-bold text-gray-500 uppercase tracking-[0.4em] opacity-60 group-hover:opacity-100">The pure fan’s companion</p>
                     </Link>
                 </div>
 

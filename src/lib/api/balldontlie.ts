@@ -1,9 +1,14 @@
 import { BDLGame, BDLGameSchema, Game, GameStatusSchema, Team } from '@/types/schema';
 import { ALL_TEAMS } from '@/lib/data/allTeams';
 import { format, subDays } from 'date-fns';
+import { z } from 'zod';
 
 const API_KEY = process.env.BALLDONTLIE_API_KEY;
 const BASE_URL = 'https://api.balldontlie.io/v1';
+
+const BDLGamesResponseSchema = z.object({
+    data: z.array(BDLGameSchema),
+});
 
 export async function fetchGames(date: Date): Promise<Game[]> {
     const dateStr = format(date, 'yyyy-MM-dd');
@@ -25,25 +30,21 @@ export async function fetchGames(date: Date): Promise<Game[]> {
             throw new Error(`Failed to fetch games: ${res.statusText}`);
         }
 
-        const data = await res.json();
-        const games = data.data; // BDL response format
+        const json: unknown = await res.json();
+        const parsed = BDLGamesResponseSchema.safeParse(json);
+        if (!parsed.success) {
+            console.error('Invalid games response:', parsed.error);
+            throw new Error('Invalid games response from API');
+        }
 
-        return games.map((g: any) => normalizeGame(g));
+        return parsed.data.data.map((g) => normalizeGame(g));
     } catch (error) {
         console.error('Error fetching games:', error);
         return getMockGames(dateStr);
     }
 }
 
-function normalizeGame(bdlGame: any): Game {
-    // Validate with Zod first
-    const parsed = BDLGameSchema.safeParse(bdlGame);
-    if (!parsed.success) {
-        console.error('Invalid game data:', parsed.error);
-        throw new Error('Invalid game data from API');
-    }
-    const g = parsed.data;
-
+function normalizeGame(g: BDLGame): Game {
     const diff = Math.abs(g.home_team_score - g.visitor_team_score);
     const totalPoints = g.home_team_score + g.visitor_team_score;
 
@@ -106,7 +107,7 @@ function mapStatus(status: string): 'Scheduled' | 'Live' | 'Final' | 'Postponed'
  * Enriches BDL team data with our local metadata (logos, full names)
  * and handles abbreviation mismatches.
  */
-function resolveTeam(bdlTeam: any): Team {
+function resolveTeam(bdlTeam: Team): Team {
     const abbrev = bdlTeam.abbreviation;
 
     // 1. Handle Known Mismatches
