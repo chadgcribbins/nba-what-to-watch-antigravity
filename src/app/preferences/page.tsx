@@ -611,7 +611,7 @@ export default function PreferencesPage() {
                                 const isChecked = e.target.checked;
                                 if (isChecked) {
                                     const standingsOrder = [...ALL_TEAMS]
-                                        .sort((a, b) => (TEAM_STANDINGS_2024[b.id] ?? 0) - (TEAM_STANDINGS_2024[a.id] ?? 0))
+                                        .sort((a, b) => ((TEAM_STANDINGS_2024 as Record<number, number>)[b.id] ?? 0) - ((TEAM_STANDINGS_2024 as Record<number, number>)[a.id] ?? 0))
                                         .map((t) => t.id);
                                     setPrefs({ ...prefs, teamRanks: standingsOrder, isSyncingToStandings: true });
                                 } else {

@@ -99,7 +99,9 @@ export async function fetchESPNGames(date: Date): Promise<Game[]> {
                 if (nbaGame) {
                     game.nbaId = nbaGame.gameId;
                     // Update watch link to primary NBA.com version
-                    const nbaWatchUrl = `https://www.nba.com/game/${nbaGame.awayTeam.teamTricode.toLowerCase()}-vs-${nbaGame.homeTeam.teamTricode.toLowerCase()}-${nbaGame.gameId}?watchFullGame`;
+                    const awayTricode = (nbaGame.awayTeam.teamTricode ?? '').toLowerCase();
+                    const homeTricode = (nbaGame.homeTeam.teamTricode ?? '').toLowerCase();
+                    const nbaWatchUrl = `https://www.nba.com/game/${awayTricode}-vs-${homeTricode}-${nbaGame.gameId}?watchFullGame`;
                     game.watchLinks = {
                         webFallback: nbaWatchUrl,
                         primary: nbaWatchUrl,
