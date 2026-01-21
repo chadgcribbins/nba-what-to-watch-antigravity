@@ -1,0 +1,6 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="120" height="120" rx="60" fill="#1F7A8C"/>
+  <circle cx="60" cy="60" r="42" fill="#F6F1E6"/>
+  <path d="M60 24L70 48H96L74 64L82 92L60 75L38 92L46 64L24 48H50L60 24Z" fill="#1F7A8C"/>
+  <text x="60" y="104" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1F7A8C">WEST</text>
+</svg>

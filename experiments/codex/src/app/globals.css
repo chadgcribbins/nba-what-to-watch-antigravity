@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f6f1e6;
+  --cream-deep: #efe4cf;
+  --ink: #101726;
+  --navy: #0f2a4d;
+  --orange: #e56b2b;
+  --gold: #f5c15a;
+  --teal: #1f7a8c;
+  --paper: #fff8ea;
+}
+
+@theme inline {
+  --color-background: var(--cream);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.app-shell {
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(245, 193, 90, 0.35) 0, transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(31, 122, 140, 0.25) 0, transparent 42%),
+    radial-gradient(circle at 70% 80%, rgba(229, 107, 43, 0.2) 0, transparent 50%),
+    linear-gradient(180deg, var(--cream) 0%, var(--paper) 50%, var(--cream-deep) 100%);
+  min-height: 100vh;
+}
+
+.card-shadow {
+  box-shadow: 0 22px 60px -30px rgba(15, 42, 77, 0.35);
+}
