@@ -29,18 +29,5 @@ git push origin main
 echo "✅ Pushed to personal repo!"
 echo ""
 
-# Check if WE3 repo exists
-echo "🔍 Checking WE3 repo..."
-if git ls-remote we3 &> /dev/null; then
-    echo "⬆️  Pushing to WE3 GitHub..."
-    git push we3 main
-    echo "✅ Pushed to WE3 repo!"
-else
-    echo "⚠️  WE3 repo doesn't exist yet. Create it first:"
-    echo "   https://github.com/organizations/WE3io/repositories/new"
-    echo "   Name: we3-playground-nba"
-    echo "   Then run: git push we3 main"
-fi
-
 echo ""
 echo "✨ Done! NBA project pushed to GitHub."
